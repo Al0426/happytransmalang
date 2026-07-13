@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Trans Malang - Sewa Bus Pariwisata Terpercaya</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #0066cc 0%, #004a99 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,102,204,0.8), rgba(0,74,153,0.8)), 
+                        url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1920&q=80') center/cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #ff6b35;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background: #e55525;
+            transform: translateY(-2px);
+        }
+
+        /* Section */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #0066cc;
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /* Fleet Grid */
+        .fleet-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .fleet-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .fleet-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .fleet-image {
+            height: 250px;
+            background: linear-gradient(135deg, #0066cc 0%, #004a99 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
+        }
+
+        .fleet-content {
+            padding: 25px;
+        }
+
+        .fleet-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #0066cc;
+        }
+
+        .fleet-price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ff6b35;
+            margin-bottom: 1rem;
+        }
+
+        .fleet-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .fleet-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .fleet-features li:before {
+            content: "✓ ";
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a2b3c;
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 20px;
+            color: #ff6b35;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+        }
+
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .fleet-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">🚌 Happy Trans Malang</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#fleet">Armada</a></li>
+                    <li><a href="#packages">Paket</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Sewa Bus Malang Terpercaya</h1>
+            <p>Armada Bus Modern & Nyaman untuk Perjalanan Wisata, Gathering, dan Acara Spesial Anda</p>
+            <a href="#fleet" class="btn">Lihat Armada</a>
+            <a href="https://wa.me/6288235416304" class="btn" style="background: #25d366;">Hubungi Kami</a>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section class="section" id="fleet">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pilihan Armada</h2>
+                <p>Bus Pariwisata Kami - Armada terawat dengan fasilitas lengkap untuk kenyamanan perjalanan Anda</p>
+            </div>
+            <div class="fleet-grid">
+                <!-- Big Bus -->
+                <div class="fleet-card">
+                    <div class="fleet-image">🚌</div>
+                    <div class="fleet-content">
+                        <h3>Big Bus</h3>
+                        <div class="fleet-price">Rp3.000.000/hari</div>
+                        <ul class="fleet-features">
+                            <li>Kapasitas: 50-60 Seat</li>
+                            <li>AC Dingin</li>
+                            <li>TV & Karaoke</li>
+                            <li>Reclining Seat</li>
+                            <li>USB Charger</li>
+                        </ul>
+                        <a href="https://wa.me/6288235416304?text=Saya%20ingin%20booking%20Big%20Bus" class="btn">Booking Sekarang</a>
+                    </div>
+                </div>
+
+                <!-- Medium Bus -->
+                <div class="fleet-card">
+                    <div class="fleet-image"></div>
+                    <div class="fleet-content">
+                        <h3>Medium Bus</h3>
+                        <div class="fleet-price">Rp1.800.000/hari</div>
+                        <ul class="fleet-features">
+                            <li>Kapasitas: 35 Seat</li>
+                            <li>AC Dingin</li>
+                            <li>TV & Audio</li>
+                            <li>Reclining Seat</li>
+                            <li>USB Charger</li>
+                        </ul>
+                        <a href="https://wa.me/6288235416304?text=Saya%20ingin%20booking%20Medium%20Bus" class="btn">Booking Sekarang</a>
+                    </div>
+                </div>
+
+                <!-- Hiace -->
+                <div class="fleet-card">
+                    <div class="fleet-image">🚐</div>
+                    <div class="fleet-content">
+                        <h3>Hiace Commuter</h3>
+                        <div class="fleet-price">Rp1.100.000/hari</div>
+                        <ul class="fleet-features">
+                            <li>Kapasitas: 14 Seat</li>
+                            <li>AC Dingin</li>
+                            <li>Audio System</li>
+                            <li>Reclining Seat</li>
+                            <li>USB Charger</li>
+                        </ul>
+                        <a href="https://wa.me/6288235416304?text=Saya%20ingin%20booking%20Hiace" class="btn">Booking Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Happy Trans Malang</h4>
+                    <p>Penyedia layanan sewa bus pariwisata terpercaya di Malang dengan armada modern dan driver profesional.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#fleet">Armada</a></li>
+                        <li><a href="#packages">Paket Wisata</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontak Kami</h4>
+                    <ul>
+                        <li>📍 Kajoetangan Heritage, Jl. Arif Rahman Hakim, Malang</li>
+                        <li> 0882-3541-6304</li>
+                        <li>📱 0812-8487-6147</li>
+                        <li>✉️ info@happytransmalang.id</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Happy Trans Malang. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

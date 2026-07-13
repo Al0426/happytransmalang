@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Armada Mobil - Happy Trans Malang | Sewa Mobil & Hiace Terpercaya</title>
+<meta name="description" content="Daftar lengkap armada mobil Happy Trans Malang. Sewa mobil, Hiace, dan ELF dengan harga terjangkau. Hubungi 0882-3541-6304.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root {
+--primary: #0066cc;
+--primary-dark: #004a99;
+--secondary: #ff6b35;
+--secondary-dark: #e55525;
+--accent: #ffc93c;
+--gold: #c9a961;
+--dark: #1a2b3c;
+--gray: #6c757d;
+--light: #f8f9fa;
+--white: #ffffff;
+--success: #28a745;
+--danger: #dc3545;
+--shadow: 0 5px 20px rgba(0,0,0,0.1);
+--shadow-lg: 0 15px 40px rgba(0,0,0,0.15);
+--transition: all 0.3s ease;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: var(--dark); overflow-x: hidden; }
+h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; font-weight: 700; line-height: 1.3; }
+img { max-width: 100%; height: auto; }
+a { text-decoration: none; color: inherit; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* Header */
+header { background: var(--white); box-shadow: var(--shadow); position: sticky; top: 0; z-index: 1000; }
+nav { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; }
+.logo { display: flex; align-items: center; gap: 12px; }
+.logo-img { width: 55px; height: 55px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+.logo-text { font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 800; color: var(--dark); line-height: 1.1; }
+.logo-text .happy { color: var(--gold); display: block; font-size: 22px; }
+.logo-text .trans { color: var(--primary); font-size: 18px; }
+.logo-text .malang { color: var(--gray); font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+.nav-links { display: flex; list-style: none; gap: 22px; align-items: center; }
+.nav-links a { color: var(--dark); font-weight: 500; font-size: 14px; transition: var(--transition); position: relative; }
+.nav-links a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: var(--secondary); transition: width 0.3s; }
+.nav-links a:hover { color: var(--secondary); }
+.nav-links a:hover::after { width: 100%; }
+.nav-cta { background: var(--secondary); color: var(--white) !important; padding: 10px 25px; border-radius: 50px; }
+.nav-cta:hover { background: var(--secondary-dark); }
+.nav-cta::after { display: none; }
+.mobile-menu-btn { display: none; background: none; border: none; font-size: 24px; color: var(--primary); cursor: pointer; }
+
+/* Page Hero */
+.page-hero {
+    background: linear-gradient(135deg, rgba(0,74,153,0.9) 0%, rgba(0,102,204,0.75) 100%),
+                url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1920&q=80') center/cover;
+    padding: 100px 0 80px;
+    color: var(--white);
+    text-align: center;
+}
+.page-hero h1 { font-size: 42px; margin-bottom: 15px; }
+.page-hero .subtitle { font-size: 16px; opacity: 0.9; max-width: 700px; margin: 0 auto 25px; }
+.breadcrumb { display: flex; justify-content: center; gap: 10px; font-size: 14px; opacity: 0.9; }
+.breadcrumb a { color: var(--accent); }
+.breadcrumb a:hover { text-decoration: underline; }
+
+/* Section Title */
+.section-title { text-align: center; margin-bottom: 50px; }
+.section-title span { color: var(--secondary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 10px; }
+.section-title h2 { font-size: 36px; color: var(--dark); margin-bottom: 15px; }
+.section-title p { color: var(--gray); max-width: 700px; margin: 0 auto; }
+
+/* Fleet Grid */
+.fleet-section { padding: 80px 0; background: var(--light); }
+.fleet-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+.fleet-card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+.fleet-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-lg); }
+.fleet-card.featured { border: 2px solid var(--secondary); }
+.fleet-card.featured::before {
+    content: '⭐ BEST SELLER';
+    position: absolute;
+    top: 15px;
+    right: -30px;
+    background: var(--secondary);
+    color: var(--white);
+    padding: 5px 40px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transform: rotate(45deg);
+    z-index: 2;
+}
+.fleet-image {
+    height: 220px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fleet-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.fleet-card:hover .fleet-image img { transform: scale(1.08); }
+.fleet-image i.fallback-icon { font-size: 80px; color: var(--white); opacity: 0.9; }
+.fleet-image .fleet-tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--secondary);
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: 2;
+}
+.fleet-pricing { padding: 20px 25px; text-align: center; background: var(--light); border-bottom: 1px solid #eee; }
+.fleet-price { font-size: 28px; font-weight: 800; color: var(--secondary); font-family: 'Montserrat', sans-serif; }
+.fleet-price small { font-size: 14px; color: var(--gray); font-weight: 500; }
+.fleet-note { font-size: 11px; color: var(--gray); margin-top: 3px; font-style: italic; }
+.fleet-body { padding: 20px 25px; flex: 1; display: flex; flex-direction: column; }
+.fleet-header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #eee;
+}
+.fleet-name { font-size: 20px; font-weight: 700; color: var(--dark); }
+.fleet-capacity {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--primary);
+    color: var(--white);
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 12px;
+}
+.fleet-route { font-size: 12px; color: var(--gray); margin-bottom: 15px; }
+.fleet-route i { color: var(--secondary); }
+.fleet-list { list-style: none; margin-bottom: 12px; }
+.fleet-list-title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.fleet-list-title.include { color: var(--success); }
+.fleet-list-title.exclude { color: var(--danger); }
+.fleet-list li { padding: 4px 0; font-size: 13px; color: var(--dark); display: flex; align-items: center; gap: 10px; }
+.fleet-list li i.fa-check { color: var(--success); }
+.fleet-list li i.fa-times { color: var(--danger); }
+.fleet-list.exclude-list li { color: var(--gray); text-decoration: line-through; opacity: 0.8; }
+.fleet-footer { margin-top: auto; padding-top: 15px; }
+.fleet-btn {
+    display: block;
+    text-align: center;
+    background: var(--primary);
+    color: var(--white);
+    padding: 12px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 13px;
+}
+.fleet-btn:hover { background: var(--secondary); transform: translateY(-2px); box-shadow: 0 10px 20px rgba(255,107,53,0.3); }
+
+/* CTA Section */
+.cta-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+    text-align: center;
+}
+.cta-section h2 { font-size: 36px; margin-bottom: 15px; }
+.cta-section p { font-size: 16px; opacity: 0.9; max-width: 700px; margin: 0 auto 25px; }
+.cta-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+.btn { display: inline-block; padding: 12px 30px; border-radius: 50px; font-weight: 600; transition: var(--transition); }
+.btn-primary { background: var(--secondary); color: var(--white); }
+.btn-primary:hover { background: var(--secondary-dark); transform: translateY(-2px); }
+.btn-outline { background: transparent; color: var(--white); border: 2px solid var(--white); }
+.btn-outline:hover { background: var(--white); color: var(--primary); }
+.btn-wa { background: #25d366; color: var(--white); }
+.btn-wa:hover { background: #1ebe57; transform: translateY(-3px); }
+
+/* Footer */
+footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 0 0; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 40px; margin-bottom: 40px; }
+.footer-col h4 { color: var(--white); font-size: 18px; margin-bottom: 20px; position: relative; padding-bottom: 10px; }
+.footer-col h4::after { content: ''; position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background: var(--secondary); }
+.footer-about p { margin-bottom: 20px; font-size: 14px; line-height: 1.8; }
+.footer-social { display: flex; gap: 10px; flex-wrap: wrap; }
+.footer-social a { width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); transition: var(--transition); }
+.footer-social a:hover { transform: translateY(-3px); }
+.footer-social a.fb:hover { background: #1877f2; }
+.footer-social a.ig:hover { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.footer-social a.tt:hover { background: #000000; }
+.footer-social a.wa:hover { background: #25d366; }
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 10px; }
+.footer-col ul a { color: rgba(255,255,255,0.7); font-size: 14px; transition: var(--transition); display: flex; align-items: center; gap: 8px; }
+.footer-col ul a:hover { color: var(--secondary); padding-left: 5px; }
+.footer-contact p { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 15px; font-size: 14px; }
+.footer-contact i { color: var(--secondary); margin-top: 4px; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding: 20px 0; text-align: center; font-size: 14px; }
+.footer-bottom span { color: var(--secondary); font-weight: 600; }
+
+/* Floating WA */
+.floating-wa-container { position: fixed; bottom: 30px; right: 30px; z-index: 999; display: flex; flex-direction: column; gap: 12px; align-items: flex-end; }
+.floating-wa { width: 60px; height: 60px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 28px; box-shadow: 0 5px 20px rgba(37,211,102,0.4); transition: var(--transition); animation: pulse 2s infinite; position: relative; }
+.floating-wa:hover { transform: scale(1.1); }
+.floating-wa .wa-tooltip { position: absolute; right: 70px; background: var(--white); color: var(--dark); padding: 8px 15px; border-radius: 8px; font-size: 13px; font-weight: 500; white-space: nowrap; box-shadow: var(--shadow); opacity: 0; pointer-events: none; transition: var(--transition); }
+.floating-wa:hover .wa-tooltip { opacity: 1; }
+.floating-wa .wa-tooltip::after { content: ''; position: absolute; right: -6px; top: 50%; transform: translateY(-50%); border: 6px solid transparent; border-left-color: var(--white); }
+.floating-wa.secondary { background: var(--primary); animation: pulseBlue 2s infinite; animation-delay: 0.5s; }
+@keyframes pulse { 0%, 100% { box-shadow: 0 5px 20px rgba(37,211,102,0.4); } 50% { box-shadow: 0 5px 30px rgba(37,211,102,0.8); } }
+@keyframes pulseBlue { 0%, 100% { box-shadow: 0 5px 20px rgba(0,102,204,0.4); } 50% { box-shadow: 0 5px 30px rgba(0,102,204,0.8); } }
+
+/* Responsive */
+@media (max-width: 992px) {
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+    .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); flex-direction: column; padding: 20px; box-shadow: var(--shadow); gap: 15px; }
+    .nav-links.active { display: flex; }
+    .mobile-menu-btn { display: block; }
+    .page-hero h1 { font-size: 28px; }
+    .section-title h2 { font-size: 28px; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .floating-wa-container { bottom: 20px; right: 20px; }
+    .floating-wa { width: 55px; height: 55px; font-size: 24px; }
+    .logo-text .happy { font-size: 18px; }
+    .logo-text .trans { font-size: 16px; }
+    .logo-img { width: 45px; height: 45px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+<div class="container">
+<nav>
+<a href="index.html" class="logo">
+<img src="https://i.ibb.co.com/G32957D0/Chat-GPT-Image-Jul-8-2026-04-33-03-PM.png" alt="Logo Happy Trans Malang" class="logo-img" onerror="this.style.display='none'">
+<div class="logo-text">
+<span class="happy">HAPPY</span>
+<span class="trans">TRANS</span>
+<span class="malang">Malang</span>
+</div>
+</a>
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">Beranda</a></li>
+<li><a href="index.html#about">Tentang</a></li>
+<li><a href="armada-mobil.html" style="color: var(--secondary);">Armada</a></li>
+<li><a href="index.html#services">Layanan</a></li>
+<li><a href="index.html#packages">Paket Wisata</a></li>
+<li><a href="index.html#gallery">Galeri</a></li>
+<li><a href="index.html#location">Lokasi</a></li>
+<li><a href="#" class="nav-cta" onclick="openBookingModal(); return false;">Booking</a></li>
+</ul>
+<button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation"><i class="fas fa-bars"></i></button>
+</nav>
+</div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero">
+<div class="container">
+<h1>Armada Mobil & Hiace</h1>
+<p class="subtitle">Pilihan lengkap kendaraan terawat untuk kenyamanan perjalanan Anda di Malang, Batu, dan sekitarnya</p>
+<div class="breadcrumb">
+<a href="index.html">Beranda</a>
+<span>/</span>
+<span>Armada Mobil</span>
+</div>
+</div>
+</section>
+
+<!-- Fleet Section -->
+<section class="fleet-section">
+<div class="container">
+<div class="section-title">
+<span>Daftar Armada</span>
+<h2>Mobil, Hiace & ELF</h2>
+<p>Semua kendaraan kami terpelihara dengan baik, dilengkapi driver profesional, dan siap melayani kebutuhan perjalanan Anda</p>
+</div>
+<div class="fleet-grid">
+
+<!-- Honda Brio -->
+<div class="fleet-card">
+<div class="fleet-image">
+<i class="fas fa-car fallback-icon"></i>
+</div>
+<div class="fleet-pricing">
+<div class="fleet-price">Rp550.000 <small>/ hari</small></div>
+<div class="fleet-note">Full Day (Max pukul 22.00)</div>
+</div>
+<div class="fleet-body">
+<div class="fleet-header-info">
+<div class="fleet-name">Honda Brio</div>
+<div class="fleet-capacity"><i class="fas fa-user"></i> Max 3 Seat</div>
+</div>
+<div class="fleet-route"><i class="fas fa-route"></i> Dalam Kota Malang / Batu</div>
+<div class="fleet-list-title include"><i class="fas fa-check-circle"></i> Include</div>
+<ul class="fleet-list">
+<li><i class="fas fa-check"></i> Mobil</li>
+<li><i class="fas fa-check"></i> Driver</li>
+<li><i class="fas fa-check"></i> BBM</li>
+</ul>
+<div class="fleet-list-title exclude"><i class="fas fa-times-circle"></i> Exclude</div>
+<ul class="fleet-list exclude-list">
+<li><i class="fas fa-times"></i> Parkir</li>
+<li><i class="fas fa-times"></i> Makan Driver</li>
+</ul>
+<div class="fleet-footer">
+<a href="#" class="fleet-btn" onclick="openBookingModal('Honda Brio'); return false;">
+<i class="fab fa-whatsapp"></i> Booking Sekarang
+</a>
+</div>
+</div>
+</div>
+
+<!-- Honda Mobilio -->
+<div class="fleet-card">
+<div class="fleet-image">
+<i class="fas fa-car-side fallback-icon"></i>
+</div>
+<div class="fleet-pricing">
+<div class="fleet-price">Rp550.000 <small>/ hari</small></div>
+<div class="fleet-note">Full Day (Max pukul 22.00)</div>
+</div>
+<div class="fleet-body">
+<div class="fleet-header-info">
+<div class="fleet-name">Honda Mobilio</div>
+<div class="fleet-capacity"><i class="fas fa-user"></i> Max 6 Seat</div>
+</div>
+<div class="fleet-route"><i class="fas fa-route"></i> Dalam Kota Malang / Batu</div>
+<div class="fleet-list-title include"><i class="fas fa-check-circle"></i> Include</div>
+<ul class="fleet-list">
+<li><i class="fas fa-check"></i> Mobil</li>
+<li><i class="fas fa-check"></i> Driver</li>
+<li><i class="fas fa-check"></i> BBM</li>
+</ul>
+<div class="fleet-list-title exclude"><i class="fas fa-times-circle"></i> Exclude</div>
+<ul class="fleet-list exclude-list">
+<li><i class="fas fa-times"></i> Parkir</li>
+<li><i class="fas fa-times"></i> Makan Driver</li>
+</ul>
+<div class="fleet-footer">
+<a href="#" class="fleet-btn" onclick="openBookingModal('Honda Mobilio'); return false;">
+<i class="fab fa-whatsapp"></i> Booking Sekarang
+</a>
+</div>
+</div>
+</div>
+
+<!-- Toyota Avanza -->
+<div class="fleet-card featured">
+<div class="fleet-image">
+<span class="fleet-tag">Popular</span>
+<i class="fas fa-car-side fallback-icon"></i>
+</div>
+<div class="fleet-pricing">
+<div class="fleet-price">Rp550.000 <small>/ hari</small></div>
+<div class="fleet-note">Full Day (Max pukul 22.00)</div>
+</div>
+<div class="fleet-body">
+<div class="fleet-header-info">
+<div class="fleet-name">Toyota Avanza</div>
+<div class="fleet-capacity"><i class="fas fa-user"></i> Max 6 Seat</div>
+</div>
+<div class="fleet-route"><i class="fas fa-route"></i> Dalam Kota Malang / Batu</div>
+<div class="fleet-list-title include"><i class="fas fa-check-circle"></i> Include</div>
+<ul class="fleet-list">
+<li><i class="fas fa-check"></i> Mobil</li>
+<li><i class="fas fa-check"></i> Driver</li>
+<li><i class="fas fa-check"></i> BBM</li>
+</ul>
+<div class="fleet-list-title exclude"><i class="fas fa-times-circle"></i> Exclude</div>
+<ul class="fleet-list exclude-list">
+<li><i class="fas fa-times"></i> Parkir</li>
+<li><i class="fas fa-times"></i> Makan Driver</li>
+</ul>
+<div class="fleet-footer">
+<a href="#" class="fleet-btn" onclick="openBookingModal('Toyota Avanza'); return false;">
+<i class="fab fa-whatsapp"></i> Booking Sekarang
+</a>
+</div>
+</div>
+</div>
+
+<!-- New Avanza FWD -->
+<div class="fleet-card">
+<div class="fleet-image">
+<i class="fas fa-car-side fallback-icon"></i>
+</div>
+<div class="fleet-pricing">
+<div class="fleet-price">Rp625.000 <small>/ hari</small></div>
+<div class="fleet-note">Full Day (Max pukul 22.00)</div>
+</div>
+<div class="fleet-body">
+<div class="fleet-header-info">
+<div class="fleet-name">New Avanza (FWD)</div>
+<div class="fleet-capacity"><i class="fas fa-user"></i> Max 6 Seat</div>
+</div>
+<div class="fleet-route"><i class="fas fa-route"></i> Dalam Kota Malang / Batu</div>
+<div class="fleet-list-title include"><i class="fas fa-check-circle"></i> Include</div>
+<ul class="fleet-list">
+<li><i class="fas fa-check"></i> Mobil</li>
+<li><i class="fas fa-check"></i> Driver</li>
+<li><i class="fas fa-check"></i> BBM</li>
+</ul>
+<div class="fleet-list-title exclude"><i class="fas fa-times-circle"></i> Exclude</div>
+<ul class="fleet-list exclude-list">
+<li><i class="fas fa-times"></i> Parkir</li>
+<li><i class="fas fa-times"></i> Makan Driver</li>
+</ul>
+<div class="fleet-footer">
+<a href="#" class="fleet-btn" onclick="openBookingModal('New Avanza FWD'); return false;">
+<i class="fab fa-whatsapp"></i> Booking Sekarang
+</a>
+</div>
+</div>
+</div>
+
+<!-- Suzuki Ertiga -->
+<div class="fleet-card">
+<div class="fleet-image">
+<i class="fas fa-car-side fallback-icon"></i>
+</div>
+<div class="fleet-pricing">
+<div class="fleet-price">Rp550.000 <small>/ hari</small></div>
+<div class="fleet-note">Full Day (Max pukul 22.00)</div>
+</div>
+<div class="fleet-body">
+<div class="fleet-header-info">
+<div class="fleet-name">Suzuki Ertiga</div>
+<div class="fleet-capacity"><i class="fas fa-user"></i> Max 6 Seat</div>
+</div>
+<div class="fleet-route"><i class="fas fa-route"></i> Dalam Kota Malang / Batu</div>
+<div class="fleet-list-title include"><i class="fas fa-check-circle"></i> Include</div>
+<ul class="fleet-list">
+<li><i class="fas fa-check"></i> Mobil</li>
+<li><i class="fas fa-check"></i> Driver</li>
+<li><i class="fas fa-check"></i> BBM</li>
+</ul>
+<div class="fleet-list-title exclude"><i class="fas fa-times-circle"></i> Exclude</div>
+<ul class="fleet-list exclude-list">
+<li><i class="fas fa-times"></i> Parkir</li>
+<li><i class="fas fa-times"></i> Makan Driver</li>
+</ul>
+<div class="fleet-footer">
+<a href="#" class="fleet-btn" onclick="openBookingModal('Suzuki Ertiga'); return false;">
+<i class="fab fa-whatsapp"></i> Booking Sekarang
+</a>
+</div>
+</div>
+</div>
+
+<!-- Toyota Innova -->
+<div class="fleet-card featured">
+<div class="fleet-image">
+<span class="fleet-tag">Premium</span>
+<i class="fas fa-car-side fallback-icon"></i>
+</div>
+<div class="fleet-pricing">
+<div class="fleet-price">Rp750.000 <small>/ hari</small></div>
+<div class="fleet-note">Full Day (Max pukul 22.00)</div>
+</div>
+<div class="fleet-body">
+<div class="fleet-header-info">
+<div class="fleet-name">Toyota Innova</div>
+<div class="fleet-capacity"><i class="fas fa-user"></i> Max 6 Seat</div>
+</div>
+<div class="fleet-route"><i class="fas fa-route"></i> Dalam Kota Malang / Batu</div>
+<div class="fleet-list-title include"><i class="fas fa-check-circle"></i> Include</div>
+<ul class="fleet-list">
+<li><i class="fas fa-check"></i> Mobil</li>
+<li><i class="fas fa-check"></i> Driver</li>
+<li><i class="fas fa-check"></i> BBM</li>
+</ul>
+<div class="fleet-list-title exclude"><i class="fas fa-times-circle"></i> Exclude</div>
+<ul class="fleet-list exclude-list">
+<li><i class="fas fa-times"></i> Parkir</li>
+<li><i class="fas fa-times"></i> Makan Driver</li>
+</ul>
+<div class="fleet-footer">
+<a href="#" class="fleet-btn" onclick="openBookingModal('Toyota Innova'); return false;">
+<i class="fab fa-whatsapp"></i> Booking Sekarang
+</a>
+</div>
+</div>
+</div>
+
+<!-- Hiace Commuter -->
+<div class="fleet-card">
+<div class="fleet-image">
+<i class="fas fa-van-shuttle fallback-icon"></i>
+</div>
+<div class="fleet-pricing">
+<div class="fleet-price">Rp1.050.000 <small>/ hari</small></div>
+<div class="fleet-note">Full Day (Max pukul 22.00)</div>
+</div>
+<div class="fleet-body">
+<div class="fleet-header-info">
+<div class="fleet-name">Hiace Commuter</div>
+<div class="fleet-capacity"><i class="fas fa-user"></i> Max 14 Seat</div>
+</div>
+<div class="fleet-route"><i class="fas fa-route"></i> Dalam Kota Malang / Batu</div>
+<div class="fleet-list-title include"><i class="fas fa-check-circle"></i> Include</div>
+<ul class="fleet-list">
+<li><i class="fas fa-check"></i> Mobil</li>
+<li><i class="fas fa-check"></i> Driver</li>
+<li><i class="fas fa-check"></i> BBM</li>
+</ul>
+<div class="fleet-list-title exclude"><i class="fas fa-times-circle"></i> Exclude</div>
+<ul class="fleet-list exclude-list">
+<li><i class="fas fa-times"></i> Parkir</li>
+<li><i class="fas fa-times"></i> Makan Driver</li>
+</ul>
+<div class="fleet-footer">
+<a href="#" class="fleet-btn" onclick="openBookingModal('Hiace Commuter'); return false;">
+<i class="fab fa-whatsapp"></i> Booking Sekarang
+</a>
+</div>
+</div>
+</div>
+
+<!-- Hiace Premio -->
+<div class="fleet-card featured">
+<div class="fleet-image">
+<span class="fleet-tag">Best Seller</span>
+<i class="fas fa-van-shuttle fallback-icon"></i>
+</div>
+<div class="fleet-pricing">
+<div class="fleet-price">Rp1.200.000 <small>/ hari</small></div>
+<div class="fleet-note">Full Day (Max pukul 22.00)</div>
+</div>
+<div class="fleet-body">
+<div class="fleet-header-info">
+<div class="fleet-name">Hiace Premio</div>
+<div class="fleet-capacity"><i class="fas fa-user"></i> Max 14 Seat</div>
+</div>
+<div class="fleet-route"><i class="fas fa-route"></i> Dalam Kota Malang / Batu</div>
+<div class="fleet-list-title include"><i class="fas fa-check-circle"></i> Include</div>
+<ul class="fleet-list">
+<li><i class="fas fa-check"></i> Mobil</li>
+<li><i class="fas fa-check"></i> Driver</li>
+<li><i class="fas fa-check"></i> BBM</li>
+</ul>
+<div class="fleet-list-title exclude"><i class="fas fa-times-circle"></i> Exclude</div>
+<ul class="fleet-list exclude-list">
+<li><i class="fas fa-times"></i> Parkir</li>
+<li><i class="fas fa-times"></i> Makan Driver</li>
+</ul>
+<div class="fleet-footer">
+<a href="#" class="fleet-btn" onclick="openBookingModal('Hiace Premio'); return false;">
+<i class="fab fa-whatsapp"></i> Booking Sekarang
+</a>
+</div>
+</div>
+</div>
+
+<!-- Toyota Alphard -->
+<div class="fleet-card">
+<div class="fleet-image" style="background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);">
+<span class="fleet-tag" style="background: var(--dark);">Luxury</span>
+<i class="fas fa-gem fallback-icon"></i>
+</div>
+<div class="fleet-pricing">
+<div class="fleet-price" style="color: var(--gold);">Hubungi Kami</div>
+<div class="fleet-note">Full Day (Max pukul 22.00)</div>
+</div>
+<div class="fleet-body">
+<div class="fleet-header-info">
+<div class="fleet-name">Toyota Alphard</div>
+<div class="fleet-capacity" style="background: var(--gold); color: var(--dark);"><i class="fas fa-user"></i> Max 6 Seat</div>
+</div>
+<div class="fleet-route"><i class="fas fa-route"></i> Dalam Kota Malang / Batu</div>
+<div class="fleet-list-title include"><i class="fas fa-check-circle"></i> Include</div>
+<ul class="fleet-list">
+<li><i class="fas fa-check"></i> Mobil</li>
+<li><i class="fas fa-check"></i> Driver</li>
+<li><i class="fas fa-check"></i> BBM</li>
+</ul>
+<div class="fleet-list-title exclude"><i class="fas fa-times-circle"></i> Exclude</div>
+<ul class="fleet-list exclude-list">
+<li><i class="fas fa-times"></i> Parkir</li>
+<li><i class="fas fa-times"></i> Makan Driver</li>
+</ul>
+<div class="fleet-footer">
+<a href="#" class="fleet-btn" onclick="openBookingModal('Toyota Alphard'); return false;" style="background: var(--gold); color: var(--dark);">
+<i class="fab fa-whatsapp"></i> Konsultasi
+</a>
+</div>
+</div>
+</div>
+
+<!-- Short ELF -->
+<div class="fleet-card">
+<div class="fleet-image">
+<i class="fas fa-shuttle-van fallback-icon"></i>
+</div>
+<div class="fleet-pricing">
+<div class="fleet-price">Rp850.000 <small>/ hari</small></div>
+<div class="fleet-note">Full Day (Max pukul 22.00)</div>
+</div>
+<div class="fleet-body">
+<div class="fleet-header-info">
+<div class="fleet-name">Short ELF</div>
+<div class="fleet-capacity"><i class="fas fa-user"></i> Max 13 Seat</div>
+</div>
+<div class="fleet-route"><i class="fas fa-route"></i> Dalam Kota Malang / Batu</div>
+<div class="fleet-list-title include"><i class="fas fa-check-circle"></i> Include</div>
+<ul class="fleet-list">
+<li><i class="fas fa-check"></i> Mobil</li>
+<li><i class="fas fa-check"></i> Driver</li>
+<li><i class="fas fa-check"></i> BBM</li>
+</ul>
+<div class="fleet-list-title exclude"><i class="fas fa-times-circle"></i> Exclude</div>
+<ul class="fleet-list exclude-list">
+<li><i class="fas fa-times"></i> Parkir</li>
+<li><i class="fas fa-times"></i> Makan Driver</li>
+</ul>
+<div class="fleet-footer">
+<a href="#" class="fleet-btn" onclick="openBookingModal('Short ELF'); return false;">
+<i class="fab fa-whatsapp"></i> Booking Sekarang
+</a>
+</div>
+</div>
+</div>
+
+<!-- Long ELF -->
+<div class="fleet-card">
+<div class="fleet-image">
+<i class="fas fa-shuttle-van fallback-icon"></i>
+</div>
+<div class="fleet-pricing">
+<div class="fleet-price">Rp1.050.000 <small>/ hari</small></div>
+<div class="fleet-note">Mulai dari - Full Day (Max pukul 22.00)</div>
+</div>
+<div class="fleet-body">
+<div class="fleet-header-info">
+<div class="fleet-name">Long ELF</div>
+<div class="fleet-capacity"><i class="fas fa-user"></i> Max 17 Seat</div>
+</div>
+<div class="fleet-route"><i class="fas fa-route"></i> Dalam Kota Malang / Batu</div>
+<div class="fleet-list-title include"><i class="fas fa-check-circle"></i> Include</div>
+<ul class="fleet-list">
+<li><i class="fas fa-check"></i> Mobil</li>
+<li><i class="fas fa-check"></i> Driver</li>
+<li><i class="fas fa-check"></i> BBM</li>
+</ul>
+<div class="fleet-list-title exclude"><i class="fas fa-times-circle"></i> Exclude</div>
+<ul class="fleet-list exclude-list">
+<li><i class="fas fa-times"></i> Parkir</li>
+<li><i class="fas fa-times"></i> Makan Driver</li>
+</ul>
+<div class="fleet-footer">
+<a href="#" class="fleet-btn" onclick="openBookingModal('Long ELF'); return false;">
+<i class="fab fa-whatsapp"></i> Booking Sekarang
+</a>
+</div>
+</div>
+</div>
+
+<!-- Long ELF Giga -->
+<div class="fleet-card featured">
+<div class="fleet-image">
+<span class="fleet-tag">Recommended</span>
+<i class="fas fa-shuttle-van fallback-icon"></i>
+</div>
+<div class="fleet-pricing">
+<div class="fleet-price">Rp1.150.000 <small>/ hari</small></div>
+<div class="fleet-note">Full Day (Max pukul 22.00)</div>
+</div>
+<div class="fleet-body">
+<div class="fleet-header-info">
+<div class="fleet-name">Long ELF Giga</div>
+<div class="fleet-capacity"><i class="fas fa-user"></i> Max 19 Seat</div>
+</div>
+<div class="fleet-route"><i class="fas fa-route"></i> Dalam Kota Malang / Batu</div>
+<div class="fleet-list-title include"><i class="fas fa-check-circle"></i> Include</div>
+<ul class="fleet-list">
+<li><i class="fas fa-check"></i> Mobil</li>
+<li><i class="fas fa-check"></i> Driver</li>
+<li><i class="fas fa-check"></i> BBM</li>
+</ul>
+<div class="fleet-list-title exclude"><i class="fas fa-times-circle"></i> Exclude</div>
+<ul class="fleet-list exclude-list">
+<li><i class="fas fa-times"></i> Parkir</li>
+<li><i class="fas fa-times"></i> Makan Driver</li>
+</ul>
+<div class="fleet-footer">
+<a href="#" class="fleet-btn" onclick="openBookingModal('Long ELF Giga'); return false;">
+<i class="fab fa-whatsapp"></i> Booking Sekarang
+</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+<div class="container">
+<h2>Butuh Armada Lain?</h2>
+<p>Kami juga menyediakan Medium Bus dan Big Bus untuk rombongan besar. Konsultasikan kebutuhan Anda dengan tim kami untuk penawaran terbaik.</p>
+<div class="cta-buttons">
+<a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang%2C%20saya%20ingin%20konsultasi%20armada" class="btn btn-wa" target="_blank">
+<i class="fab fa-whatsapp"></i> Chat WhatsApp
+</a>
+<a href="index.html" class="btn btn-outline">
+<i class="fas fa-arrow-left"></i> Kembali ke Beranda
+</a>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-col footer-about">
+<a href="index.html" class="logo" style="margin-bottom: 20px;">
+<img src="https://i.ibb.co.com/G32957D0/Chat-GPT-Image-Jul-8-2026-04-33-03-PM.png" alt="Happy Trans Malang" class="logo-img" style="width: 50px; height: 50px;" onerror="this.style.display='none'">
+<div class="logo-text" style="color: var(--white);">
+<span class="happy" style="color: var(--gold);">HAPPY</span>
+<span class="trans" style="color: var(--white);">TRANS</span>
+<span class="malang" style="color: rgba(255,255,255,0.7);">Malang</span>
+</div>
+</a>
+<p>Penyedia layanan transportasi pariwisata terpercaya di Malang dengan komitmen memberikan pengalaman perjalanan terbaik, aman, dan nyaman untuk setiap pelanggan.</p>
+<div class="footer-social">
+<a href="https://facebook.com/happytransmalang" target="_blank" class="fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+<a href="https://instagram.com/happytransmalang" target="_blank" class="ig" title="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://tiktok.com/@happytransmalang" target="_blank" class="tt" title="TikTok"><i class="fab fa-tiktok"></i></a>
+<a href="https://wa.me/6288235416304" target="_blank" class="wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+</div>
+</div>
+<div class="footer-col">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="index.html"><i class="fas fa-chevron-right"></i> Beranda</a></li>
+<li><a href="index.html#about"><i class="fas fa-chevron-right"></i> Tentang Kami</a></li>
+<li><a href="armada-mobil.html"><i class="fas fa-chevron-right"></i> Armada</a></li>
+<li><a href="index.html#services"><i class="fas fa-chevron-right"></i> Layanan</a></li>
+<li><a href="index.html#packages"><i class="fas fa-chevron-right"></i> Paket Wisata</a></li>
+<li><a href="index.html#gallery"><i class="fas fa-chevron-right"></i> Galeri</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Armada Kami</h4>
+<ul>
+<li><a href="#"><i class="fas fa-chevron-right"></i> Honda Brio</a></li>
+<li><a href="#"><i class="fas fa-chevron-right"></i> Toyota Avanza</a></li>
+<li><a href="#"><i class="fas fa-chevron-right"></i> Toyota Innova</a></li>
+<li><a href="#"><i class="fas fa-chevron-right"></i> Hiace Premio</a></li>
+<li><a href="#"><i class="fas fa-chevron-right"></i> Long ELF Giga</a></li>
+<li><a href="#"><i class="fas fa-chevron-right"></i> Medium & Big Bus</a></li>
+</ul>
+</div>
+<div class="footer-col footer-contact">
+<h4>Hubungi Kami</h4>
+<p><i class="fas fa-map-marker-alt"></i> Kajoetangan Heritage, Jl. Arif Rahman Hakim, Malang</p>
+<p><i class="fab fa-whatsapp"></i> 0882-3541-6304</p>
+<p><i class="fab fa-whatsapp"></i> 0812-8487-6147</p>
+<p><i class="fas fa-envelope"></i> happytransmalang@gmail.com</p>
+<p><i class="fas fa-clock"></i> 24/7 Online Support</p>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2026 <span>Happy Trans Malang</span>. All rights reserved. | Kajoetangan Heritage, Malang</p>
+</div>
+</div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<div class="floating-wa-container">
+<a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang%2C%20saya%20ingin%20booking%20armada" class="floating-wa" target="_blank">
+<i class="fab fa-whatsapp"></i>
+<span class="wa-tooltip">WA: 0882-3541-6304</span>
+</a>
+<a href="https://wa.me/6281284876147?text=Halo%20Happy%20Trans%20Malang%2C%20saya%20ingin%20booking%20armada" class="floating-wa secondary" target="_blank">
+<i class="fab fa-whatsapp"></i>
+<span class="wa-tooltip">WA: 0812-8487-6147</span>
+</a>
+</div>
+
+<script>
+// Mobile Menu
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+mobileMenuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    const icon = mobileMenuBtn.querySelector('i');
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-times');
+});
+
+// Booking Modal (redirect to WhatsApp)
+function openBookingModal(vehicle = '') {
+    const message = vehicle 
+        ? `Halo Happy Trans Malang, saya ingin booking *${vehicle}*. Mohon info ketersediaan dan harga.`
+        : 'Halo Happy Trans Malang, saya ingin konsultasi armada. Mohon info lengkap.';
+    window.open(`https://wa.me/6288235416304?text=${encodeURIComponent(message)}`, '_blank');
+}
+</script>
+
+</body>
+</html>
