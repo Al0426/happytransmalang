@@ -48,7 +48,6 @@ a { text-decoration: none; color: inherit; }
 .section-title span { color: var(--secondary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 10px; }
 .section-title h2 { font-size: 36px; color: var(--dark); margin-bottom: 15px; }
 .section-title p { color: var(--gray); max-width: 600px; margin: 0 auto; }
-
 .section-buttons { text-align: center; margin-top: 40px; }
 
 /* Top Bar */
@@ -249,7 +248,7 @@ nav { display: flex; justify-content: space-between; align-items: center; paddin
 .location-details li strong { display: block; margin-bottom: 3px; font-size: 15px; }
 .location-details li span { font-size: 14px; opacity: 0.85; text-transform: none; letter-spacing: 0; color: var(--white); }
 .location-map { border-radius: 15px; overflow: hidden; box-shadow: var(--shadow-lg); min-height: 450px; }
-.location-map iframe { width: 100%; height: 100%; min-height: 450px; border: none; }
+.location-map iframe { width: 100%; height: 100%; min-height: 450px; border: none; display: block; }
 
 /* CTA */
 .cta { padding: 80px 0; background: linear-gradient(rgba(0,74,153,0.9), rgba(0,74,153,0.9)), url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1920&q=80') center/cover; color: var(--white); text-align: center; }
@@ -278,6 +277,8 @@ footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 0 
 .footer-col ul a:hover { color: var(--secondary); padding-left: 5px; }
 .footer-contact p { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 15px; font-size: 14px; }
 .footer-contact i { color: var(--secondary); margin-top: 4px; }
+.footer-contact a { color: rgba(255,255,255,0.7); text-decoration: none; transition: var(--transition); }
+.footer-contact a:hover { color: var(--secondary); }
 .newsletter-form { display: flex; margin-top: 15px; }
 .newsletter-form input { flex: 1; padding: 12px 15px; border: none; background: rgba(255,255,255,0.1); color: var(--white); border-radius: 50px 0 0 50px; font-size: 14px; }
 .newsletter-form input::placeholder { color: rgba(255,255,255,0.5); }
@@ -314,7 +315,21 @@ footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 0 
 .floating-wa-container { position: fixed; bottom: 30px; right: 30px; z-index: 999; display: flex; flex-direction: column; gap: 12px; align-items: flex-end; }
 .floating-wa { width: 60px; height: 60px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 28px; box-shadow: 0 5px 20px rgba(37,211,102,0.4); transition: var(--transition); animation: pulse 2s infinite; position: relative; }
 .floating-wa:hover { transform: scale(1.1); }
-.floating-wa .wa-tooltip { position: absolute; right: 70px; background: var(--white); color: var(--dark); padding: 8px 15px; border-radius: 8px; font-size: 13px; font-weight: 500; white-space: nowrap; box-shadow: var(--shadow); opacity: 0; pointer-events: none; transition: var(--transition); }
+.floating-wa .wa-tooltip { 
+    position: absolute; 
+    right: 70px; 
+    background: var(--white); 
+    color: var(--dark); 
+    padding: 8px 15px; 
+    border-radius: 8px; 
+    font-size: 13px; 
+    font-weight: 500; 
+    white-space: nowrap; 
+    box-shadow: var(--shadow); 
+    opacity: 0; 
+    pointer-events: none; 
+    transition: var(--transition); 
+}
 .floating-wa:hover .wa-tooltip { opacity: 1; }
 .floating-wa .wa-tooltip::after { content: ''; position: absolute; right: -6px; top: 50%; transform: translateY(-50%); border: 6px solid transparent; border-left-color: var(--white); }
 .floating-wa.secondary { background: var(--primary); animation: pulseBlue 2s infinite; animation-delay: 0.5s; }
@@ -354,7 +369,9 @@ footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 0 
 .lightbox-nav { width: 40px; height: 40px; }
 .lightbox-prev { left: 10px; }
 .lightbox-next { right: 10px; }
-.floating-wa-container { bottom: 2
+.floating-wa-container { bottom: 20px; right: 20px; }
+.floating-wa { width: 50px; height: 50px; font-size: 24px; }
+}
 </style>
 </head>
 <body>
@@ -1011,7 +1028,7 @@ footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 0 
 </ul>
 </div>
 <div class="location-map">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.4!2d112.63!3d-7.98!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd625c1f0cb8b1d%3A0x4d3b0e8e8e8e8e8e!2sJl.%20Arif%20Rahman%20Hakim%2C%20Malang!5e0!3m2!1sen!2sid!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.888589844167!2d112.6303893153648!3d-7.966629994231581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd62829c3a0931f%3A0xd04260731133040!2sJl.%20Arif%20Rahman%20Hakim%2C%20Klojen%2C%20Kota%20Malang%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1710000000000!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Peta Lokasi Happy Trans Malang"></iframe>
 </div>
 </div>
 </div>
@@ -1079,16 +1096,16 @@ footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 0 
 </ul>
 </div>
 <div class="footer-col footer-contact">
-<h4>Hubungi Kami</h4>
-<p><i class="fas fa-map-marker-alt"></i> Kajoetangan Heritage, Jl. Arif Rahman Hakim, Malang</p>
-<p><i class="fab fa-whatsapp"></i> 0882-3541-6304</p>
-<p><i class="fab fa-whatsapp"></i> 0812-8487-6147</p>
-<p><i class="fas fa-envelope"></i> happytransmalang@gmail.com</p>
-<p><i class="fas fa-clock"></i> 24/7 Online Support</p>
-<form class="newsletter-form" onsubmit="event.preventDefault(); alert('Terima kasih telah berlangganan!'); this.reset();">
-<input type="email" placeholder="Email Anda" required>
-<button type="submit"><i class="fas fa-paper-plane"></i></button>
-</form>
+    <h4>Hubungi Kami</h4>
+    <p><i class="fas fa-map-marker-alt"></i> Kajoetangan Heritage, Jl. Arif Rahman Hakim, Malang</p>
+    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6288235416304">0882-3541-6304</a></p>
+    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6281284876147">0812-8487-6147</a></p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:happytransmalang@gmail.com">happytransmalang@gmail.com</a></p>
+    <p><i class="fas fa-clock"></i> 24/7 Online Support</p>
+    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Terima kasih telah berlangganan!'); this.reset();">
+        <input type="email" placeholder="Email Anda" required>
+        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+    </form>
 </div>
 </div>
 <div class="footer-bottom">
