@@ -49,7 +49,7 @@ nav { display: flex; justify-content: space-between; align-items: center; paddin
 .nav-links a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: var(--secondary); transition: width 0.3s; }
 .nav-links a:hover { color: var(--secondary); }
 .nav-links a:hover::after { width: 100%; }
-.nav-cta { background: var(--secondary); color: var(--white) !important; padding: 10px 25px; border-radius: 50px; }
+.nav-cta { background: var(--secondary); color: var(--white) !important; padding: 10px 25px; border-radius: 50px; border: none; cursor: pointer; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; }
 .nav-cta:hover { background: var(--secondary-dark); }
 .nav-cta::after { display: none; }
 .mobile-menu-btn { display: none; background: none; border: none; font-size: 24px; color: var(--primary); cursor: pointer; }
@@ -85,6 +85,7 @@ nav { display: flex; justify-content: space-between; align-items: center; paddin
     transition: var(--transition);
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .fleet-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-lg); }
 .fleet-card.featured { border: 2px solid var(--secondary); }
@@ -234,7 +235,7 @@ footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 0 
 
 /* Floating WA */
 .floating-wa-container { position: fixed; bottom: 30px; right: 30px; z-index: 999; display: flex; flex-direction: column; gap: 12px; align-items: flex-end; }
-.floating-wa { width: 60px; height: 60px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 28px; box-shadow: 0 5px 20px rgba(37,211,102,0.4); transition: var(--transition); animation: pulse 2s infinite; position: relative; }
+.floating-wa { width: 60px; height: 60px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 28px; box-shadow: 0 5px 20px rgba(37,211,102,0.4); transition: var(--transition); animation: pulse 2s infinite; position: relative; text-decoration: none; }
 .floating-wa:hover { transform: scale(1.1); }
 .floating-wa .wa-tooltip { position: absolute; right: 70px; background: var(--white); color: var(--dark); padding: 8px 15px; border-radius: 8px; font-size: 13px; font-weight: 500; white-space: nowrap; box-shadow: var(--shadow); opacity: 0; pointer-events: none; transition: var(--transition); }
 .floating-wa:hover .wa-tooltip { opacity: 1; }
@@ -243,35 +244,227 @@ footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 0 
 @keyframes pulse { 0%, 100% { box-shadow: 0 5px 20px rgba(37,211,102,0.4); } 50% { box-shadow: 0 5px 30px rgba(37,211,102,0.8); } }
 @keyframes pulseBlue { 0%, 100% { box-shadow: 0 5px 20px rgba(0,102,204,0.4); } 50% { box-shadow: 0 5px 30px rgba(0,102,204,0.8); } }
 
-/* Responsive */
-@media (max-width: 992px) {
-    .footer-grid { grid-template-columns: 1fr 1fr; }
+/* ==================== BOOKING MODAL STYLES ==================== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    z-index: 2000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
+
+.modal-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-container {
+    background: var(--white);
+    width: 100%;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    max-height: 90vh;
+    overflow-y: auto;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-container {
+    transform: scale(1);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #0066cc 0%, #ff6b35 100%);
+    color: var(--white);
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+.modal-header-content h3 {
+    font-size: 24px;
+    margin: 0 0 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-header-content p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.modal-close {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: var(--white);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+.modal-close:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: rotate(90deg);
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group label .required {
+    color: var(--danger);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background: var(--light);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: var(--white);
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.booking-summary {
+    background: #f8f9fa;
+    border-left: 4px solid var(--secondary);
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.booking-summary h4 {
+    font-size: 14px;
+    margin: 0 0 8px 0;
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.booking-summary p {
+    font-size: 13px;
+    color: var(--gray);
+    margin: 0;
+}
+
+.btn-whatsapp {
+    width: 100%;
+    padding: 16px;
+    background: #25d366;
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-whatsapp:hover {
+    background: #1ebe57;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); flex-direction: column; padding: 20px; box-shadow: var(--shadow); gap: 15px; }
-    .nav-links.active { display: flex; }
-    .mobile-menu-btn { display: block; }
-    .page-hero h1 { font-size: 28px; }
-    .section-title h2 { font-size: 28px; }
-    .footer-grid { grid-template-columns: 1fr; }
-    .floating-wa-container { bottom: 20px; right: 20px; }
-    .floating-wa { width: 55px; height: 55px; font-size: 24px; }
-    .logo-text .happy { font-size: 18px; }
-    .logo-text .trans { font-size: 16px; }
-    .logo-img { width: 45px; height: 45px; }
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .modal-header {
+        padding: 20px;
+    }
+    
+    .modal-header-content h3 {
+        font-size: 20px;
+    }
+    
+    .modal-body {
+        padding: 20px;
+    }
+    
+    .btn-whatsapp {
+        font-size: 14px;
+        padding: 14px;
+    }
 }
 </style>
 <!-- Favicon untuk menampilkan logo di tab browser -->
 <link rel="icon" type="image/png" href="logo.png">
 <!-- Favicon Dasar -->
 <link rel="icon" type="image/png" href="favicon.png">
-  
 <!-- Untuk layar Home Screen iPhone/iPad -->
 <link rel="apple-touch-icon" href="favicon.png">
-  
 <!-- Untuk Android Chrome -->
 <meta name="theme-color" content="#ffffff">
-<!-- Ganti #ffffff dengan warna utama brand Anda -->
 </head>
 <body>
 
@@ -532,10 +725,10 @@ footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 0 
 <!-- Hiace Commuter -->
 <div class="fleet-card">
 <div class="fleet-image">
-<img src="https://static.wixstatic.com/media/261cbb_bf6c6d0e19884236a7c7c05afab1ce3b~mv2.png" alt="Hiace Commuter">
+<img src="https://static.wixstatic.com/media/304dbc_2e46f098bc154cadb0834f3ad779b8ba~mv2.png" alt="Hiace Commuter">
 </div>
 <div class="fleet-pricing">
-<div class="fleet-price">Rp1.050.000 <small>/ hari</small></div>
+<div class="fleet-price">Rp1.100.000 <small>/ hari</small></div>
 <div class="fleet-note">Full Day (Max pukul 22.00)</div>
 </div>
 <div class="fleet-body">
@@ -598,20 +791,20 @@ footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 0 
 </div>
 </div>
 
-<!-- Toyota Alphard -->
-<div class="fleet-card">
-<div class="fleet-image" style="background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);">
-<span class="fleet-tag" style="background: var(--dark);">Luxury</span>
-<img src="https://res.cloudinary.com/mufautoshow/image/upload/f_auto,f_auto/w_1200/v1621137839/moas/news/1621137832_toyota-alphard-transformers-mpv-mewah-terbaik-di-indonesia.png" alt="Toyota Alphard">
+<!-- Hiace Luxury -->
+<div class="fleet-card featured">
+<div class="fleet-image">
+<span class="fleet-tag">Best Seller</span>
+<img src="https://static.wixstatic.com/media/261cbb_bf6c6d0e19884236a7c7c05afab1ce3b~mv2.png" alt="Hiace Premio">
 </div>
 <div class="fleet-pricing">
-<div class="fleet-price" style="color: var(--gold);">Hubungi Kami</div>
+<div class="fleet-price">Rp1.850.000 <small>/ hari</small></div>
 <div class="fleet-note">Full Day (Max pukul 22.00)</div>
 </div>
 <div class="fleet-body">
 <div class="fleet-header-info">
-<div class="fleet-name">Toyota Alphard</div>
-<div class="fleet-capacity" style="background: var(--gold); color: var(--dark);"><i class="fas fa-user"></i> Max 6 Seat</div>
+<div class="fleet-name">Hiace Luxury</div>
+<div class="fleet-capacity"><i class="fas fa-user"></i> Max 12 Seat</div>
 </div>
 <div class="fleet-route"><i class="fas fa-route"></i> Dalam Kota Malang / Batu</div>
 <div class="fleet-list-title include"><i class="fas fa-check-circle"></i> Include</div>
@@ -626,8 +819,8 @@ footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 0 
 <li><i class="fas fa-times"></i> Makan Driver</li>
 </ul>
 <div class="fleet-footer">
-<a href="#" class="fleet-btn" onclick="openBookingModal('Toyota Alphard'); return false;" style="background: var(--gold); color: var(--dark);">
-<i class="fab fa-whatsapp"></i> Konsultasi
+<a href="#" class="fleet-btn" onclick="openBookingModal('Hiace Premio'); return false;">
+<i class="fab fa-whatsapp"></i> Booking Sekarang
 </a>
 </div>
 </div>
@@ -825,6 +1018,88 @@ footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 0 
 </a>
 </div>
 
+<!-- ==================== BOOKING MODAL ==================== -->
+<div class="modal-overlay" id="bookingModal">
+    <div class="modal-container">
+        <div class="modal-header">
+            <div class="modal-header-content">
+                <h3><i class="fas fa-calendar-alt"></i> Form Booking</h3>
+                <p>Isi data di bawah untuk memesan layanan Happy Trans Malang</p>
+            </div>
+            <button class="modal-close" onclick="closeBookingModal()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form id="bookingForm" onsubmit="sendToWhatsApp(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>NAMA LENGKAP <span class="required">*</span></label>
+                        <input type="text" id="bookName" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label>NO. WHATSAPP <span class="required">*</span></label>
+                        <input type="tel" id="bookPhone" placeholder="08xx-xxxx-xxxx" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>ARMADA / MOBIL <span class="required">*</span></label>
+                        <select id="bookService" required>
+                            <option value="">-- Pilih Mobil --</option>
+                            <option value="Honda Brio">Honda Brio</option>
+                            <option value="Honda Mobilio">Honda Mobilio</option>
+                            <option value="Toyota Avanza">Toyota Avanza</option>
+                            <option value="New Avanza (FWD)">New Avanza (FWD)</option>
+                            <option value="Suzuki Ertiga">Suzuki Ertiga</option>
+                            <option value="Hiace Commuter">Hiace Commuter</option>
+                            <option value="Hiace Premio">Hiace Premio</option>
+                            <option value="Toyota Alphard">Toyota Alphard</option>
+                            <option value="Short ELF">Short ELF</option>
+                            <option value="Long ELF">Long ELF</option>
+                            <option value="Long ELF Giga">Long ELF Giga</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>TANGGAL BERANGKAT <span class="required">*</span></label>
+                        <input type="date" id="bookDate" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>DURASI (HARI) <span class="required">*</span></label>
+                        <input type="number" id="bookDuration" placeholder="1" min="1" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label>TITIK JEMPUT <span class="required">*</span></label>
+                        <input type="text" id="bookPickup" placeholder="Kota / Alamat" required>
+                    </div>
+                    <div class="form-group">
+                        <label>DESTINASI / TUJUAN</label>
+                        <input type="text" id="bookDestination" placeholder="Tujuan perjalanan">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>CATATAN TAMBAHAN</label>
+                    <textarea id="bookNotes" placeholder="Permintaan khusus, itinerary, dll" rows="3"></textarea>
+                </div>
+
+                <div class="booking-summary">
+                    <h4><i class="fas fa-info-circle"></i> Ringkasan Booking</h4>
+                    <p>Isi form di atas untuk melihat ringkasan pemesanan Anda.</p>
+                </div>
+
+                <button type="submit" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> KIRIM VIA WHATSAPP
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
 <script>
 // Mobile Menu
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
@@ -836,12 +1111,103 @@ mobileMenuBtn.addEventListener('click', () => {
     icon.classList.toggle('fa-times');
 });
 
-// Booking Modal (redirect to WhatsApp)
-function openBookingModal(vehicle = '') {
-    const message = vehicle 
-        ? `Halo Happy Trans Malang, saya ingin booking *${vehicle}*. Mohon info ketersediaan dan harga.`
-        : 'Halo Happy Trans Malang, saya ingin konsultasi armada. Mohon info lengkap.';
-    window.open(`https://wa.me/6288235416304?text=${encodeURIComponent(message)}`, '_blank');
+// ==================== BOOKING MODAL LOGIC ====================
+function openBookingModal(serviceName = '') {
+    const modal = document.getElementById('bookingModal');
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    
+    if (serviceName) {
+        const serviceSelect = document.getElementById('bookService');
+        serviceSelect.value = serviceName;
+    }
+    
+    const dateInput = document.getElementById('bookDate');
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.setAttribute('min', today);
+}
+
+function closeBookingModal() {
+    const modal = document.getElementById('bookingModal');
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+    document.getElementById('bookingForm').reset();
+}
+
+document.getElementById('bookingModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeBookingModal();
+    }
+});
+
+document.getElementById('bookingForm').addEventListener('input', updateSummary);
+
+function updateSummary() {
+    const name = document.getElementById('bookName').value;
+    const service = document.getElementById('bookService').value;
+    const date = document.getElementById('bookDate').value;
+    const duration = document.getElementById('bookDuration').value;
+    const pax = document.getElementById('bookPax').value;
+    const pickup = document.getElementById('bookPickup').value;
+    const destination = document.getElementById('bookDestination').value;
+    
+    if (name && service && date) {
+        const summary = document.querySelector('.booking-summary');
+        const formattedDate = new Date(date).toLocaleDateString('id-ID', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        
+        summary.innerHTML = `
+            <h4><i class="fas fa-info-circle"></i> Ringkasan Booking</h4>
+            <p><strong>${name}</strong> ingin memesan <strong>${service}</strong></p>
+            <p>📅 ${formattedDate} | ⏱️ ${duration} hari | 👥 ${pax} penumpang</p>
+            <p>📍 Jemput: ${pickup || '-'} ${destination ? '| 🎯 Tujuan: ' + destination : ''}</p>
+        `;
+    }
+}
+
+function sendToWhatsApp(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('bookName').value;
+    const phone = document.getElementById('bookPhone').value;
+    const service = document.getElementById('bookService').value;
+    const date = document.getElementById('bookDate').value;
+    const duration = document.getElementById('bookDuration').value;
+    const pax = document.getElementById('bookPax').value;
+    const pickup = document.getElementById('bookPickup').value;
+    const destination = document.getElementById('bookDestination').value;
+    const notes = document.getElementById('bookNotes').value;
+    
+    const formattedDate = new Date(date).toLocaleDateString('id-ID', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+    
+    const message = `*BOOKING HAPPY TRANS MALANG* 🚐\n\n` +
+                   `*DATA PEMESAN:*\n` +
+                   `👤 Nama: ${name}\n` +
+                   ` No. WA: ${phone}\n` +
+                   `\n*DETAIL PESANAN:*\n` +
+                   `🎯 Layanan: ${service}\n` +
+                   ` Tanggal: ${formattedDate}\n` +
+                   `⏱️ Durasi: ${duration} hari\n` +
+                   `👥 Jumlah Penumpang: ${pax} orang\n` +
+                   `📍 Titik Jemput: ${pickup}\n` +
+                   `${destination ? '🎪 Destinasi: ' + destination + '\n' : ''}` +
+                   `${notes ? '\n*CATATAN TAMBAHAN:*\n' + notes : ''}\n\n` +
+                   `Mohon konfirmasi ketersediaan dan total biaya. Terima kasih! 🙏`;
+    
+    const waNumber = '6288235416304';
+    const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
+    
+    window.open(waUrl, '_blank');
+    closeBookingModal();
 }
 </script>
 
