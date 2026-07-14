@@ -1,649 +1,446 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paket Wisata Malang Batu Bromo - Happy Trans Malang</title>
-<meta name="description" content="Paket wisata Malang, Batu, dan Bromo terlengkap dengan harga terjangkau. Hiace, Medium Bus, dan Big Bus tersedia. Hubungi 0882-3541-6304.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<style>
-:root {
---primary: #0066cc;
---primary-dark: #004a99;
---secondary: #ff6b35;
---secondary-dark: #e55525;
---accent: #ffc93c;
---gold: #c9a961;
---dark: #1a2b3c;
---gray: #6c757d;
---light: #f8f9fa;
---white: #ffffff;
---success: #28a745;
---danger: #dc3545;
---shadow: 0 5px 20px rgba(0,0,0,0.1);
---shadow-lg: 0 15px 40px rgba(0,0,0,0.15);
---transition: all 0.3s ease;
-}
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-html {
-scroll-behavior: smooth;
-}
-body {
-font-family: 'Poppins', sans-serif;
-line-height: 1.6;
-color: var(--dark);
-overflow-x: hidden;
-}
-h1, h2, h3, h4 {
-font-family: 'Montserrat', sans-serif;
-font-weight: 700;
-line-height: 1.3;
-}
-img {
-max-width: 100%;
-height: auto;
-}
-a {
-text-decoration: none;
-color: inherit;
-}
-.container {
-max-width: 1200px;
-margin: 0 auto;
-padding: 0 20px;
-}
-.btn {
-display: inline-block;
-padding: 12px 30px;
-border-radius: 50px;
-font-weight: 600;
-text-transform: uppercase;
-letter-spacing: 0.5px;
-transition: var(--transition);
-border: none;
-cursor: pointer;
-font-size: 14px;
-}
-.btn-primary {
-background: var(--secondary);
-color: var(--white);
-}
-.btn-primary:hover {
-background: var(--secondary-dark);
-transform: translateY(-2px);
-box-shadow: 0 10px 20px rgba(255,107,53,0.3);
-}
-.section-title {
-text-align: center;
-margin-bottom: 50px;
-}
-.section-title span {
-color: var(--secondary);
-font-size: 14px;
-font-weight: 600;
-text-transform: uppercase;
-letter-spacing: 2px;
-display: block;
-margin-bottom: 10px;
-}
-.section-title h2 {
-font-size: 36px;
-color: var(--dark);
-margin-bottom: 15px;
-}
-/* Header */
-header {
-background: var(--white);
-box-shadow: var(--shadow);
-position: sticky;
-top: 0;
-z-index: 1000;
-}
-nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 10px 0;
-}
-.logo {
-display: flex;
-align-items: center;
-gap: 12px;
-}
-.logo-img {
-width: 55px;
-height: 55px;
-border-radius: 50%;
-object-fit: cover;
-}
-.logo-text {
-font-family: 'Montserrat', sans-serif;
-font-size: 20px;
-font-weight: 800;
-color: var(--dark);
-line-height: 1.1;
-}
-.logo-text .happy {
-color: var(--gold);
-display: block;
-font-size: 22px;
-}
-.logo-text .trans {
-color: var(--primary);
-font-size: 18px;
-}
-.nav-links {
-display: flex;
-list-style: none;
-gap: 22px;
-align-items: center;
-}
-.nav-links a {
-color: var(--dark);
-font-weight: 500;
-font-size: 14px;
-transition: var(--transition);
-}
-.nav-links a:hover {
-color: var(--secondary);
-}
-.nav-cta {
-background: var(--secondary);
-color: var(--white) !important;
-padding: 10px 25px;
-border-radius: 50px;
-}
-/* Packages Section */
-.packages {
-padding: 80px 0;
-background: var(--light);
-}
-.package-filters {
-display: flex;
-justify-content: center;
-gap: 15px;
-flex-wrap: wrap;
-margin-bottom: 40px;
-}
-.filter-btn {
-padding: 10px 25px;
-background: var(--white);
-border: 2px solid var(--light);
-border-radius: 50px;
-font-weight: 500;
-font-size: 14px;
-color: var(--gray);
-cursor: pointer;
-transition: var(--transition);
-}
-.filter-btn:hover,
-.filter-btn.active {
-background: var(--secondary);
-border-color: var(--secondary);
-color: var(--white);
-}
-.packages-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-gap: 30px;
-}
-.package-card {
-background: var(--white);
-border-radius: 20px;
-overflow: hidden;
-box-shadow: var(--shadow);
-transition: var(--transition);
-position: relative;
-}
-.package-card:hover {
-transform: translateY(-10px);
-box-shadow: var(--shadow-lg);
-}
-.package-card.featured {
-border: 3px solid var(--secondary);
-}
-.package-badge {
-position: absolute;
-top: 15px;
-right: 15px;
-background: var(--secondary);
-color: var(--white);
-padding: 6px 15px;
-border-radius: 50px;
-font-size: 12px;
-font-weight: 700;
-text-transform: uppercase;
-z-index: 2;
-}
-.package-image {
-height: 250px;
-background-size: cover;
-background-position: center;
-position: relative;
-}
-.package-image::before {
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%);
-}
-.package-duration {
-position: absolute;
-bottom: 15px;
-left: 20px;
-background: var(--white);
-color: var(--dark);
-padding: 6px 15px;
-border-radius: 50px;
-font-weight: 600;
-font-size: 13px;
-z-index: 2;
-}
-.package-title {
-position: absolute;
-bottom: 15px;
-right: 20px;
-color: var(--white);
-z-index: 2;
-}
-.package-title h3 {
-font-size: 22px;
-margin-bottom: 5px;
-}
-.package-content {
-padding: 25px;
-}
-.package-price {
-font-size: 28px;
-font-weight: 800;
-color: var(--secondary);
-font-family: 'Montserrat', sans-serif;
-margin-bottom: 5px;
-}
-.package-price small {
-font-size: 14px;
-color: var(--gray);
-font-weight: 500;
-}
-.package-features {
-list-style: none;
-margin: 20px 0;
-}
-.package-features li {
-padding: 10px 0;
-border-bottom: 1px dashed #eee;
-display: flex;
-align-items: center;
-gap: 10px;
-font-size: 14px;
-color: var(--dark);
-}
-.package-features li:last-child {
-border-bottom: none;
-}
-.package-features li i {
-color: var(--success);
-width: 20px;
-}
-.package-btn {
-display: block;
-text-align: center;
-background: var(--primary);
-color: var(--white);
-padding: 14px;
-border-radius: 50px;
-font-weight: 600;
-transition: var(--transition);
-text-transform: uppercase;
-letter-spacing: 0.5px;
-font-size: 13px;
-}
-.package-btn:hover {
-background: var(--secondary);
-transform: translateY(-2px);
-box-shadow: 0 10px 20px rgba(255,107,53,0.3);
-}
-/* CTA Section */
-.cta {
-padding: 80px 0;
-background: linear-gradient(rgba(0,74,153,0.9), rgba(0,74,153,0.9)),
-url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1920&q=80') center/cover;
-color: var(--white);
-text-align: center;
-}
-.cta h2 {
-font-size: 40px;
-margin-bottom: 20px;
-}
-.cta p {
-font-size: 17px;
-margin-bottom: 30px;
-max-width: 700px;
-margin-left: auto;
-margin-right: auto;
-opacity: 0.95;
-}
-/* Footer */
-footer {
-background: var(--dark);
-color: rgba(255,255,255,0.7);
-padding: 60px 0 0;
-}
-.footer-bottom {
-border-top: 1px solid rgba(255,255,255,0.1);
-padding: 20px 0;
-text-align: center;
-font-size: 14px;
-}
-.footer-bottom span {
-color: var(--secondary);
-font-weight: 600;
-}
-/* Responsive */
-@media (max-width: 768px) {
-.nav-links {
-display: none;
-}
-.packages-grid {
-grid-template-columns: 1fr;
-}
-.section-title h2 {
-font-size: 28px;
-}
-.cta h2 {
-font-size: 28px;
-}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paket Wisata Malang Batu Bromo - Happy Trans Malang</title>
+    <meta name="description" content="Paket wisata lengkap Malang, Batu, dan Bromo dengan harga terjangkau. One day trip, multi day, dan custom gathering bersama Happy Trans Malang.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #0066cc; --primary-dark: #004a99; --secondary: #ff6b35; --secondary-dark: #e55525;
+            --accent: #ffc93c; --gold: #c9a961; --dark: #1a2b3c; --gray: #6c757d; --light: #f8f9fa;
+            --white: #ffffff; --success: #28a745; --danger: #dc3545;
+            --shadow: 0 5px 20px rgba(0,0,0,0.1); --shadow-lg: 0 15px 40px rgba(0,0,0,0.15); --transition: all 0.3s ease;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: var(--dark); overflow-x: hidden; }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; font-weight: 700; line-height: 1.3; }
+        img { max-width: 100%; height: auto; }
+        a { text-decoration: none; color: inherit; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        header { background: var(--white); box-shadow: var(--shadow); position: sticky; top: 0; z-index: 1000; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; }
+        .logo { display: flex; align-items: center; gap: 12px; }
+        .logo-img { width: 55px; height: 55px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+        .logo-text { font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 800; color: var(--dark); line-height: 1.1; }
+        .logo-text .happy { color: var(--gold); display: block; font-size: 22px; }
+        .logo-text .trans { color: var(--primary); font-size: 18px; }
+        .logo-text .malang { color: var(--gray); font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .nav-links { display: flex; list-style: none; gap: 22px; align-items: center; }
+        .nav-links a { color: var(--dark); font-weight: 500; font-size: 14px; transition: var(--transition); position: relative; }
+        .nav-links a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: var(--secondary); transition: width 0.3s; }
+        .nav-links a:hover { color: var(--secondary); }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-cta { background: var(--secondary); color: var(--white) !important; padding: 10px 25px; border-radius: 50px; border: none; cursor: pointer; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; }
+        .nav-cta:hover { background: var(--secondary-dark); }
+        .nav-cta::after { display: none; }
+        .mobile-menu-btn { display: none; background: none; border: none; font-size: 24px; color: var(--primary); cursor: pointer; }
+
+        .page-hero {
+            background: linear-gradient(135deg, rgba(0,74,153,0.9) 0%, rgba(0,102,204,0.75) 100%), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80') center/cover;
+            padding: 100px 0 80px; color: var(--white); text-align: center;
+        }
+        .page-hero h1 { font-size: 42px; margin-bottom: 15px; }
+        .page-hero .subtitle { font-size: 16px; opacity: 0.9; max-width: 700px; margin: 0 auto 25px; }
+        .breadcrumb { display: flex; justify-content: center; gap: 10px; font-size: 14px; opacity: 0.9; }
+        .breadcrumb a { color: var(--accent); }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        .filter-buttons { text-align: center; margin-bottom: 40px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+        .btn-filter { padding: 8px 20px; border-radius: 50px; border: 1px solid var(--primary); background: transparent; color: var(--primary); cursor: pointer; font-weight: 500; transition: var(--transition); font-family: 'Poppins', sans-serif; }
+        .btn-filter:hover, .btn-filter.active { background: var(--primary); color: var(--white); }
+
+        .fleet-section { padding: 80px 0; background: var(--light); }
+        .fleet-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .fleet-card {
+            background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow);
+            transition: var(--transition); display: flex; flex-direction: column; position: relative;
+        }
+        .fleet-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-lg); }
+        .fleet-card.featured { border: 2px solid var(--secondary); }
+        .fleet-card.featured::before {
+            content: '⭐ BEST SELLER'; position: absolute; top: 15px; right: -30px; background: var(--secondary);
+            color: var(--white); padding: 5px 40px; font-size: 11px; font-weight: 700; letter-spacing: 1px; transform: rotate(45deg); z-index: 2;
+        }
+        .fleet-image { height: 220px; overflow: hidden; position: relative; display: flex; align-items: center; justify-content: center; background: var(--dark); }
+        .fleet-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .fleet-card:hover .fleet-image img { transform: scale(1.08); }
+        .fleet-image .fleet-tag {
+            position: absolute; top: 15px; right: 15px; background: var(--secondary); color: var(--white);
+            padding: 5px 15px; border-radius: 50px; font-size: 11px; font-weight: 700; text-transform: uppercase; z-index: 2;
+        }
+        .fleet-pricing { padding: 20px 25px; text-align: center; background: var(--light); border-bottom: 1px solid #eee; }
+        .fleet-price { font-size: 28px; font-weight: 800; color: var(--secondary); font-family: 'Montserrat', sans-serif; }
+        .fleet-price small { font-size: 14px; color: var(--gray); font-weight: 500; }
+        .fleet-note { font-size: 11px; color: var(--gray); margin-top: 3px; font-style: italic; }
+        .fleet-body { padding: 20px 25px; flex: 1; display: flex; flex-direction: column; }
+        .fleet-header-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px dashed #eee; }
+        .fleet-name { font-size: 20px; font-weight: 700; color: var(--dark); }
+        .fleet-list { list-style: none; margin-bottom: 12px; }
+        .fleet-list li { padding: 6px 0; font-size: 13px; color: var(--dark); display: flex; align-items: center; gap: 10px; }
+        .fleet-list li i.fa-check { color: var(--success); }
+        .fleet-footer { margin-top: auto; padding-top: 15px; }
+        .fleet-btn {
+            display: block; text-align: center; background: var(--primary); color: var(--white); padding: 12px;
+            border-radius: 50px; font-weight: 600; transition: var(--transition); text-transform: uppercase; letter-spacing: 0.5px; font-size: 13px;
+        }
+        .fleet-btn:hover { background: var(--secondary); transform: translateY(-2px); box-shadow: 0 10px 20px rgba(255,107,53,0.3); }
+
+        .cta-section { padding: 80px 0; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: var(--white); text-align: center; }
+        .cta-section h2 { font-size: 36px; margin-bottom: 15px; }
+        .cta-section p { font-size: 16px; opacity: 0.9; max-width: 700px; margin: 0 auto 25px; }
+        .cta-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        .btn { display: inline-block; padding: 12px 30px; border-radius: 50px; font-weight: 600; transition: var(--transition); }
+        .btn-outline { background: transparent; color: var(--white); border: 2px solid var(--white); }
+        .btn-outline:hover { background: var(--white); color: var(--primary); }
+        .btn-wa { background: #25d366; color: var(--white); }
+        .btn-wa:hover { background: #1ebe57; transform: translateY(-3px); }
+
+        footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 0 0; }
+        .footer-content { display: grid; grid-template-columns: 2fr 1fr 1.5fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h4 { color: var(--white); font-size: 18px; margin-bottom: 20px; position: relative; padding-bottom: 10px; }
+        .footer-col h4::after { content: ''; position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background: var(--secondary); }
+        .footer-about p { margin-bottom: 20px; font-size: 14px; line-height: 1.8; }
+        .social-links { display: flex; gap: 10px; flex-wrap: wrap; }
+        .social-links a { width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); transition: var(--transition); }
+        .social-links a:hover { transform: translateY(-3px); background: var(--secondary); }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 10px; }
+        .footer-col ul a { color: rgba(255,255,255,0.7); font-size: 14px; transition: var(--transition); display: flex; align-items: center; gap: 8px; }
+        .footer-col ul a:hover { color: var(--secondary); padding-left: 5px; }
+        .footer-contact p { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 15px; font-size: 14px; }
+        .footer-contact i { color: var(--secondary); margin-top: 4px; }
+        .newsletter-form { display: flex; margin-top: 15px; }
+        .newsletter-form input { flex: 1; padding: 10px; border: none; border-radius: 5px 0 0 5px; outline: none; }
+        .newsletter-form button { padding: 10px 15px; background: var(--secondary); color: var(--white); border: none; border-radius: 0 5px 5px 0; cursor: pointer; transition: var(--transition); }
+        .newsletter-form button:hover { background: var(--secondary-dark); }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding: 20px 0; text-align: center; font-size: 14px; }
+        .footer-bottom span { color: var(--secondary); font-weight: 600; }
+
+        .floating-wa-container { position: fixed; bottom: 30px; right: 30px; z-index: 999; display: flex; flex-direction: column; gap: 12px; align-items: flex-end; }
+        .floating-wa { width: 60px; height: 60px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 28px; box-shadow: 0 5px 20px rgba(37,211,102,0.4); transition: var(--transition); animation: pulse 2s infinite; position: relative; text-decoration: none; }
+        .floating-wa:hover { transform: scale(1.1); }
+        .floating-wa .wa-tooltip { position: absolute; right: 70px; background: var(--white); color: var(--dark); padding: 8px 15px; border-radius: 8px; font-size: 13px; font-weight: 500; white-space: nowrap; box-shadow: var(--shadow); opacity: 0; pointer-events: none; transition: var(--transition); }
+        .floating-wa:hover .wa-tooltip { opacity: 1; }
+        .floating-wa .wa-tooltip::after { content: ''; position: absolute; right: -6px; top: 50%; transform: translateY(-50%); border: 6px solid transparent; border-left-color: var(--white); }
+        .floating-wa.secondary { background: var(--primary); animation: pulseBlue 2s infinite; animation-delay: 0.5s; }
+        @keyframes pulse { 0%, 100% { box-shadow: 0 5px 20px rgba(37,211,102,0.4); } 50% { box-shadow: 0 5px 30px rgba(37,211,102,0.8); } }
+        @keyframes pulseBlue { 0%, 100% { box-shadow: 0 5px 20px rgba(0,102,204,0.4); } 50% { box-shadow: 0 5px 30px rgba(0,102,204,0.8); } }
+
+        @media (max-width: 992px) { .footer-content { grid-template-columns: 1fr 1fr; } }
+        @media (max-width: 768px) {
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); flex-direction: column; padding: 20px; box-shadow: var(--shadow); gap: 15px; }
+            .nav-links.active { display: flex; }
+            .mobile-menu-btn { display: block; }
+            .page-hero h1 { font-size: 28px; }
+            .footer-content { grid-template-columns: 1fr; }
+            .floating-wa-container { bottom: 20px; right: 20px; }
+            .floating-wa { width: 55px; height: 55px; font-size: 24px; }
+            .logo-text .happy { font-size: 18px; }
+            .logo-text .trans { font-size: 16px; }
+            .logo-img { width: 45px; height: 45px; }
+        }
+    </style>
 </head>
 <body>
-<!-- Header -->
-<header>
-<div class="container">
-<nav>
-<a href="/" class="logo">
-<img src="https://i.ibb.co.com/G32957D0/Chat-GPT-Image-Jul-8-2026-04-33-03-PM.png" alt="Logo Happy Trans Malang" class="logo-img">
-<div class="logo-text">
-<span class="happy">HAPPY</span>
-<span class="trans">TRANS</span>
-</div>
-</a>
-<ul class="nav-links">
-<li><a href="/">Beranda</a></li>
-<li><a href="#packages">Paket Wisata</a></li>
-<li><a href="/sewa-bus">Sewa Bus</a></li>
-<li><a href="/tentang">Tentang</a></li>
-<li><a href="/kontak" class="nav-cta">Booking</a></li>
-</ul>
-</nav>
-</div>
-</header>
 
-<!-- Packages Section -->
-<section class="packages" id="packages">
-<div class="container">
-<div class="section-title">
-<span>Paket Wisata</span>
-<h2>Destinasi Populer Malang - Batu - Bromo</h2>
-<p>Paket wisata lengkap dengan harga terjangkau untuk pengalaman tak terlupakan</p>
-</div>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="./" class="logo">
+                    <img src="https://i.ibb.co.com/G32957D0/Chat-GPT-Image-Jul-8-2026-04-33-03-PM.png" alt="Logo Happy Trans Malang" class="logo-img">
+                    <div class="logo-text">
+                        <span class="happy">HAPPY</span>
+                        <span class="trans">TRANS</span>
+                        <span class="malang">Malang</span>
+                    </div>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="./">Beranda</a></li>
+                    <li><a href="armada.html">Armada</a></li>
+                    <li><a href="paket-wisata.html" style="color: var(--secondary);">Paket Wisata</a></li>
+                    <li><a href="custom-trip.html">Custom Trip</a></li>
+                    <li><a href="sewa-bus.html">Sewa Bus</a></li>
+                    <li><a href="#location">Lokasi</a></li>
+                    <li><button class="nav-cta" onclick="openBookingModal()">Booking</button></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation"><i class="fas fa-bars"></i></button>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Paket Wisata</h1>
+                <p class="subtitle">Destinasi Populer Malang - Batu - Bromo. Paket wisata lengkap dengan harga terjangkau untuk pengalaman tak terlupakan.</p>
+                <div class="breadcrumb">
+                    <a href="./">Beranda</a> <span>/</span> <span>Paket Wisata</span>
+                </div>
+            </div>
+        </section>
 
-<div class="package-filters">
-<button class="filter-btn active" data-filter="all">Semua</button>
-<button class="filter-btn" data-filter="oneday">One Day Trip</button>
-<button class="filter-btn" data-filter="multiday">Multi Day</button>
-<button class="filter-btn" data-filter="bromo">Bromo</button>
-<button class="filter-btn" data-filter="gathering">Gathering</button>
-</div>
+        <section class="fleet-section">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="btn-filter active" data-filter="all">Semua</button>
+                    <button class="btn-filter" data-filter="oneday">One Day Trip</button>
+                    <button class="btn-filter" data-filter="multiday">Multi Day</button>
+                    <button class="btn-filter" data-filter="bromo">Bromo</button>
+                    <button class="btn-filter" data-filter="gathering">Gathering</button>
+                </div>
 
-<div class="packages-grid">
-<!-- Paket Bromo Midnight -->
-<div class="package-card featured" data-category="oneday bromo">
-<span class="package-badge">Popular</span>
-<div class="package-image" style="background-image: url('https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?w=600&q=80');">
-<div class="package-duration"><i class="fas fa-clock"></i> 1 Hari</div>
-<div class="package-title">
-<h3>Bromo Midnight</h3>
-</div>
-</div>
-<div class="package-content">
-<div class="package-price">Rp300.000 <small>/orang</small></div>
-<ul class="package-features">
-<li><i class="fas fa-check-circle"></i> Sunrise view Penanjakan</li>
-<li><i class="fas fa-check-circle"></i> Kawah Bromo</li>
-<li><i class="fas fa-check-circle"></i> Pasir Berbisik</li>
-<li><i class="fas fa-check-circle"></i> Bukit Teletubbies</li>
-<li><i class="fas fa-check-circle"></i> Transportasi AC</li>
-<li><i class="fas fa-check-circle"></i> Driver Profesional</li>
-</ul>
-<a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Bromo%20Midnight" class="package-btn" target="_blank">
-<i class="fab fa-whatsapp"></i> Booking Sekarang
-</a>
-</div>
-</div>
+                <div class="fleet-grid">
+                    <!-- Paket 1: Bromo Midnight -->
+                    <div class="fleet-card" data-category="oneday bromo">
+                        <div class="fleet-image">
+                            <span class="fleet-tag">1 Hari</span>
+                            <img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?w=600&q=80" alt="Bromo Midnight">
+                        </div>
+                        <div class="fleet-pricing"><div class="fleet-price">Rp300.000 <small>/ orang</small></div></div>
+                        <div class="fleet-body">
+                            <div class="fleet-header-info"><div class="fleet-name">Bromo Midnight</div></div>
+                            <ul class="fleet-list">
+                                <li><i class="fas fa-check"></i> Sunrise view Penanjakan</li>
+                                <li><i class="fas fa-check"></i> Kawah Bromo & Pasir Berbisik</li>
+                                <li><i class="fas fa-check"></i> Bukit Teletubbies</li>
+                                <li><i class="fas fa-check"></i> Transportasi AC & Driver</li>
+                            </ul>
+                            <div class="fleet-footer">
+                                <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Bromo%20Midnight" class="fleet-btn" target="_blank"><i class="fab fa-whatsapp"></i> Booking Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
 
-<!-- Paket Pantai Selatan -->
-<div class="package-card" data-category="oneday">
-<div class="package-image" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80');">
-<div class="package-duration"><i class="fas fa-clock"></i> 1 Hari</div>
-<div class="package-title">
-<h3>Pantai Selatan</h3>
-</div>
-</div>
-<div class="package-content">
-<div class="package-price">Rp200.000 <small>/orang</small></div>
-<ul class="package-features">
-<li><i class="fas fa-check-circle"></i> 2 Pantai Pilihan</li>
-<li><i class="fas fa-check-circle"></i> Pantai Tiga Warna</li>
-<li><i class="fas fa-check-circle"></i> Pantai Balekambang</li>
-<li><i class="fas fa-check-circle"></i> Pantai Goa Cina</li>
-<li><i class="fas fa-check-circle"></i> Transportasi AC</li>
-<li><i class="fas fa-check-circle"></i> Minimal 4 Orang</li>
-</ul>
-<a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Pantai%20Selatan" class="package-btn" target="_blank">
-<i class="fab fa-whatsapp"></i> Booking Sekarang
-</a>
-</div>
-</div>
+                    <!-- Paket 2: Pantai Selatan -->
+                    <div class="fleet-card" data-category="oneday">
+                        <div class="fleet-image">
+                            <span class="fleet-tag">1 Hari</span>
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="Pantai Selatan">
+                        </div>
+                        <div class="fleet-pricing">
+                            <div class="fleet-price">Rp200.000 <small>/ orang</small></div>
+                            <div class="fleet-note">Minimal 4 Orang</div>
+                        </div>
+                        <div class="fleet-body">
+                            <div class="fleet-header-info"><div class="fleet-name">Pantai Selatan</div></div>
+                            <ul class="fleet-list">
+                                <li><i class="fas fa-check"></i> 2 Pantai Pilihan</li>
+                                <li><i class="fas fa-check"></i> Pantai Tiga Warna / Balekambang</li>
+                                <li><i class="fas fa-check"></i> Pantai Goa Cina</li>
+                                <li><i class="fas fa-check"></i> Transportasi AC</li>
+                            </ul>
+                            <div class="fleet-footer">
+                                <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Pantai%20Selatan" class="fleet-btn" target="_blank"><i class="fab fa-whatsapp"></i> Booking Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
 
-<!-- Paket Wisata Batu -->
-<div class="package-card" data-category="oneday">
-<div class="package-image" style="background-image: url('https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=600&q=80');">
-<div class="package-duration"><i class="fas fa-clock"></i> 1 Hari</div>
-<div class="package-title">
-<h3>Wisata Batu</h3>
-</div>
-</div>
-<div class="package-content">
-<div class="package-price">Rp190.000 <small>/orang</small></div>
-<ul class="package-features">
-<li><i class="fas fa-check-circle"></i> Jatim Park 2 & BNS</li>
-<li><i class="fas fa-check-circle"></i> Museum Angkut</li>
-<li><i class="fas fa-check-circle"></i> Secret Zoo</li>
-<li><i class="fas fa-check-circle"></i> Transportasi AC</li>
-<li><i class="fas fa-check-circle"></i> Minimal 2 Orang</li>
-</ul>
-<a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Wisata%20Batu" class="package-btn" target="_blank">
-<i class="fab fa-whatsapp"></i> Booking Sekarang
-</a>
-</div>
-</div>
+                    <!-- Paket 3: Wisata Batu -->
+                    <div class="fleet-card" data-category="oneday">
+                        <div class="fleet-image">
+                            <span class="fleet-tag">1 Hari</span>
+                            <img src="https://images.unsplash.com/photo-1513883049090-d0b7439799bf?w=600&q=80" alt="Wisata Batu">
+                        </div>
+                        <div class="fleet-pricing">
+                            <div class="fleet-price">Rp190.000 <small>/ orang</small></div>
+                            <div class="fleet-note">Minimal 2 Orang</div>
+                        </div>
+                        <div class="fleet-body">
+                            <div class="fleet-header-info"><div class="fleet-name">Wisata Batu</div></div>
+                            <ul class="fleet-list">
+                                <li><i class="fas fa-check"></i> Jatim Park 2 & BNS</li>
+                                <li><i class="fas fa-check"></i> Museum Angkut</li>
+                                <li><i class="fas fa-check"></i> Secret Zoo</li>
+                                <li><i class="fas fa-check"></i> Transportasi AC</li>
+                            </ul>
+                            <div class="fleet-footer">
+                                <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Wisata%20Batu" class="fleet-btn" target="_blank"><i class="fab fa-whatsapp"></i> Booking Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
 
-<!-- Paket Malang Batu 2H1M -->
-<div class="package-card" data-category="multiday">
-<div class="package-image" style="background-image: url('https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80');">
-<div class="package-duration"><i class="fas fa-clock"></i> 2 Hari 1 Malam</div>
-<div class="package-title">
-<h3>Malang Batu</h3>
-</div>
-</div>
-<div class="package-content">
-<div class="package-price">Rp942.000 <small>/orang</small></div>
-<ul class="package-features">
-<li><i class="fas fa-check-circle"></i> Petik Apel Batu</li>
-<li><i class="fas fa-check-circle"></i> Jatim Park 2</li>
-<li><i class="fas fa-check-circle"></i> Museum Angkut</li>
-<li><i class="fas fa-check-circle"></i> BNS</li>
-<li><i class="fas fa-check-circle"></i> Hotel & Makan</li>
-<li><i class="fas fa-check-circle"></i> Transportasi AC</li>
-</ul>
-<a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Malang%20Batu%202H1M" class="package-btn" target="_blank">
-<i class="fab fa-whatsapp"></i> Booking Sekarang
-</a>
-</div>
-</div>
+                    <!-- Paket 4: Malang Batu (2H1M) -->
+                    <div class="fleet-card" data-category="multiday">
+                        <div class="fleet-image">
+                            <span class="fleet-tag">2 Hari 1 Malam</span>
+                            <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80" alt="Malang Batu">
+                        </div>
+                        <div class="fleet-pricing"><div class="fleet-price">Rp942.000 <small>/ orang</small></div></div>
+                        <div class="fleet-body">
+                            <div class="fleet-header-info"><div class="fleet-name">Malang Batu</div></div>
+                            <ul class="fleet-list">
+                                <li><i class="fas fa-check"></i> Petik Apel Batu</li>
+                                <li><i class="fas fa-check"></i> Jatim Park 2 & Museum Angkut</li>
+                                <li><i class="fas fa-check"></i> Hotel & Makan</li>
+                                <li><i class="fas fa-check"></i> Transportasi AC</li>
+                            </ul>
+                            <div class="fleet-footer">
+                                <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Malang%20Batu%202H1M" class="fleet-btn" target="_blank"><i class="fab fa-whatsapp"></i> Booking Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
 
-<!-- Paket Malang Batu Bromo 2H1M -->
-<div class="package-card featured" data-category="multiday bromo">
-<span class="package-badge">Best Seller</span>
-<div class="package-image" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80');">
-<div class="package-duration"><i class="fas fa-clock"></i> 2 Hari 1 Malam</div>
-<div class="package-title">
-<h3>Malang Batu Bromo</h3>
-</div>
-</div>
-<div class="package-content">
-<div class="package-price">Rp1.342.000 <small>/orang</small></div>
-<ul class="package-features">
-<li><i class="fas fa-check-circle"></i> Bromo Sunrise</li>
-<li><i class="fas fa-check-circle"></i> Kawah Bromo</li>
-<li><i class="fas fa-check-circle"></i> Jatim Park 2</li>
-<li><i class="fas fa-check-circle"></i> Museum Angkut</li>
-<li><i class="fas fa-check-circle"></i> Hotel & Makan</li>
-<li><i class="fas fa-check-circle"></i> Transportasi AC</li>
-</ul>
-<a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Malang%20Batu%20Bromo%202H1M" class="package-btn" target="_blank">
-<i class="fab fa-whatsapp"></i> Booking Sekarang
-</a>
-</div>
-</div>
+                    <!-- Paket 5: Malang Batu Bromo (Best Seller 2H1M) -->
+                    <div class="fleet-card featured" data-category="multiday bromo">
+                        <div class="fleet-image">
+                            <span class="fleet-tag">2 Hari 1 Malam</span>
+                            <img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?w=600&q=80" alt="Malang Batu Bromo">
+                        </div>
+                        <div class="fleet-pricing"><div class="fleet-price">Rp1.342.000 <small>/ orang</small></div></div>
+                        <div class="fleet-body">
+                            <div class="fleet-header-info"><div class="fleet-name">Malang Batu Bromo</div></div>
+                            <ul class="fleet-list">
+                                <li><i class="fas fa-check"></i> Bromo Sunrise & Kawah</li>
+                                <li><i class="fas fa-check"></i> Jatim Park 2 & Museum Angkut</li>
+                                <li><i class="fas fa-check"></i> Hotel & Makan</li>
+                                <li><i class="fas fa-check"></i> Transportasi AC</li>
+                            </ul>
+                            <div class="fleet-footer">
+                                <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Malang%20Batu%20Bromo%202H1M" class="fleet-btn" target="_blank"><i class="fab fa-whatsapp"></i> Booking Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
 
-<!-- Paket Malang Batu Bromo 3H2M -->
-<div class="package-card" data-category="multiday bromo">
-<div class="package-image" style="background-image: url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80');">
-<div class="package-duration"><i class="fas fa-clock"></i> 3 Hari 2 Malam</div>
-<div class="package-title">
-<h3>Malang Batu Bromo</h3>
-</div>
-</div>
-<div class="package-content">
-<div class="package-price">Rp1.591.000 <small>/orang</small></div>
-<ul class="package-features">
-<li><i class="fas fa-check-circle"></i> Bromo Sunrise & Kawah</li>
-<li><i class="fas fa-check-circle"></i> Petik Apel Batu</li>
-<li><i class="fas fa-check-circle"></i> Jatim Park 2 & 3</li>
-<li><i class="fas fa-check-circle"></i> Museum Angkut</li>
-<li><i class="fas fa-check-circle"></i> Hotel & Makan</li>
-<li><i class="fas fa-check-circle"></i> Transportasi AC</li>
-</ul>
-<a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Malang%20Batu%20Bromo%203H2M" class="package-btn" target="_blank">
-<i class="fab fa-whatsapp"></i> Booking Sekarang
-</a>
-</div>
-</div>
+                    <!-- Paket 6: Gathering Perusahaan -->
+                    <div class="fleet-card featured" data-category="gathering">
+                        <div class="fleet-image">
+                            <span class="fleet-tag">Custom</span>
+                            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&q=80" alt="Gathering Perusahaan">
+                        </div>
+                        <div class="fleet-pricing">
+                            <div class="fleet-price">Custom <small>/ grup</small></div>
+                            <div class="fleet-note">Harga Negosiasi</div>
+                        </div>
+                        <div class="fleet-body">
+                            <div class="fleet-header-info"><div class="fleet-name">Gathering Perusahaan</div></div>
+                            <ul class="fleet-list">
+                                <li><i class="fas fa-check"></i> Semua Paket Tersedia</li>
+                                <li><i class="fas fa-check"></i> Bromo, Batu, Pantai</li>
+                                <li><i class="fas fa-check"></i> Outbound & Durasi Fleksibel</li>
+                                <li><i class="fas fa-check"></i> Minimal 2 Orang</li>
+                            </ul>
+                            <div class="fleet-footer">
+                                <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20konsultasi%20Paket%20Gathering" class="fleet-btn" target="_blank"><i class="fab fa-whatsapp"></i> Hubungi Kami</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!-- Paket Bromo Picnic -->
-<div class="package-card" data-category="bromo">
-<div class="package-image" style="background-image: url('https://images.unsplash.com/photo-1528127269322-539801943592?w=600&q=80');">
-<div class="package-duration"><i class="fas fa-clock"></i> 1 Hari</div>
-<div class="package-title">
-<h3>Bromo Picnic</h3>
-</div>
-</div>
-<div class="package-content">
-<div class="package-price">Rp1.500.000 <small>/grup</small></div>
-<ul class="package-features">
-<li><i class="fas fa-check-circle"></i> Bromo Picnic Breakfast</li>
-<li><i class="fas fa-check-circle"></i> Dekorasi Piknik</li>
-<li><i class="fas fa-check-circle"></i> Menu Sarapan Lengkap</li>
-<li><i class="fas fa-check-circle"></i> Lembah Widodaren</li>
-<li><i class="fas fa-check-circle"></i> Max 12 Orang</li>
-<li><i class="fas fa-check-circle"></i> Belum termasuk transport</li>
-</ul>
-<a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Bromo%20Picnic" class="package-btn" target="_blank">
-<i class="fab fa-whatsapp"></i> Booking Sekarang
-</a>
-</div>
-</div>
+        <section class="cta-section">
+            <div class="container">
+                <h2>Butuh Paket Custom?</h2>
+                <p>Kami siap membantu Anda membuat itinerary perjalanan yang sesuai dengan kebutuhan dan budget Anda. Konsultasi gratis!</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20konsultasi%20paket%20custom" class="btn btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Chat WhatsApp</a>
+                    <a href="./" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Kembali ke Beranda</a>
+                </div>
+            </div>
+        </section>
 
-<!-- Paket Gathering -->
-<div class="package-card" data-category="gathering">
-<div class="package-image" style="background-image: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80');">
-<div class="package-duration"><i class="fas fa-clock"></i> Custom</div>
-<div class="package-title">
-<h3>Gathering Perusahaan</h3>
-</div>
-</div>
-<div class="package-content">
-<div class="package-price">Custom <small>/grup</small></div>
-<ul class="package-features">
-<li><i class="fas fa-check-circle"></i> Semua Paket Tersedia</li>
-<li><i class="fas fa-check-circle"></i> Bromo, Batu, Pantai</li>
-<li><i class="fas fa-check-circle"></i> Outbound</li>
-<li><i class="fas fa-check-circle"></i> Durasi Fleksibel</li>
-<li><i class="fas fa-check-circle"></i> Minimal 2 Orang</li>
-<li><i class="fas fa-check-circle"></i> Harga Negosiasi</li>
-</ul>
-<a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20konsultasi%20Paket%20Gathering" class="package-btn" target="_blank">
-<i class="fab fa-whatsapp"></i> Hubungi Kami
-</a>
-</div>
-</div>
-</div>
-</div>
-</section>
+        <div class="floating-wa-container">
+            <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20paket%20wisata" class="floating-wa" target="_blank">
+                <i class="fab fa-whatsapp"></i><span class="wa-tooltip">WA: 0882-3541-6304</span>
+            </a>
+            <a href="https://wa.me/6281284876147?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20paket%20wisata" class="floating-wa secondary" target="_blank">
+                <i class="fab fa-whatsapp"></i><span class="wa-tooltip">WA: 0812-8487-6147</span>
+            </a>
+        </div>
+    </main>
 
-<!-- CTA Section -->
-<section class="cta">
-<div class="container">
-<h2>Butuh Paket Custom?</h2>
-<p>Kami siap membantu Anda membuat itinerary perjalanan yang sesuai dengan kebutuhan dan budget Anda. Konsultasi gratis!</p>
-<a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20konsultasi%20paket%20custom" class="btn btn-primary" target="_blank">
-<i class="fab fa-whatsapp"></i> Chat WhatsApp
-</a>
-</div>
-</section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col footer-about">
+                    <h4>Tentang Kami</h4>
+                    <p>Happy Trans Malang adalah penyedia layanan transportasi pariwisata terpercaya di Malang dan Batu. Kami menyediakan sewa Hiace, Medium Bus, dan Big Bus dengan armada terawat dan driver profesional.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/6288235416304"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col footer-links">
+                    <h4>Link Cepat</h4>
+                    <ul>
+                        <li><a href="./">Beranda</a></li>
+                        <li><a href="armada.html">Armada</a></li>
+                        <li><a href="paket-wisata.html">Paket Wisata</a></li>
+                        <li><a href="custom-trip.html">Custom Trip</a></li>
+                        <li><a href="sewa-bus.html">Sewa Bus</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4>Hubungi Kami</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Kajoetangan Heritage, Jl. Arif Rahman Hakim, Malang</p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6288235416304">0882-3541-6304</a></p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6281284876147">0812-8487-6147</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:happytransmalang@gmail.com">happytransmalang@gmail.com</a></p>
+                    <p><i class="fas fa-clock"></i> 24/7 Online Support</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Terima kasih telah berlangganan!'); this.reset();">
+                        <input type="email" placeholder="Email Anda" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span>Happy Trans Malang</span>. All rights reserved. | Kajoetangan Heritage, Malang</p>
+            </div>
+        </div>
+    </footer>
 
-<!-- Footer -->
-<footer>
-<div class="container">
-<div class="footer-bottom">
-<p>&copy; 2026 <span>Happy Trans Malang</span>. All rights reserved.</p>
-</div>
-</div>
-</footer>
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        if (mobileMenuBtn && navLinks) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                if (icon) { icon.classList.toggle('fa-bars'); icon.classList.toggle('fa-times'); }
+            });
+        }
 
-<script>
-// Filter Packages
-const filterBtns = document.querySelectorAll('.filter-btn');
-const packageCards = document.querySelectorAll('.package-card');
+        // Filter Functionality
+        const filterButtons = document.querySelectorAll('.btn-filter');
+        const fleetCards = document.querySelectorAll('.fleet-card');
 
-filterBtns.forEach(btn => {
-btn.addEventListener('click', () => {
-filterBtns.forEach(b => b.classList.remove('active'));
-btn.classList.add('active');
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                const filterValue = button.getAttribute('data-filter');
+                
+                fleetCards.forEach(card => {
+                    const categories = card.getAttribute('data-category');
+                    if (filterValue === 'all' || categories.includes(filterValue)) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
 
-const filter = btn.dataset.filter;
-
-packageCards.forEach(card => {
-if (filter === 'all' || card.dataset.category.includes(filter)) {
-card.style.display = 'block';
-} else {
-card.style.display = 'none';
-}
-});
-});
-});
-</script>
+        function openBookingModal() {
+            const message = 'Halo Happy Trans Malang, saya ingin konsultasi paket wisata. Mohon info lengkap.';
+            window.open(`https://wa.me/6288235416304?text=${encodeURIComponent(message)}`, '_blank');
+        }
+    </script>
 </body>
 </html>
