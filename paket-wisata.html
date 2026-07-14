@@ -62,7 +62,7 @@
         .btn-filter:hover, .btn-filter.active { background: var(--primary); color: var(--white); }
 
         .fleet-section { padding: 80px 0; background: var(--light); }
-        .fleet-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .fleet-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
         .fleet-card {
             background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow);
             transition: var(--transition); display: flex; flex-direction: column; position: relative;
@@ -81,15 +81,15 @@
             padding: 5px 15px; border-radius: 50px; font-size: 11px; font-weight: 700; text-transform: uppercase; z-index: 2;
         }
         .fleet-pricing { padding: 20px 25px; text-align: center; background: var(--light); border-bottom: 1px solid #eee; }
-        .fleet-price { font-size: 28px; font-weight: 800; color: var(--secondary); font-family: 'Montserrat', sans-serif; }
+        .fleet-price { font-size: 26px; font-weight: 800; color: var(--secondary); font-family: 'Montserrat', sans-serif; }
         .fleet-price small { font-size: 14px; color: var(--gray); font-weight: 500; }
         .fleet-note { font-size: 11px; color: var(--gray); margin-top: 3px; font-style: italic; }
         .fleet-body { padding: 20px 25px; flex: 1; display: flex; flex-direction: column; }
         .fleet-header-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px dashed #eee; }
-        .fleet-name { font-size: 20px; font-weight: 700; color: var(--dark); }
+        .fleet-name { font-size: 18px; font-weight: 700; color: var(--dark); line-height: 1.3; }
         .fleet-list { list-style: none; margin-bottom: 12px; }
-        .fleet-list li { padding: 6px 0; font-size: 13px; color: var(--dark); display: flex; align-items: center; gap: 10px; }
-        .fleet-list li i.fa-check { color: var(--success); }
+        .fleet-list li { padding: 6px 0; font-size: 13px; color: var(--dark); display: flex; align-items: flex-start; gap: 10px; line-height: 1.4; }
+        .fleet-list li i.fa-check { color: var(--success); margin-top: 4px; flex-shrink: 0; }
         .fleet-footer { margin-top: auto; padding-top: 15px; }
         .fleet-btn {
             display: block; text-align: center; background: var(--primary); color: var(--white); padding: 12px;
@@ -152,17 +152,10 @@
             .logo-img { width: 45px; height: 45px; }
         }
     </style>
-<!-- Favicon untuk menampilkan logo di tab browser -->
-<link rel="icon" type="image/png" href="logo.png">
-<!-- Favicon Dasar -->
-<link rel="icon" type="image/png" href="favicon.png">
-  
-<!-- Untuk layar Home Screen iPhone/iPad -->
-<link rel="apple-touch-icon" href="favicon.png">
-  
-<!-- Untuk Android Chrome -->
-<meta name="theme-color" content="#ffffff">
-<!-- Ganti #ffffff dengan warna utama brand Anda -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <meta name="theme-color" content="#0066cc">
 </head>
 <body>
 
@@ -212,20 +205,21 @@
                 </div>
 
                 <div class="fleet-grid">
-                    <!-- Paket 1: Bromo Midnight -->
+                    
+                    <!-- 1. Paket Bromo Midnight -->
                     <div class="fleet-card" data-category="oneday bromo">
                         <div class="fleet-image">
                             <span class="fleet-tag">1 Hari</span>
-                            <img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?w=600&q=80" alt="Bromo Midnight">
+                            <img src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/Paket-One-Day-Trip-Bromo-Midnight-1-300x300.jpg.webp" alt="Bromo Midnight">
                         </div>
                         <div class="fleet-pricing"><div class="fleet-price">Rp300.000 <small>/ orang</small></div></div>
                         <div class="fleet-body">
-                            <div class="fleet-header-info"><div class="fleet-name">Bromo Midnight</div></div>
+                            <div class="fleet-header-info"><div class="fleet-name">Paket Bromo Midnight</div></div>
                             <ul class="fleet-list">
-                                <li><i class="fas fa-check"></i> Sunrise view Penanjakan</li>
-                                <li><i class="fas fa-check"></i> Kawah Bromo & Pasir Berbisik</li>
-                                <li><i class="fas fa-check"></i> Bukit Teletubbies</li>
-                                <li><i class="fas fa-check"></i> Transportasi AC & Driver</li>
+                                <li><i class="fas fa-check"></i> Sunrise view, kawah bromo, pasir berbisik</li>
+                                <li><i class="fas fa-check"></i> Padang savana / bukit teletubbies</li>
+                                <li><i class="fas fa-check"></i> Durasi: 1 Hari / One Day Trip</li>
+                                <li><i class="fas fa-check"></i> Minimal Peserta: 1 Orang</li>
                             </ul>
                             <div class="fleet-footer">
                                 <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Bromo%20Midnight" class="fleet-btn" target="_blank"><i class="fab fa-whatsapp"></i> Booking Sekarang</a>
@@ -233,68 +227,92 @@
                         </div>
                     </div>
 
-                    <!-- Paket 2: Pantai Selatan -->
+                    <!-- 2. Paket Pantai Selatan 1 Hari -->
                     <div class="fleet-card" data-category="oneday">
                         <div class="fleet-image">
                             <span class="fleet-tag">1 Hari</span>
-                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="Pantai Selatan">
+                            <img src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/Paket-One-Day-Trip-Pantai-Selatan-300x300.jpg.webp" alt="Pantai Selatan">
                         </div>
                         <div class="fleet-pricing">
                             <div class="fleet-price">Rp200.000 <small>/ orang</small></div>
                             <div class="fleet-note">Minimal 4 Orang</div>
                         </div>
                         <div class="fleet-body">
-                            <div class="fleet-header-info"><div class="fleet-name">Pantai Selatan</div></div>
+                            <div class="fleet-header-info"><div class="fleet-name">Paket Pantai Selatan 1 Hari</div></div>
                             <ul class="fleet-list">
-                                <li><i class="fas fa-check"></i> 2 Pantai Pilihan</li>
-                                <li><i class="fas fa-check"></i> Pantai Tiga Warna / Balekambang</li>
-                                <li><i class="fas fa-check"></i> Pantai Goa Cina</li>
-                                <li><i class="fas fa-check"></i> Transportasi AC</li>
+                                <li><i class="fas fa-check"></i> Jelajah 2 Opsi Pantai Malang Selatan</li>
+                                <li><i class="fas fa-check"></i> Pilihan: Tiga Warna, Balekambang, Goa Cina, dll</li>
+                                <li><i class="fas fa-check"></i> Durasi: 1 Hari / One Day Trip</li>
+                                <li><i class="fas fa-check"></i> Minimal Peserta: 4 Orang</li>
                             </ul>
                             <div class="fleet-footer">
-                                <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Pantai%20Selatan" class="fleet-btn" target="_blank"><i class="fab fa-whatsapp"></i> Booking Sekarang</a>
+                                <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Pantai%20Selatan%201%20Hari" class="fleet-btn" target="_blank"><i class="fab fa-whatsapp"></i> Booking Sekarang</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Paket 3: Wisata Batu -->
+                    <!-- 3. Paket Wisata Batu 1 Hari -->
                     <div class="fleet-card" data-category="oneday">
                         <div class="fleet-image">
                             <span class="fleet-tag">1 Hari</span>
-                            <img src="https://images.unsplash.com/photo-1513883049090-d0b7439799bf?w=600&q=80" alt="Wisata Batu">
+                            <img src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/Paket-One-Day-Trip-Wisata-Batu-300x300.jpg.webp" alt="Wisata Batu">
                         </div>
                         <div class="fleet-pricing">
                             <div class="fleet-price">Rp190.000 <small>/ orang</small></div>
                             <div class="fleet-note">Minimal 2 Orang</div>
                         </div>
                         <div class="fleet-body">
-                            <div class="fleet-header-info"><div class="fleet-name">Wisata Batu</div></div>
+                            <div class="fleet-header-info"><div class="fleet-name">Paket Wisata Batu 1 Hari</div></div>
                             <ul class="fleet-list">
-                                <li><i class="fas fa-check"></i> Jatim Park 2 & BNS</li>
-                                <li><i class="fas fa-check"></i> Museum Angkut</li>
-                                <li><i class="fas fa-check"></i> Secret Zoo</li>
-                                <li><i class="fas fa-check"></i> Transportasi AC</li>
+                                <li><i class="fas fa-check"></i> Jatim Park 2 & BNS, atau Museum Angkut & BNS</li>
+                                <li><i class="fas fa-check"></i> Menikmati keindahan wisata kota Batu</li>
+                                <li><i class="fas fa-check"></i> Durasi: 1 Hari / One Day Trip</li>
+                                <li><i class="fas fa-check"></i> Minimal Peserta: 2 Orang</li>
                             </ul>
                             <div class="fleet-footer">
-                                <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Wisata%20Batu" class="fleet-btn" target="_blank"><i class="fab fa-whatsapp"></i> Booking Sekarang</a>
+                                <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Wisata%20Batu%201%20Hari" class="fleet-btn" target="_blank"><i class="fab fa-whatsapp"></i> Booking Sekarang</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Paket 4: Malang Batu (2H1M) -->
+                    <!-- 4. Paket Private Bromo Picnic -->
+                    <div class="fleet-card featured" data-category="oneday bromo">
+                        <div class="fleet-image">
+                            <span class="fleet-tag">1 Hari</span>
+                            <img src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/Paket-Wsiata-Bromo-Picnic-300x300.jpg.webp" alt="Bromo Picnic">
+                        </div>
+                        <div class="fleet-pricing">
+                            <div class="fleet-price">Rp1.500.000 <small>/ grup</small></div>
+                            <div class="fleet-note">Max 12 Orang (Belum term. transport)</div>
+                        </div>
+                        <div class="fleet-body">
+                            <div class="fleet-header-info"><div class="fleet-name">Private Bromo Picnic</div></div>
+                            <ul class="fleet-list">
+                                <li><i class="fas fa-check"></i> Sarapan outdoor dekorasi piknik di Widodaren/Savana</li>
+                                <li><i class="fas fa-check"></i> Menu lengkap: Nasi, Rawon/Pecel, Sate, Salad, dll</li>
+                                <li><i class="fas fa-check"></i> Durasi: 1 Hari / One Day Trip</li>
+                                <li><i class="fas fa-check"></i> Maksimal Peserta: 12 Orang</li>
+                            </ul>
+                            <div class="fleet-footer">
+                                <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Private%20Bromo%20Picnic" class="fleet-btn" target="_blank"><i class="fab fa-whatsapp"></i> Booking Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. Paket Malang Batu 2 Hari 1 Malam -->
                     <div class="fleet-card" data-category="multiday">
                         <div class="fleet-image">
                             <span class="fleet-tag">2 Hari 1 Malam</span>
-                            <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80" alt="Malang Batu">
+                            <img src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/Paket-2-Hari-1-Malam-Malang-Batu-300x300.jpg.webp" alt="Malang Batu 2H1M">
                         </div>
                         <div class="fleet-pricing"><div class="fleet-price">Rp942.000 <small>/ orang</small></div></div>
                         <div class="fleet-body">
-                            <div class="fleet-header-info"><div class="fleet-name">Malang Batu</div></div>
+                            <div class="fleet-header-info"><div class="fleet-name">Malang Batu 2H1M</div></div>
                             <ul class="fleet-list">
-                                <li><i class="fas fa-check"></i> Petik Apel Batu</li>
-                                <li><i class="fas fa-check"></i> Jatim Park 2 & Museum Angkut</li>
-                                <li><i class="fas fa-check"></i> Hotel & Makan</li>
-                                <li><i class="fas fa-check"></i> Transportasi AC</li>
+                                <li><i class="fas fa-check"></i> Wisata Petik Apel, Jatim Park 2, Museum Angkut</li>
+                                <li><i class="fas fa-check"></i> Museum Satwa, BNS, Coban Rondo</li>
+                                <li><i class="fas fa-check"></i> Durasi: 2 Hari 1 Malam</li>
+                                <li><i class="fas fa-check"></i> Minimal Peserta: 2 Orang</li>
                             </ul>
                             <div class="fleet-footer">
                                 <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Malang%20Batu%202H1M" class="fleet-btn" target="_blank"><i class="fab fa-whatsapp"></i> Booking Sekarang</a>
@@ -302,20 +320,20 @@
                         </div>
                     </div>
 
-                    <!-- Paket 5: Malang Batu Bromo (Best Seller 2H1M) -->
+                    <!-- 6. Paket Malang Batu Bromo 2 Hari 1 Malam -->
                     <div class="fleet-card featured" data-category="multiday bromo">
                         <div class="fleet-image">
                             <span class="fleet-tag">2 Hari 1 Malam</span>
-                            <img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?w=600&q=80" alt="Malang Batu Bromo">
+                            <img src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/Paket-2-Hari-1-Malam-Malang-Batu-Bromo-300x300.jpg.webp" alt="Malang Batu Bromo 2H1M">
                         </div>
                         <div class="fleet-pricing"><div class="fleet-price">Rp1.342.000 <small>/ orang</small></div></div>
                         <div class="fleet-body">
-                            <div class="fleet-header-info"><div class="fleet-name">Malang Batu Bromo</div></div>
+                            <div class="fleet-header-info"><div class="fleet-name">Malang Batu Bromo 2H1M</div></div>
                             <ul class="fleet-list">
-                                <li><i class="fas fa-check"></i> Bromo Sunrise & Kawah</li>
-                                <li><i class="fas fa-check"></i> Jatim Park 2 & Museum Angkut</li>
-                                <li><i class="fas fa-check"></i> Hotel & Makan</li>
-                                <li><i class="fas fa-check"></i> Transportasi AC</li>
+                                <li><i class="fas fa-check"></i> Jatim Park 2, Museum Angkut, BNS</li>
+                                <li><i class="fas fa-check"></i> Penanjakan, Kawah Bromo, Pasir Berbisik, Bukit Teletubbies</li>
+                                <li><i class="fas fa-check"></i> Durasi: 2 Hari 1 Malam</li>
+                                <li><i class="fas fa-check"></i> Minimal Peserta: 2 Orang</li>
                             </ul>
                             <div class="fleet-footer">
                                 <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Malang%20Batu%20Bromo%202H1M" class="fleet-btn" target="_blank"><i class="fab fa-whatsapp"></i> Booking Sekarang</a>
@@ -323,11 +341,98 @@
                         </div>
                     </div>
 
-                    <!-- Paket 6: Gathering Perusahaan -->
-                    <div class="fleet-card featured" data-category="gathering">
+                    <!-- 7. Paket Malang Batu 3 Hari 2 Malam -->
+                    <div class="fleet-card" data-category="multiday">
+                        <div class="fleet-image">
+                            <span class="fleet-tag">3 Hari 2 Malam</span>
+                            <img src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/Paket-3-Hari-2-Malam-Malang-Batu-300x300.jpg.webp" alt="Malang Batu 3H2M">
+                        </div>
+                        <div class="fleet-pricing"><div class="fleet-price">Rp1.347.000 <small>/ orang</small></div></div>
+                        <div class="fleet-body">
+                            <div class="fleet-header-info"><div class="fleet-name">Malang Batu 3H2M</div></div>
+                            <ul class="fleet-list">
+                                <li><i class="fas fa-check"></i> Jatim Park 2, Museum Angkut, BNS, Paralayang</li>
+                                <li><i class="fas fa-check"></i> Omah Kayu, Alun-alun Batu, Coban Rais, Coban Rondo</li>
+                                <li><i class="fas fa-check"></i> Durasi: 3 Hari 2 Malam</li>
+                                <li><i class="fas fa-check"></i> Minimal Peserta: 2 Orang</li>
+                            </ul>
+                            <div class="fleet-footer">
+                                <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Malang%20Batu%203H2M" class="fleet-btn" target="_blank"><i class="fab fa-whatsapp"></i> Booking Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. Paket Malang Batu Bromo 3 Hari 2 Malam -->
+                    <div class="fleet-card" data-category="multiday bromo">
+                        <div class="fleet-image">
+                            <span class="fleet-tag">3 Hari 2 Malam</span>
+                            <img src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/Paket-3-Hari-2-Malam-Malang-Batu-Bromo-300x300.jpg.webp" alt="Malang Batu Bromo 3H2M">
+                        </div>
+                        <div class="fleet-pricing">
+                            <div class="fleet-price">Rp1.591.000 <small>/ grup</small></div>
+                            <div class="fleet-note">Harga spesial untuk rombongan</div>
+                        </div>
+                        <div class="fleet-body">
+                            <div class="fleet-header-info"><div class="fleet-name">Malang Batu Bromo 3H2M</div></div>
+                            <ul class="fleet-list">
+                                <li><i class="fas fa-check"></i> Jatim Park 2, Museum Angkut, BNS</li>
+                                <li><i class="fas fa-check"></i> Penanjakan, Kawah Bromo, Pasir Berbisik, Bukit Teletubbies</li>
+                                <li><i class="fas fa-check"></i> Durasi: 3 Hari 2 Malam</li>
+                                <li><i class="fas fa-check"></i> Minimal Peserta: 2 Orang</li>
+                            </ul>
+                            <div class="fleet-footer">
+                                <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Malang%20Batu%20Bromo%203H2M" class="fleet-btn" target="_blank"><i class="fab fa-whatsapp"></i> Booking Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 9. Paket Malang Batu Bromo 4 Hari 3 Malam -->
+                    <div class="fleet-card" data-category="multiday bromo">
+                        <div class="fleet-image">
+                            <span class="fleet-tag">4 Hari 3 Malam</span>
+                            <img src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/Paket-4-Hari-3-Malam-Malang-Batu-Bromo-300x300.jpg.webp" alt="Malang Batu Bromo 4H3M">
+                        </div>
+                        <div class="fleet-pricing"><div class="fleet-price">Rp1.952.000 <small>/ orang</small></div></div>
+                        <div class="fleet-body">
+                            <div class="fleet-header-info"><div class="fleet-name">Malang Batu Bromo 4H3M</div></div>
+                            <ul class="fleet-list">
+                                <li><i class="fas fa-check"></i> Semua destinasi 3H2M + Eco Green Park</li>
+                                <li><i class="fas fa-check"></i> Coban Rais & Omah Kayu</li>
+                                <li><i class="fas fa-check"></i> Durasi: 4 Hari 3 Malam</li>
+                                <li><i class="fas fa-check"></i> Minimal Peserta: 2 Orang</li>
+                            </ul>
+                            <div class="fleet-footer">
+                                <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Malang%20Batu%20Bromo%204H3M" class="fleet-btn" target="_blank"><i class="fab fa-whatsapp"></i> Booking Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 10. Paket Malang Batu Bromo 5 Hari 4 Malam -->
+                    <div class="fleet-card" data-category="multiday bromo">
+                        <div class="fleet-image">
+                            <span class="fleet-tag">5 Hari 4 Malam</span>
+                            <img src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/Paket-5-Hari-4-Malam-Malang-Batu-Bromo-300x300.jpg.webp" alt="Malang Batu Bromo 5H4M">
+                        </div>
+                        <div class="fleet-pricing"><div class="fleet-price">Rp2.245.000 <small>/ orang</small></div></div>
+                        <div class="fleet-body">
+                            <div class="fleet-header-info"><div class="fleet-name">Malang Batu Bromo 5H4M</div></div>
+                            <ul class="fleet-list">
+                                <li><i class="fas fa-check"></i> Semua destinasi 4H3M + Kampung Warna-Warni</li>
+                                <li><i class="fas fa-check"></i> Coban Rondo</li>
+                                <li><i class="fas fa-check"></i> Durasi: 5 Hari 4 Malam</li>
+                                <li><i class="fas fa-check"></i> Minimal Peserta: 2 Orang</li>
+                            </ul>
+                            <div class="fleet-footer">
+                                <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20booking%20Paket%20Malang%20Batu%20Bromo%205H4M" class="fleet-btn" target="_blank"><i class="fab fa-whatsapp"></i> Booking Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 11. Paket Gathering Perusahaan -->
+                    <div class="fleet-card" data-category="gathering">
                         <div class="fleet-image">
                             <span class="fleet-tag">Custom</span>
-                            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&q=80" alt="Gathering Perusahaan">
+                            <img src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/Paket-Company-Gathering-300x300.jpg.webp" alt="Gathering Perusahaan">
                         </div>
                         <div class="fleet-pricing">
                             <div class="fleet-price">Custom <small>/ grup</small></div>
@@ -336,16 +441,17 @@
                         <div class="fleet-body">
                             <div class="fleet-header-info"><div class="fleet-name">Gathering Perusahaan</div></div>
                             <ul class="fleet-list">
-                                <li><i class="fas fa-check"></i> Semua Paket Tersedia</li>
-                                <li><i class="fas fa-check"></i> Bromo, Batu, Pantai</li>
-                                <li><i class="fas fa-check"></i> Outbound & Durasi Fleksibel</li>
-                                <li><i class="fas fa-check"></i> Minimal 2 Orang</li>
+                                <li><i class="fas fa-check"></i> Paket wisata tim/keluarga di Malang, Batu, Bromo</li>
+                                <li><i class="fas fa-check"></i> Pilihan: Bromo, Batu, Outbound, Pantai Selatan</li>
+                                <li><i class="fas fa-check"></i> Durasi: Opsional (by request)</li>
+                                <li><i class="fas fa-check"></i> Minimal Peserta: 2 Orang</li>
                             </ul>
                             <div class="fleet-footer">
-                                <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20konsultasi%20Paket%20Gathering" class="fleet-btn" target="_blank"><i class="fab fa-whatsapp"></i> Hubungi Kami</a>
+                                <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20konsultasi%20Paket%20Gathering%20Perusahaan" class="fleet-btn" target="_blank"><i class="fab fa-whatsapp"></i> Hubungi Kami</a>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
