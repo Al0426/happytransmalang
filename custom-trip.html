@@ -1,1138 +1,346 @@
 <!DOCTYPE html>
-<html lang="id" prefix="og: https://ogp.me/ns#"><head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=AW-10958889749&amp;cx=c&amp;gtm=4e6790"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-K3CS3L92"></script><script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var ewww_webp_supported=!1;function check_webp_feature(A,e){var w;e=void 0!==e?e:function(){},ewww_webp_supported?e(ewww_webp_supported):((w=new Image).onload=function(){ewww_webp_supported=0<w.width&&0<w.height,e&&e(ewww_webp_supported)},w.onerror=function(){e&&e(!1)},w.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA=="}[A])}check_webp_feature("alpha");</script><script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var Arrive=function(c,w){"use strict";if(c.MutationObserver&&"undefined"!=typeof HTMLElement){var r,a=0,u=(r=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector,{matchesSelector:function(e,t){return e instanceof HTMLElement&&r.call(e,t)},addMethod:function(e,t,r){var a=e[t];e[t]=function(){return r.length==arguments.length?r.apply(this,arguments):"function"==typeof a?a.apply(this,arguments):void 0}},callCallbacks:function(e,t){t&&t.options.onceOnly&&1==t.firedElems.length&&(e=[e[0]]);for(var r,a=0;r=e[a];a++)r&&r.callback&&r.callback.call(r.elem,r.elem);t&&t.options.onceOnly&&1==t.firedElems.length&&t.me.unbindEventWithSelectorAndCallback.call(t.target,t.selector,t.callback)},checkChildNodesRecursively:function(e,t,r,a){for(var i,n=0;i=e[n];n++)r(i,t,a)&&a.push({callback:t.callback,elem:i}),0<i.childNodes.length&&u.checkChildNodesRecursively(i.childNodes,t,r,a)},mergeArrays:function(e,t){var r,a={};for(r in e)e.hasOwnProperty(r)&&(a[r]=e[r]);for(r in t)t.hasOwnProperty(r)&&(a[r]=t[r]);return a},toElementsArray:function(e){return e=void 0!==e&&("number"!=typeof e.length||e===c)?[e]:e}}),e=(l.prototype.addEvent=function(e,t,r,a){a={target:e,selector:t,options:r,callback:a,firedElems:[]};return this._beforeAdding&&this._beforeAdding(a),this._eventsBucket.push(a),a},l.prototype.removeEvent=function(e){for(var t,r=this._eventsBucket.length-1;t=this._eventsBucket[r];r--)e(t)&&(this._beforeRemoving&&this._beforeRemoving(t),(t=this._eventsBucket.splice(r,1))&&t.length&&(t[0].callback=null))},l.prototype.beforeAdding=function(e){this._beforeAdding=e},l.prototype.beforeRemoving=function(e){this._beforeRemoving=e},l),t=function(i,n){var o=new e,l=this,s={fireOnAttributesModification:!1};return o.beforeAdding(function(t){var e=t.target;e!==c.document&&e!==c||(e=document.getElementsByTagName("html")[0]);var r=new MutationObserver(function(e){n.call(this,e,t)}),a=i(t.options);r.observe(e,a),t.observer=r,t.me=l}),o.beforeRemoving(function(e){e.observer.disconnect()}),this.bindEvent=function(e,t,r){t=u.mergeArrays(s,t);for(var a=u.toElementsArray(this),i=0;i<a.length;i++)o.addEvent(a[i],e,t,r)},this.unbindEvent=function(){var r=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<r.length;t++)if(this===w||e.target===r[t])return!0;return!1})},this.unbindEventWithSelectorOrCallback=function(r){var a=u.toElementsArray(this),i=r,e="function"==typeof r?function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.callback===i)return!0;return!1}:function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.selector===r)return!0;return!1};o.removeEvent(e)},this.unbindEventWithSelectorAndCallback=function(r,a){var i=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<i.length;t++)if((this===w||e.target===i[t])&&e.selector===r&&e.callback===a)return!0;return!1})},this},i=new function(){var s={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};function n(e,t,r){return!(!u.matchesSelector(e,t.selector)||(e._id===w&&(e._id=a++),-1!=t.firedElems.indexOf(e._id)))&&(t.firedElems.push(e._id),!0)}var c=(i=new t(function(e){var t={attributes:!1,childList:!0,subtree:!0};return e.fireOnAttributesModification&&(t.attributes=!0),t},function(e,i){e.forEach(function(e){var t=e.addedNodes,r=e.target,a=[];null!==t&&0<t.length?u.checkChildNodesRecursively(t,i,n,a):"attributes"===e.type&&n(r,i)&&a.push({callback:i.callback,elem:r}),u.callCallbacks(a,i)})})).bindEvent;return i.bindEvent=function(e,t,r){t=void 0===r?(r=t,s):u.mergeArrays(s,t);var a=u.toElementsArray(this);if(t.existing){for(var i=[],n=0;n<a.length;n++)for(var o=a[n].querySelectorAll(e),l=0;l<o.length;l++)i.push({callback:r,elem:o[l]});if(t.onceOnly&&i.length)return r.call(i[0].elem,i[0].elem);setTimeout(u.callCallbacks,1,i)}c.call(this,e,t,r)},i},o=new function(){var a={};function i(e,t){return u.matchesSelector(e,t.selector)}var n=(o=new t(function(){return{childList:!0,subtree:!0}},function(e,r){e.forEach(function(e){var t=e.removedNodes,e=[];null!==t&&0<t.length&&u.checkChildNodesRecursively(t,r,i,e),u.callCallbacks(e,r)})})).bindEvent;return o.bindEvent=function(e,t,r){t=void 0===r?(r=t,a):u.mergeArrays(a,t),n.call(this,e,t,r)},o};d(HTMLElement.prototype),d(NodeList.prototype),d(HTMLCollection.prototype),d(HTMLDocument.prototype),d(Window.prototype);var n={};return s(i,n,"unbindAllArrive"),s(o,n,"unbindAllLeave"),n}function l(){this._eventsBucket=[],this._beforeAdding=null,this._beforeRemoving=null}function s(e,t,r){u.addMethod(t,r,e.unbindEvent),u.addMethod(t,r,e.unbindEventWithSelectorOrCallback),u.addMethod(t,r,e.unbindEventWithSelectorAndCallback)}function d(e){e.arrive=i.bindEvent,s(i,e,"unbindArrive"),e.leave=o.bindEvent,s(o,e,"unbindLeave")}}(window,void 0),ewww_webp_supported=!1;function check_webp_feature(e,t){var r;ewww_webp_supported?t(ewww_webp_supported):((r=new Image).onload=function(){ewww_webp_supported=0<r.width&&0<r.height,t(ewww_webp_supported)},r.onerror=function(){t(!1)},r.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",animation:"UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}[e])}function ewwwLoadImages(e){if(e){for(var t=document.querySelectorAll(".batch-image img, .image-wrapper a, .ngg-pro-masonry-item a, .ngg-galleria-offscreen-seo-wrapper a"),r=0,a=t.length;r<a;r++)ewwwAttr(t[r],"data-src",t[r].getAttribute("data-webp")),ewwwAttr(t[r],"data-thumbnail",t[r].getAttribute("data-webp-thumbnail"));for(var i=document.querySelectorAll("div.woocommerce-product-gallery__image"),r=0,a=i.length;r<a;r++)ewwwAttr(i[r],"data-thumb",i[r].getAttribute("data-webp-thumb"))}for(var n=document.querySelectorAll("video"),r=0,a=n.length;r<a;r++)ewwwAttr(n[r],"poster",e?n[r].getAttribute("data-poster-webp"):n[r].getAttribute("data-poster-image"));for(var o,l=document.querySelectorAll("img.ewww_webp_lazy_load"),r=0,a=l.length;r<a;r++)e&&(ewwwAttr(l[r],"data-lazy-srcset",l[r].getAttribute("data-lazy-srcset-webp")),ewwwAttr(l[r],"data-srcset",l[r].getAttribute("data-srcset-webp")),ewwwAttr(l[r],"data-lazy-src",l[r].getAttribute("data-lazy-src-webp")),ewwwAttr(l[r],"data-src",l[r].getAttribute("data-src-webp")),ewwwAttr(l[r],"data-orig-file",l[r].getAttribute("data-webp-orig-file")),ewwwAttr(l[r],"data-medium-file",l[r].getAttribute("data-webp-medium-file")),ewwwAttr(l[r],"data-large-file",l[r].getAttribute("data-webp-large-file")),null!=(o=l[r].getAttribute("srcset"))&&!1!==o&&o.includes("R0lGOD")&&ewwwAttr(l[r],"src",l[r].getAttribute("data-lazy-src-webp"))),l[r].className=l[r].className.replace(/\bewww_webp_lazy_load\b/,"");for(var s=document.querySelectorAll(".ewww_webp"),r=0,a=s.length;r<a;r++)e?(ewwwAttr(s[r],"srcset",s[r].getAttribute("data-srcset-webp")),ewwwAttr(s[r],"src",s[r].getAttribute("data-src-webp")),ewwwAttr(s[r],"data-orig-file",s[r].getAttribute("data-webp-orig-file")),ewwwAttr(s[r],"data-medium-file",s[r].getAttribute("data-webp-medium-file")),ewwwAttr(s[r],"data-large-file",s[r].getAttribute("data-webp-large-file")),ewwwAttr(s[r],"data-large_image",s[r].getAttribute("data-webp-large_image")),ewwwAttr(s[r],"data-src",s[r].getAttribute("data-webp-src"))):(ewwwAttr(s[r],"srcset",s[r].getAttribute("data-srcset-img")),ewwwAttr(s[r],"src",s[r].getAttribute("data-src-img"))),s[r].className=s[r].className.replace(/\bewww_webp\b/,"ewww_webp_loaded");window.jQuery&&jQuery.fn.isotope&&jQuery.fn.imagesLoaded&&(jQuery(".fusion-posts-container-infinite").imagesLoaded(function(){jQuery(".fusion-posts-container-infinite").hasClass("isotope")&&jQuery(".fusion-posts-container-infinite").isotope()}),jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").imagesLoaded(function(){jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").isotope()}))}function ewwwWebPInit(e){ewwwLoadImages(e),ewwwNggLoadGalleries(e),document.arrive(".ewww_webp",function(){ewwwLoadImages(e)}),document.arrive(".ewww_webp_lazy_load",function(){ewwwLoadImages(e)}),document.arrive("videos",function(){ewwwLoadImages(e)}),"loading"==document.readyState?document.addEventListener("DOMContentLoaded",ewwwJSONParserInit):("undefined"!=typeof galleries&&ewwwNggParseGalleries(e),ewwwWooParseVariations(e))}function ewwwAttr(e,t,r){null!=r&&!1!==r&&e.setAttribute(t,r)}function ewwwJSONParserInit(){"undefined"!=typeof galleries&&check_webp_feature("alpha",ewwwNggParseGalleries),check_webp_feature("alpha",ewwwWooParseVariations)}function ewwwWooParseVariations(e){if(e)for(var t=document.querySelectorAll("form.variations_form"),r=0,a=t.length;r<a;r++){var i=t[r].getAttribute("data-product_variations"),n=!1;try{for(var o in i=JSON.parse(i))void 0!==i[o]&&void 0!==i[o].image&&(void 0!==i[o].image.src_webp&&(i[o].image.src=i[o].image.src_webp,n=!0),void 0!==i[o].image.srcset_webp&&(i[o].image.srcset=i[o].image.srcset_webp,n=!0),void 0!==i[o].image.full_src_webp&&(i[o].image.full_src=i[o].image.full_src_webp,n=!0),void 0!==i[o].image.gallery_thumbnail_src_webp&&(i[o].image.gallery_thumbnail_src=i[o].image.gallery_thumbnail_src_webp,n=!0),void 0!==i[o].image.thumb_src_webp&&(i[o].image.thumb_src=i[o].image.thumb_src_webp,n=!0));n&&ewwwAttr(t[r],"data-product_variations",JSON.stringify(i))}catch(e){}}}function ewwwNggParseGalleries(e){if(e)for(var t in galleries){var r=galleries[t];galleries[t].images_list=ewwwNggParseImageList(r.images_list)}}function ewwwNggLoadGalleries(e){e&&document.addEventListener("ngg.galleria.themeadded",function(e,t){window.ngg_galleria._create_backup=window.ngg_galleria.create,window.ngg_galleria.create=function(e,t){var r=$(e).data("id");return galleries["gallery_"+r].images_list=ewwwNggParseImageList(galleries["gallery_"+r].images_list),window.ngg_galleria._create_backup(e,t)}})}function ewwwNggParseImageList(e){for(var t in e){var r=e[t];if(void 0!==r["image-webp"]&&(e[t].image=r["image-webp"],delete e[t]["image-webp"]),void 0!==r["thumb-webp"]&&(e[t].thumb=r["thumb-webp"],delete e[t]["thumb-webp"]),void 0!==r.full_image_webp&&(e[t].full_image=r.full_image_webp,delete e[t].full_image_webp),void 0!==r.srcsets)for(var a in r.srcsets)nggSrcset=r.srcsets[a],void 0!==r.srcsets[a+"-webp"]&&(e[t].srcsets[a]=r.srcsets[a+"-webp"],delete e[t].srcsets[a+"-webp"]);if(void 0!==r.full_srcsets)for(var i in r.full_srcsets)nggFSrcset=r.full_srcsets[i],void 0!==r.full_srcsets[i+"-webp"]&&(e[t].full_srcsets[i]=r.full_srcsets[i+"-webp"],delete e[t].full_srcsets[i+"-webp"])}return e}check_webp_feature("alpha",ewwwWebPInit);</script>		    <!-- PVC Template -->
-    <script type="text/template" id="pvc-stats-view-template">
-    <i class="pvc-stats-icon small" aria-hidden="true"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="chart-bar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-chart-bar fa-w-16 fa-2x"><path fill="currentColor" d="M396.8 352h22.4c6.4 0 12.8-6.4 12.8-12.8V108.8c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v230.4c0 6.4 6.4 12.8 12.8 12.8zm-192 0h22.4c6.4 0 12.8-6.4 12.8-12.8V140.8c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v198.4c0 6.4 6.4 12.8 12.8 12.8zm96 0h22.4c6.4 0 12.8-6.4 12.8-12.8V204.8c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v134.4c0 6.4 6.4 12.8 12.8 12.8zM496 400H48V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16zm-387.2-48h22.4c6.4 0 12.8-6.4 12.8-12.8v-70.4c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v70.4c0 6.4 6.4 12.8 12.8 12.8z" class=""></path></svg></i>
-	 <%= total_view %> kali dilihat	<% if ( today_view > 0 ) { %>
-		<span class="views_today">,  <%= today_view %> kali dibaca hari ini.</span>
-	<% } %>
-	</span>
-	</script>
-		    
-<!-- Optimasi Mesin Pencari oleh Rank Math - https://rankmath.com/ -->
-<title>Custom Trip Wisata Malang Harga Termurah 2026 - Kayana Prima Wisata</title><link rel="preload" data-rocket-preload="" as="image" href="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/banner-custom-trip-kayana-prima-wisata-2-1024x536.jpg.webp" fetchpriority="high">
-<meta name="description" content="Nikmati Keindahan Wisata di Jawa Timur Bersama Kayana Prima Wisata. Dengan Layanan Custom Trip Wisata Malang Anda Dapat Bebas Memilih Destinasi Wisata Sesuai Dengan Keinginan Anda. Konsultasikan Kepada Kami Sekarang!">
-<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
-<link rel="canonical" href="https://www.kayanaprimawisata.co.id/custom-trip-wisata-malang/">
-<meta property="og:locale" content="id_ID">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Custom Trip Wisata Malang Harga Termurah 2026 - Kayana Prima Wisata">
-<meta property="og:description" content="Nikmati Keindahan Wisata di Jawa Timur Bersama Kayana Prima Wisata. Dengan Layanan Custom Trip Wisata Malang Anda Dapat Bebas Memilih Destinasi Wisata Sesuai Dengan Keinginan Anda. Konsultasikan Kepada Kami Sekarang!">
-<meta property="og:url" content="https://www.kayanaprimawisata.co.id/custom-trip-wisata-malang/">
-<meta property="og:site_name" content="Kayana Prima Wisata">
-<meta property="og:updated_time" content="2024-07-30T15:22:14+07:00">
-<meta property="og:image" content="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/banner-custom-trip-kayana-prima-wisata-2.jpg">
-<meta property="og:image:secure_url" content="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/banner-custom-trip-kayana-prima-wisata-2.jpg">
-<meta property="og:image:width" content="1440">
-<meta property="og:image:height" content="754">
-<meta property="og:image:alt" content="custom trip wisata malang">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="article:published_time" content="2023-10-29T06:36:52+07:00">
-<meta property="article:modified_time" content="2024-07-30T15:22:14+07:00">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Custom Trip Wisata Malang Harga Termurah 2026 - Kayana Prima Wisata">
-<meta name="twitter:description" content="Nikmati Keindahan Wisata di Jawa Timur Bersama Kayana Prima Wisata. Dengan Layanan Custom Trip Wisata Malang Anda Dapat Bebas Memilih Destinasi Wisata Sesuai Dengan Keinginan Anda. Konsultasikan Kepada Kami Sekarang!">
-<meta name="twitter:image" content="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/banner-custom-trip-kayana-prima-wisata-2.jpg">
-<meta name="twitter:label1" content="Waktunya membaca">
-<meta name="twitter:data1" content="Kurang dari semenit">
-<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":"Place","@id":"https://www.kayanaprimawisata.co.id/#place","geo":{"@type":"GeoCoordinates","latitude":"-7.9983292215376505","longitude":" 112.67910994603167"},"hasMap":"https://www.google.com/maps/search/?api=1&amp;query=-7.9983292215376505, 112.67910994603167","address":{"@type":"PostalAddress","streetAddress":"Jl. Bandara Eltari No. VB 5, Cemorokandang","addressLocality":"Kec. Kedungkandang, Kota Malang","addressRegion":"Kota Malang","postalCode":"65138","addressCountry":"Indonesia"}},{"@type":["TravelAgency","Organization"],"@id":"https://www.kayanaprimawisata.co.id/#organization","name":"Kayana Prima Wisata","url":"https://www.kayanaprimawisata.co.id","email":"halo@kayanaprimawisata.co.id","address":{"@type":"PostalAddress","streetAddress":"Jl. Bandara Eltari No. VB 5, Cemorokandang","addressLocality":"Kec. Kedungkandang, Kota Malang","addressRegion":"Kota Malang","postalCode":"65138","addressCountry":"Indonesia"},"logo":{"@type":"ImageObject","@id":"https://www.kayanaprimawisata.co.id/#logo","url":"https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/image-260nw-2128998383.jpg","contentUrl":"https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/image-260nw-2128998383.jpg","caption":"Kayana Prima Wisata","inLanguage":"id","width":"1440","height":"1440"},"openingHours":["Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 08:00-21:00"],"location":{"@id":"https://www.kayanaprimawisata.co.id/#place"},"image":{"@id":"https://www.kayanaprimawisata.co.id/#logo"},"telephone":"+62 822-3404-4410"},{"@type":"WebSite","@id":"https://www.kayanaprimawisata.co.id/#website","url":"https://www.kayanaprimawisata.co.id","name":"Kayana Prima Wisata","publisher":{"@id":"https://www.kayanaprimawisata.co.id/#organization"},"inLanguage":"id"},{"@type":"ImageObject","@id":"https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/custom-trip-kayana-prima-wisata.jpg","url":"https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/custom-trip-kayana-prima-wisata.jpg","width":"1440","height":"754","inLanguage":"id"},{"@type":"BreadcrumbList","@id":"https://www.kayanaprimawisata.co.id/custom-trip-wisata-malang/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://www.kayanaprimawisata.co.id","name":"Beranda"}},{"@type":"ListItem","position":"2","item":{"@id":"https://www.kayanaprimawisata.co.id/custom-trip-wisata-malang/","name":"Custom Trip"}}]},{"@type":"WebPage","@id":"https://www.kayanaprimawisata.co.id/custom-trip-wisata-malang/#webpage","url":"https://www.kayanaprimawisata.co.id/custom-trip-wisata-malang/","name":"Custom Trip Wisata Malang Harga Termurah 2026 - Kayana Prima Wisata","datePublished":"2023-10-29T06:36:52+07:00","dateModified":"2024-07-30T15:22:14+07:00","isPartOf":{"@id":"https://www.kayanaprimawisata.co.id/#website"},"primaryImageOfPage":{"@id":"https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/custom-trip-kayana-prima-wisata.jpg"},"inLanguage":"id","breadcrumb":{"@id":"https://www.kayanaprimawisata.co.id/custom-trip-wisata-malang/#breadcrumb"}},{"@type":"Person","@id":"https://www.kayanaprimawisata.co.id/author/admin/","name":"Mas Wondho","url":"https://www.kayanaprimawisata.co.id/author/admin/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/0d97e213de560ab15b79b78252d3304ec59de7864c36f61c4df6b8ef0cd7786a?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/0d97e213de560ab15b79b78252d3304ec59de7864c36f61c4df6b8ef0cd7786a?s=96&amp;d=mm&amp;r=g","caption":"Mas Wondho","inLanguage":"id"},"sameAs":["https://www.kayanaprimawisata.co.id"],"worksFor":{"@id":"https://www.kayanaprimawisata.co.id/#organization"}},{"@type":"Article","headline":"Custom Trip Wisata Malang Harga Termurah 2026 - Kayana Prima Wisata","keywords":"custom trip wisata malang","datePublished":"2023-10-29T06:36:52+07:00","dateModified":"2024-07-30T15:22:14+07:00","author":{"@id":"https://www.kayanaprimawisata.co.id/author/admin/","name":"Mas Wondho"},"publisher":{"@id":"https://www.kayanaprimawisata.co.id/#organization"},"description":"Nikmati Keindahan Wisata di Jawa Timur Bersama Kayana Prima Wisata. Dengan Layanan Custom Trip Wisata Malang Anda Dapat Bebas Memilih Destinasi Wisata Sesuai Dengan Keinginan Anda. Konsultasikan Kepada Kami Sekarang!","name":"Custom Trip Wisata Malang Harga Termurah 2026 - Kayana Prima Wisata","@id":"https://www.kayanaprimawisata.co.id/custom-trip-wisata-malang/#richSnippet","isPartOf":{"@id":"https://www.kayanaprimawisata.co.id/custom-trip-wisata-malang/#webpage"},"image":{"@id":"https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/custom-trip-kayana-prima-wisata.jpg"},"inLanguage":"id","mainEntityOfPage":{"@id":"https://www.kayanaprimawisata.co.id/custom-trip-wisata-malang/#webpage"}}]}</script>
-<!-- /Plugin WordPress Rank Math SEO -->
-
-<link rel="dns-prefetch" href="//cdn.canvasjs.com">
-
-<link rel="alternate" type="application/rss+xml" title="Kayana Prima Wisata » Feed" href="https://www.kayanaprimawisata.co.id/feed/">
-<link rel="alternate" type="application/rss+xml" title="Kayana Prima Wisata » Umpan Komentar" href="https://www.kayanaprimawisata.co.id/comments/feed/">
-<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.kayanaprimawisata.co.id/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.kayanaprimawisata.co.id%2Fcustom-trip-wisata-malang%2F">
-<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.kayanaprimawisata.co.id/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.kayanaprimawisata.co.id%2Fcustom-trip-wisata-malang%2F&amp;format=xml">
-<style id="wp-img-auto-sizes-contain-inline-css">
-img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
-/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
-</style>
-<link data-minify="1" rel="stylesheet" id="dce-animations-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/plugins/dynamic-content-for-elementor/assets/css/animations.css?ver=1783888438" media="all">
-<link data-minify="1" rel="stylesheet" id="wptwa-public-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/plugins/wpt-whatsapp/assets/css/public.css?ver=1783888438" media="all">
-<link data-minify="1" rel="stylesheet" id="wptwa-generated-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/plugins/wpt-whatsapp/assets/css/auto-generated-wptwa.css?ver=1783888438" media="all">
-<link rel="stylesheet" id="sbi_styles-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.11.3" media="all">
-<link data-minify="1" rel="stylesheet" id="sb-elementor-shared-style-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/plugins/instagram-feed/vendor/smashballoon/framework/Packages/Blocks/css/sb-elementor.css?ver=1783888438" media="all">
-<style id="wp-emoji-styles-inline-css">
-
-	img.wp-smiley, img.emoji {
-		display: inline !important;
-		border: none !important;
-		box-shadow: none !important;
-		height: 1em !important;
-		width: 1em !important;
-		margin: 0 0.07em !important;
-		vertical-align: -0.1em !important;
-		background: none !important;
-		padding: 0 !important;
-	}
-/*# sourceURL=wp-emoji-styles-inline-css */
-</style>
-<style id="global-styles-inline-css">
-:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root { --wp--style--global--content-size: 800px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:root :where(.wp-block-icon svg){width: 24px;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-/*# sourceURL=global-styles-inline-css */
-</style>
-<link data-minify="1" rel="stylesheet" id="bne_navbar-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/plugins/bne-navbar/assets/css/bne-navbar.css?ver=1783888438" media="all">
-<link rel="stylesheet" id="a3-pvc-style-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/page-views-count/assets/css/style.min.css?ver=2.9.2" media="all">
-<link data-minify="1" rel="stylesheet" id="dashicons-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-includes/css/dashicons.min.css?ver=1783888438" media="all">
-<link rel="stylesheet" id="admin-bar-css" href="https://www.kayanaprimawisata.co.id/wp-includes/css/admin-bar.min.css?ver=7.0.1" media="all">
-<style id="admin-bar-inline-css">
-
-    .canvasjs-chart-credit{
-        display: none !important;
-    }
-    #vtrtsProChart canvas {
-    border-radius: 6px;
-}
-
-.vtrts-pro-adminbar-weekly-title {
-    font-weight: bold;
-    font-size: 14px;
-    color: #fff;
-    margin-bottom: 6px;
-}
-
-        #wpadminbar #wp-admin-bar-vtrts_pro_top_button .ab-icon:before {
-            content: "\f185";
-            color: #1DAE22;
-            top: 3px;
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Trip - Happy Trans Malang</title>
+    <meta name="description" content="Rencanakan perjalanan custom Anda bersama Happy Trans Malang. Konsultasi gratis dengan tour planner kami.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #0066cc; --primary-dark: #004a99; --secondary: #ff6b35; --secondary-dark: #e55525;
+            --accent: #ffc93c; --gold: #c9a961; --dark: #1a2b3c; --gray: #6c757d; --light: #f8f9fa;
+            --white: #ffffff; --success: #28a745; --danger: #dc3545;
+            --shadow: 0 5px 20px rgba(0,0,0,0.1); --shadow-lg: 0 15px 40px rgba(0,0,0,0.15); --transition: all 0.3s ease;
         }
-    #wp-admin-bar-vtrts_pro_top_button .ab-item {
-        min-width: 180px;
-    }
-    .vtrts-pro-adminbar-dropdown {
-        min-width: 340px;
-        padding: 18px 18px 12px 18px;
-        background: #23282d;
-        color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 4px 24px rgba(0,0,0,0.15);
-        margin-top: 10px;
-    }
-    .vtrts-pro-adminbar-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 18px 18px; /* row-gap column-gap */
-        margin-bottom: 18px;
-    }
-    .vtrts-pro-adminbar-card {
-        background: #2c3338;
-        border-radius: 8px;
-        padding: 18px 18px 12px 18px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    /* Extra margin for the right column */
-    .vtrts-pro-adminbar-card:nth-child(2),
-    .vtrts-pro-adminbar-card:nth-child(4) {
-        margin-left: 10px !important;
-        padding-left: 10px !important;
-        margin-right: 10px !important;
-        padding-right : 10px !important;
-        margin-top: 10px !important;
-    }
-    .vtrts-pro-adminbar-card:nth-child(1),
-    .vtrts-pro-adminbar-card:nth-child(3) {
-        margin-left: 10px !important;
-        padding-left: 10px !important;
-        margin-top: 10px !important;
-    }
-    /* Extra margin for the bottom row */
-    .vtrts-pro-adminbar-card:nth-child(3),
-    .vtrts-pro-adminbar-card:nth-child(4) {
-        margin-top: 6px !important;
-        padding-top: 6px !important;
-        margin-top: 10px !important;
-    }
-    .vtrts-pro-adminbar-card-title {
-        font-size: 14px;
-        font-weight: 800;
-        margin-bottom: 6px;
-        color: #fff;
-    }
-    .vtrts-pro-adminbar-card-value {
-        font-size: 22px;
-        font-weight: bold;
-        color: #1DAE22;
-        margin-bottom: 4px;
-    }
-    .vtrts-pro-adminbar-card-sub {
-        font-size: 12px;
-        color: #aaa;
-    }
-    .vtrts-pro-adminbar-btn-wrap {
-        text-align: center;
-        margin-top: 8px;
-    }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: var(--dark); overflow-x: hidden; }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; font-weight: 700; line-height: 1.3; }
+        img { max-width: 100%; height: auto; }
+        a { text-decoration: none; color: inherit; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
-    #wp-admin-bar-vtrts_pro_top_button .ab-item{
-    min-width: 80px !important;
-        padding: 0px !important;
-    .vtrts-pro-adminbar-btn {
-        display: inline-block;
-        background: #1DAE22;
-        color: #fff !important;
-        font-weight: bold;
-        padding: 8px 28px;
-        border-radius: 6px;
-        text-decoration: none;
-        font-size: 15px;
-        transition: background 0.2s;
-        margin-top: 8px;
-    }
-    .vtrts-pro-adminbar-btn:hover {
-        background: #15991b;
-        color: #fff !important;
-    }
+        header { background: var(--white); box-shadow: var(--shadow); position: sticky; top: 0; z-index: 1000; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; }
+        .logo { display: flex; align-items: center; gap: 12px; }
+        .logo-img { width: 55px; height: 55px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+        .logo-text { font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 800; color: var(--dark); line-height: 1.1; }
+        .logo-text .happy { color: var(--gold); display: block; font-size: 22px; }
+        .logo-text .trans { color: var(--primary); font-size: 18px; }
+        .logo-text .malang { color: var(--gray); font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .nav-links { display: flex; list-style: none; gap: 22px; align-items: center; }
+        .nav-links a { color: var(--dark); font-weight: 500; font-size: 14px; transition: var(--transition); position: relative; }
+        .nav-links a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: var(--secondary); transition: width 0.3s; }
+        .nav-links a:hover { color: var(--secondary); }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-cta { background: var(--secondary); color: var(--white) !important; padding: 10px 25px; border-radius: 50px; border: none; cursor: pointer; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; }
+        .nav-cta:hover { background: var(--secondary-dark); }
+        .nav-cta::after { display: none; }
+        .mobile-menu-btn { display: none; background: none; border: none; font-size: 24px; color: var(--primary); cursor: pointer; }
 
-    .vtrts-pro-adminbar-dropdown-wrap { min-width: 0; padding: 0; }
-    #wpadminbar #wp-admin-bar-vtrts_pro_top_button .vtrts-pro-adminbar-dropdown { display: none; position: absolute; left: 0; top: 100%; z-index: 99999; }
-    #wpadminbar #wp-admin-bar-vtrts_pro_top_button:hover .vtrts-pro-adminbar-dropdown { display: block; }
+        .page-hero {
+            background: linear-gradient(135deg, rgba(0,74,153,0.9) 0%, rgba(0,102,204,0.75) 100%), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1920&q=80') center/cover;
+            padding: 80px 0 60px; color: var(--white); text-align: center;
+        }
+        .page-hero h1 { font-size: 36px; margin-bottom: 15px; }
+        .page-hero .subtitle { font-size: 16px; opacity: 0.9; max-width: 700px; margin: 0 auto; }
+
+        .form-section { padding: 60px 0; background: var(--light); }
+        .form-intro { text-align: center; margin-bottom: 40px; font-size: 16px; color: var(--dark); }
+
+        .progress-steps { display: flex; justify-content: center; align-items: center; margin-bottom: 50px; flex-wrap: wrap; gap: 10px; }
+        .step { display: flex; flex-direction: column; align-items: center; gap: 10px; flex: 1; min-width: 150px; max-width: 200px; }
+        .step-icon { width: 50px; height: 50px; border-radius: 50%; background: var(--gray); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 20px; transition: var(--transition); }
+        .step.active .step-icon { background: var(--primary); }
+        .step.completed .step-icon { background: var(--success); }
+        .step-label { font-size: 12px; text-align: center; color: var(--gray); font-weight: 500; }
+        .step.active .step-label { color: var(--primary); font-weight: 600; }
+        .step-connector { flex: 1; height: 2px; background: var(--gray); max-width: 100px; }
+        .step.completed + .step-connector { background: var(--success); }
+
+        .form-container { background: var(--white); padding: 40px; border-radius: 20px; box-shadow: var(--shadow); max-width: 900px; margin: 0 auto; }
+        .form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-bottom: 25px; }
+        .form-group { display: flex; flex-direction: column; gap: 8px; }
+        .form-group label { font-weight: 600; font-size: 14px; color: var(--dark); }
+        .form-group label .required { color: var(--danger); }
+        .form-group input, .form-group select { padding: 12px 15px; border: 2px solid #ddd; border-radius: 8px; font-family: 'Poppins', sans-serif; font-size: 14px; transition: var(--transition); }
+        .form-group input:focus, .form-group select:focus { outline: none; border-color: var(--primary); }
+        .form-group input::placeholder { color: var(--gray); }
+        .form-section-title { font-size: 14px; color: var(--gray); text-align: center; margin: 20px 0; font-weight: 500; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+        .btn-submit { width: 100%; padding: 15px; background: var(--accent); color: var(--dark); border: none; border-radius: 8px; font-weight: 700; font-size: 16px; cursor: pointer; transition: var(--transition); text-transform: uppercase; letter-spacing: 1px; }
+        .btn-submit:hover { background: #ffb300; transform: translateY(-2px); box-shadow: var(--shadow); }
+
+        .custom-trip-banner { background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%); color: var(--white); padding: 30px 0; text-align: center; }
+        .custom-trip-banner h3 { font-size: 20px; margin-bottom: 15px; }
+        .btn-custom { display: inline-block; padding: 12px 30px; background: var(--accent); color: var(--dark); border-radius: 50px; font-weight: 700; transition: var(--transition); }
+        .btn-custom:hover { background: #ffb300; transform: translateY(-3px); box-shadow: var(--shadow); }
+
+        footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 0 0; }
+        .footer-content { display: grid; grid-template-columns: 2fr 1fr 1.5fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h4 { color: var(--white); font-size: 18px; margin-bottom: 20px; position: relative; padding-bottom: 10px; }
+        .footer-col h4::after { content: ''; position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background: var(--secondary); }
+        .footer-about p { margin-bottom: 20px; font-size: 14px; line-height: 1.8; }
+        .social-links { display: flex; gap: 10px; flex-wrap: wrap; }
+        .social-links a { width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); transition: var(--transition); }
+        .social-links a:hover { transform: translateY(-3px); background: var(--secondary); }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 10px; }
+        .footer-col ul a { color: rgba(255,255,255,0.7); font-size: 14px; transition: var(--transition); display: flex; align-items: center; gap: 8px; }
+        .footer-col ul a:hover { color: var(--secondary); padding-left: 5px; }
+        .footer-contact p { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 15px; font-size: 14px; }
+        .footer-contact i { color: var(--secondary); margin-top: 4px; }
+        .newsletter-form { display: flex; margin-top: 15px; }
+        .newsletter-form input { flex: 1; padding: 10px; border: none; border-radius: 5px 0 0 5px; outline: none; }
+        .newsletter-form button { padding: 10px 15px; background: var(--secondary); color: var(--white); border: none; border-radius: 0 5px 5px 0; cursor: pointer; transition: var(--transition); }
+        .newsletter-form button:hover { background: var(--secondary-dark); }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding: 20px 0; text-align: center; font-size: 14px; }
+        .footer-bottom span { color: var(--secondary); font-weight: 600; }
+
+        .floating-wa-container { position: fixed; bottom: 30px; right: 30px; z-index: 999; display: flex; flex-direction: column; gap: 12px; align-items: flex-end; }
+        .floating-wa { width: 60px; height: 60px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 28px; box-shadow: 0 5px 20px rgba(37,211,102,0.4); transition: var(--transition); animation: pulse 2s infinite; position: relative; text-decoration: none; }
+        .floating-wa:hover { transform: scale(1.1); }
+        .floating-wa .wa-tooltip { position: absolute; right: 70px; background: var(--white); color: var(--dark); padding: 8px 15px; border-radius: 8px; font-size: 13px; font-weight: 500; white-space: nowrap; box-shadow: var(--shadow); opacity: 0; pointer-events: none; transition: var(--transition); }
+        .floating-wa:hover .wa-tooltip { opacity: 1; }
+        .floating-wa .wa-tooltip::after { content: ''; position: absolute; right: -6px; top: 50%; transform: translateY(-50%); border: 6px solid transparent; border-left-color: var(--white); }
+        .floating-wa.secondary { background: var(--primary); animation: pulseBlue 2s infinite; animation-delay: 0.5s; }
+        @keyframes pulse { 0%, 100% { box-shadow: 0 5px 20px rgba(37,211,102,0.4); } 50% { box-shadow: 0 5px 30px rgba(37,211,102,0.8); } }
+        @keyframes pulseBlue { 0%, 100% { box-shadow: 0 5px 20px rgba(0,102,204,0.4); } 50% { box-shadow: 0 5px 30px rgba(0,102,204,0.8); } }
+
+        @media (max-width: 992px) { .footer-content { grid-template-columns: 1fr 1fr; } }
+        @media (max-width: 768px) {
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); flex-direction: column; padding: 20px; box-shadow: var(--shadow); gap: 15px; }
+            .nav-links.active { display: flex; }
+            .mobile-menu-btn { display: block; }
+            .page-hero h1 { font-size: 28px; }
+            .footer-content { grid-template-columns: 1fr; }
+            .floating-wa-container { bottom: 20px; right: 20px; }
+            .floating-wa { width: 55px; height: 55px; font-size: 24px; }
+            .logo-text .happy { font-size: 18px; }
+            .logo-text .trans { font-size: 16px; }
+            .logo-img { width: 45px; height: 45px; }
+            .form-container { padding: 25px; }
+            .form-row { grid-template-columns: 1fr; }
+            .progress-steps { gap: 5px; }
+            .step { min-width: 100px; }
+            .step-icon { width: 40px; height: 40px; font-size: 16px; }
+            .step-label { font-size: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="./" class="logo">
+                    <img src="https://i.ibb.co.com/G32957D0/Chat-GPT-Image-Jul-8-2026-04-33-03-PM.png" alt="Logo Happy Trans Malang" class="logo-img">
+                    <div class="logo-text">
+                        <span class="happy">HAPPY</span>
+                        <span class="trans">TRANS</span>
+                        <span class="malang">Malang</span>
+                    </div>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="./">Beranda</a></li>
+                    <li><a href="armada.html">Armada</a></li>
+                    <li><a href="paket-wisata.html">Paket Wisata</a></li>
+                    <li><a href="custom-trip.html" style="color: var(--secondary);">Custom Trip</a></li>
+                    <li><a href="sewa-bus.html">Sewa Bus</a></li>
+                    <li><a href="#location">Lokasi</a></li>
+                    <li><button class="nav-cta" onclick="scrollToForm()">Booking</button></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation"><i class="fas fa-bars"></i></button>
+            </nav>
+        </div>
+    </header>
     
-        .ab-empty-item #wp-admin-bar-vtrts_pro_top_button-default .ab-empty-item{
-    height:0px !important;
-    padding :0px !important;
-     }
-            #wpadminbar .quicklinks .ab-empty-item{
-        padding:0px !important;
-    }
-    .vtrts-pro-adminbar-dropdown {
-    min-width: 340px;
-    padding: 18px 18px 12px 18px;
-    background: #23282d;
-    color: #fff;
-    border-radius: 12px; /* more rounded */
-    box-shadow: 0 8px 32px rgba(0,0,0,0.25); /* deeper shadow */
-    margin-top: 10px;
-}
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Custom Trip</h1>
+                <p class="subtitle">Rencanakan perjalanan impian Anda bersama kami. Isi formulir di bawah untuk konsultasi dengan tour planner kami.</p>
+            </div>
+        </section>
 
-.vtrts-pro-adminbar-btn-wrap {
-    text-align: center;
-    margin-top: 18px; /* more space above */
-}
+        <section class="form-section" id="consultationForm">
+            <div class="container">
+                <p class="form-intro">Untuk berkonsultasi dengan tim tour planner kami, silahkan isi formulir dibawah ini.</p>
+                
+                <div class="progress-steps">
+                    <div class="step active">
+                        <div class="step-icon"><i class="fas fa-clock"></i></div>
+                        <div class="step-label">Info Destinasi & Waktu</div>
+                    </div>
+                    <div class="step-connector"></div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fas fa-clipboard-list"></i></div>
+                        <div class="step-label">Info Kebutuhan</div>
+                    </div>
+                    <div class="step-connector"></div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fas fa-calendar-check"></i></div>
+                        <div class="step-label">Info Kedatangan</div>
+                    </div>
+                    <div class="step-connector"></div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fas fa-user"></i></div>
+                        <div class="step-label">Info Identitas</div>
+                    </div>
+                </div>
 
-.vtrts-pro-adminbar-btn {
-    display: inline-block;
-    background: #1DAE22;
-    color: #fff !important;
-    font-weight: bold;
-    padding: 5px 22px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 17px;
-    transition: background 0.2s, box-shadow 0.2s;
-    margin-top: 8px;
-    box-shadow: 0 2px 8px rgba(29,174,34,0.15);
-    text-align: center;
-    line-height: 1.6;
-    
-}
-.vtrts-pro-adminbar-btn:hover {
-    background: #15991b;
-    color: #fff !important;
-    box-shadow: 0 4px 16px rgba(29,174,34,0.25);
-}
-    
+                <div class="form-container">
+                    <form id="customTripForm" onsubmit="handleSubmit(event)">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Kemana anda ingin berlibur? <span class="required">*</span></label>
+                                <select required id="destination">
+                                    <option value="">- PILIH DESTINASI -</option>
+                                    <option value="bromo">Gunung Bromo</option>
+                                    <option value="batu">Kota Batu</option>
+                                    <option value="malang">Kota Malang</option>
+                                    <option value="pantai">Pantai Selatan</option>
+                                    <option value="custom">Custom Destination</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Berapa lama ingin berlibur? <span class="required">*</span></label>
+                                <select required id="duration">
+                                    <option value="">- PILIH DURASI -</option>
+                                    <option value="1">1 Hari</option>
+                                    <option value="2">2 Hari 1 Malam</option>
+                                    <option value="3">3 Hari 2 Malam</option>
+                                    <option value="4">4 Hari 3 Malam</option>
+                                    <option value="more">Lebih dari 4 hari</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Kapan anda ingin berlibur? <span class="required">*</span></label>
+                                <input type="date" required id="travelDate">
+                            </div>
+                        </div>
 
+                        <p class="form-section-title">Berapa Peserta yang ingin ikut berlibur?</p>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Peserta Dewasa <span class="required">*</span></label>
+                                <input type="number" min="0" value="0" required id="adults">
+                            </div>
+                            <div class="form-group">
+                                <label>Peserta Anak</label>
+                                <input type="number" min="0" value="0" id="children">
+                            </div>
+                        </div>
 
-/*# sourceURL=admin-bar-inline-css */
-</style>
-<link data-minify="1" rel="stylesheet" id="hello-elementor-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/css/reset.css?ver=1783888438" media="all">
-<link data-minify="1" rel="stylesheet" id="hello-elementor-theme-style-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/css/theme.css?ver=1783888438" media="all">
-<link data-minify="1" rel="stylesheet" id="hello-elementor-header-footer-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=1783888438" media="all">
-<link rel="stylesheet" id="elementor-frontend-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.1.4" media="all">
-<style id="elementor-frontend-inline-css">
-.elementor-3045 .elementor-element.elementor-element-3117a60a:not(.elementor-motion-effects-element-type-background), .elementor-3045 .elementor-element.elementor-element-3117a60a > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/custom-trip-kayana-prima-wisata.jpg");}
-/*# sourceURL=elementor-frontend-inline-css */
-</style>
-<link rel="stylesheet" id="elementor-post-8-css" href="https://www.kayanaprimawisata.co.id/wp-content/uploads/elementor/css/post-8.css?ver=1783887550" media="all">
-<link rel="stylesheet" id="widget-icon-list-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=4.1.4" media="all">
-<link rel="stylesheet" id="widget-nav-menu-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=4.0.4" media="all">
-<link rel="stylesheet" id="widget-image-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.1.4" media="all">
-<link rel="stylesheet" id="e-sticky-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor-pro/assets/css/modules/sticky.min.css?ver=4.0.4" media="all">
-<link rel="stylesheet" id="widget-heading-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=4.1.4" media="all">
-<link rel="stylesheet" id="widget-social-icons-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=4.1.4" media="all">
-<link rel="stylesheet" id="e-apple-webkit-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=4.1.4" media="all">
-<link rel="stylesheet" id="widget-share-buttons-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor-pro/assets/css/widget-share-buttons.min.css?ver=4.0.4" media="all">
-<link rel="stylesheet" id="elementor-icons-shared-0-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3" media="all">
-<link data-minify="1" rel="stylesheet" id="elementor-icons-fa-solid-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=1783888438" media="all">
-<link data-minify="1" rel="stylesheet" id="elementor-icons-fa-brands-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=1783888438" media="all">
-<link rel="stylesheet" id="e-animation-shrink-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-shrink.min.css?ver=4.1.4" media="all">
-<link rel="stylesheet" id="widget-social-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor-pro/assets/css/widget-social.min.css?ver=4.0.4" media="all">
-<link data-minify="1" rel="stylesheet" id="bdt-uikit-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/plugins/bdthemes-element-pack/assets/css/bdt-uikit.css?ver=1783888438" media="all">
-<link data-minify="1" rel="stylesheet" id="ep-helper-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/plugins/bdthemes-element-pack/assets/css/ep-helper.css?ver=1783888438" media="all">
-<link data-minify="1" rel="stylesheet" id="ep-post-list-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/plugins/bdthemes-element-pack/assets/css/ep-post-list.css?ver=1783888438" media="all">
-<link rel="stylesheet" id="widget-search-form-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor-pro/assets/css/widget-search-form.min.css?ver=4.0.4" media="all">
-<link rel="stylesheet" id="widget-text-editor-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor/assets/css/widget-text-editor.min.css?ver=4.1.4" media="all">
-<link rel="stylesheet" id="widget-posts-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor-pro/assets/css/widget-posts.min.css?ver=4.0.4" media="all">
-<link data-minify="1" rel="stylesheet" id="elementor-icons-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=1783888438" media="all">
-<link data-minify="1" rel="stylesheet" id="font-awesome-5-all-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=1783888438" media="all">
-<link rel="stylesheet" id="font-awesome-4-shim-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=4.1.4" media="all">
-<link data-minify="1" rel="stylesheet" id="swiper-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=1783888438" media="all">
-<link rel="stylesheet" id="e-swiper-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=4.1.4" media="all">
-<link rel="stylesheet" id="widget-image-carousel-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor/assets/css/widget-image-carousel.min.css?ver=4.1.4" media="all">
-<link rel="stylesheet" id="widget-form-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor-pro/assets/css/widget-form.min.css?ver=4.0.4" media="all">
-<link rel="stylesheet" id="elementor-post-92-css" href="https://www.kayanaprimawisata.co.id/wp-content/uploads/elementor/css/post-92.css?ver=1783904107" media="all">
-<link rel="stylesheet" id="elementor-post-103-css" href="https://www.kayanaprimawisata.co.id/wp-content/uploads/elementor/css/post-103.css?ver=1783887551" media="all">
-<link rel="stylesheet" id="elementor-post-43-css" href="https://www.kayanaprimawisata.co.id/wp-content/uploads/elementor/css/post-43.css?ver=1783887552" media="all">
-<link rel="stylesheet" id="elementor-post-3045-css" href="https://www.kayanaprimawisata.co.id/wp-content/uploads/elementor/css/post-3045.css?ver=1783887552" media="all">
-<link rel="stylesheet" id="a3pvc-css" href="//www.kayanaprimawisata.co.id/wp-content/uploads/sass/pvc.min.css?ver=1702371376" media="all">
-<link rel="stylesheet" id="eael-general-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=6.6.11" media="all">
-<link data-minify="1" rel="stylesheet" id="elementor-gf-local-poppins-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/poppins.css?ver=1783888438" media="all">
-<link data-minify="1" rel="stylesheet" id="elementor-gf-local-robotoslab-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1783888438" media="all">
-<link data-minify="1" rel="stylesheet" id="elementor-gf-local-montserrat-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/montserrat.css?ver=1783888438" media="all">
-<link data-minify="1" rel="stylesheet" id="elementor-gf-local-roboto-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1783888438" media="all">
-<link data-minify="1" rel="stylesheet" id="elementor-gf-local-merriweather-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/merriweather.css?ver=1783888438" media="all">
-<link data-minify="1" rel="stylesheet" id="elementor-gf-local-ooohbaby-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/ooohbaby.css?ver=1783888438" media="all">
-<link data-minify="1" rel="stylesheet" id="elementor-icons-fa-regular-css" href="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=1783888438" media="all">
-<script id="jquery-core-js" src="https://www.kayanaprimawisata.co.id/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
-<script id="jquery-migrate-js" src="https://www.kayanaprimawisata.co.id/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
-<script id="underscore-js" src="https://www.kayanaprimawisata.co.id/wp-includes/js/underscore.min.js?ver=1.13.8"></script>
-<script id="backbone-js" src="https://www.kayanaprimawisata.co.id/wp-includes/js/backbone.min.js?ver=1.6.1"></script>
-<script id="a3-pvc-backbone-js-extra">
-var pvc_vars = {"rest_api_url":"https://www.kayanaprimawisata.co.id/wp-json/pvc/v1","ajax_url":"https://www.kayanaprimawisata.co.id/wp-admin/admin-ajax.php","security":"a27c79c66c","ajax_load_type":"rest_api"};
-//# sourceURL=a3-pvc-backbone-js-extra
-</script>
-<script id="a3-pvc-backbone-js" src="https://www.kayanaprimawisata.co.id/wp-content/plugins/page-views-count/assets/js/pvc.backbone.min.js?ver=2.9.2"></script>
-<script id="font-awesome-4-shim-js" src="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=4.1.4"></script>
-<link rel="https://api.w.org/" href="https://www.kayanaprimawisata.co.id/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://www.kayanaprimawisata.co.id/wp-json/wp/v2/pages/92"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.kayanaprimawisata.co.id/xmlrpc.php?rsd">
-<meta name="generator" content="WordPress 7.0.1">
-<link rel="shortlink" href="https://www.kayanaprimawisata.co.id/?p=92">
-<!-- Google Tag Manager by Slacker -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K3CS3L92');</script>
-<!-- End Google Tag Manager -->
+                        <button type="submit" class="btn-submit">Selanjutnya</button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
+        <section class="custom-trip-banner">
+            <div class="container">
+                <h3>Perlu KONSULTASI atau ingin PAKET CUSTOM TRIP? Klik disini!</h3>
+                <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20konsultasi%20paket%20custom%20trip" class="btn-custom" target="_blank">
+                    <i class="fas fa-route"></i> CUSTOM TRIP
+                </a>
+            </div>
+        </section>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3CS3L92"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager&nbsp;(noscript)&nbsp;--><meta name="generator" content="Elementor 4.1.4; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
-			<style>
-				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
-				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
-					background-image: none !important;
-				}
-				@media screen and (max-height: 1024px) {
-					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
-					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
-						background-image: none !important;
-					}
-				}
-				@media screen and (max-height: 640px) {
-					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
-					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
-						background-image: none !important;
-					}
-				}
-			</style>
-			<link rel="icon" href="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-32x32.png" sizes="32x32">
-<link rel="icon" href="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-192x192.png" sizes="192x192">
-<link rel="apple-touch-icon" href="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-180x180.png">
-<meta name="msapplication-TileImage" content="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-270x270.png">
-<style id="wp-custom-css">
-#bne-navbar .bne-navbar-title {
-    display: block;
-    font-size: 9px;
-}
-</style>
-<meta name="generator" content="WP Rocket 3.17.3.1" data-wpr-features="wpr_minify_js wpr_oci wpr_minify_css wpr_desktop"><script src="https://www.kayanaprimawisata.co.id/wp-includes/js/wp-emoji-release.min.js?ver=7.0.1" defer=""></script><script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10958889749/?random=1783962939510&amp;cv=11&amp;fst=1783962939510&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be6790v9173351811z89173264966za20gzb9173264966zd9173264966xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=115938465~115938468~118826210~118897920~118897930~119027224&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.kayanaprimawisata.co.id%2Fcustom-trip-wisata-malang%2F&amp;ref=https%3A%2F%2Fwww.kayanaprimawisata.co.id%2Fpaket-wisata-malang-batu-bromo%2F&amp;rcb=10&amp;frm=0&amp;tiba=Custom%20Trip%20Wisata%20Malang%20Harga%20Termurah%202026%20-%20Kayana%20Prima%20Wisata&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=1239645007.1783319772&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B149.0.7827.201%7CChromium%3B149.0.7827.201%7CNot)A%253BBrand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;data=event%3Dgtag.config&amp;ept=9&amp;rfmt=3&amp;fmt=4"></script></head>
-<body class="wp-singular page-template-default page page-id-92 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-92 elementor-page-3045 e--ua-blink e--ua-chrome e--ua-webkit" data-elementor-device-mode="desktop">
+        <div class="floating-wa-container">
+            <a href="https://wa.me/6288235416304?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20konsultasi%20custom%20trip" class="floating-wa" target="_blank">
+                <i class="fab fa-whatsapp"></i><span class="wa-tooltip">WA: 0882-3541-6304</span>
+            </a>
+            <a href="https://wa.me/6281284876147?text=Halo%20Happy%20Trans%20Malang,%20saya%20ingin%20konsultasi%20custom%20trip" class="floating-wa secondary" target="_blank">
+                <i class="fab fa-whatsapp"></i><span class="wa-tooltip">WA: 0812-8487-6147</span>
+            </a>
+        </div>
+    </main>
 
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col footer-about">
+                    <h4>Tentang Kami</h4>
+                    <p>Happy Trans Malang adalah penyedia layanan transportasi pariwisata terpercaya di Malang dan Batu. Kami menyediakan sewa Hiace, Medium Bus, dan Big Bus dengan armada terawat dan driver profesional.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/6288235416304"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col footer-links">
+                    <h4>Link Cepat</h4>
+                    <ul>
+                        <li><a href="./">Beranda</a></li>
+                        <li><a href="armada.html">Armada</a></li>
+                        <li><a href="paket-wisata.html">Paket Wisata</a></li>
+                        <li><a href="custom-trip.html">Custom Trip</a></li>
+                        <li><a href="sewa-bus.html">Sewa Bus</a></li>
+                        <li><a href="location.html">Lokasi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4>Hubungi Kami</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Kajoetangan Heritage, Jl. Arif Rahman Hakim, Malang</p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6288235416304">0882-3541-6304</a></p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6281284876147">0812-8487-6147</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:happytransmalang@gmail.com">happytransmalang@gmail.com</a></p>
+                    <p><i class="fas fa-clock"></i> 24/7 Online Support</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Terima kasih telah berlangganan!'); this.reset();">
+                        <input type="email" placeholder="Email Anda" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span>Happy Trans Malang</span>. All rights reserved. | Kajoetangan Heritage, Malang</p>
+            </div>
+        </div>
+    </footer>
 
-<a class="skip-link screen-reader-text" href="#content">Lewati ke konten</a>
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        if (mobileMenuBtn && navLinks) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                if (icon) { icon.classList.toggle('fa-bars'); icon.classList.toggle('fa-times'); }
+            });
+        }
 
-		<header data-elementor-type="header" data-elementor-id="103" class="elementor elementor-103 elementor-location-header" data-elementor-settings="{&quot;element_pack_global_tooltip_width&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;element_pack_global_tooltip_width_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;element_pack_global_tooltip_width_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;element_pack_global_tooltip_padding&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_padding_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_padding_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true}}" data-elementor-post-type="elementor_library">
-			<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-70aedf84 e-con-full e-flex e-con e-parent e-lazyloaded" data-id="70aedf84" data-element_type="container" data-e-type="container" id="header_pop">
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" data-dce-background-color="#1BA0E1" class="elementor-element elementor-element-355df586 elementor-hidden-tablet elementor-hidden-mobile e-flex e-con-boxed e-con e-child" data-id="355df586" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-743eab6f elementor-hidden-mobile e-con-full e-flex e-con e-child" data-id="743eab6f" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-3ed8bfd7 elementor-icon-list--layout-inline elementor-align-start elementor-mobile-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="3ed8bfd7" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
-				<div class="elementor-widget-container">
-							<ul class="elementor-icon-list-items elementor-inline-items">
-							<li class="elementor-icon-list-item elementor-inline-item">
-											<a href="https://kirimpesanwa.my.id/kayana">
+        function scrollToForm() {
+            document.getElementById('consultationForm').scrollIntoView({ behavior: 'smooth' });
+        }
 
-												<span class="elementor-icon-list-icon">
-							<i aria-hidden="true" class="fas fa-phone"></i>						</span>
-										<span class="elementor-icon-list-text">+62 822-3404-4410</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item elementor-inline-item">
-											<a href="mailto:halo@kayanaprimawisata.co.id">
-
-												<span class="elementor-icon-list-icon">
-							<i aria-hidden="true" class="fas fa-envelope"></i>						</span>
-										<span class="elementor-icon-list-text">halo@kayanaprimawisata.co.id</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item elementor-inline-item">
-											<a href="https://maps.app.goo.gl/ogbjRzJtYXS5nhQB6">
-
-												<span class="elementor-icon-list-icon">
-							<i aria-hidden="true" class="fas fa-map-marker-alt"></i>						</span>
-										<span class="elementor-icon-list-text">Malang, Jawa Timur, Indonesia</span>
-											</a>
-									</li>
-						</ul>
-						</div>
-				</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-457b78a8 e-con-full e-flex e-con e-child" data-id="457b78a8" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-08146ee elementor-nav-menu__align-center elementor-nav-menu--stretch elementor-nav-menu__text-align-center elementor-nav-menu--dropdown-tablet elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="08146ee" data-element_type="widget" data-e-type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
-				<div class="elementor-widget-container">
-								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
-				<ul id="menu-1-08146ee" class="elementor-nav-menu" data-smartmenus-id="17839629394496882"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124"><a href="https://www.kayanaprimawisata.co.id/tentang-kami/" class="elementor-item">Tentang Kami</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122"><a href="https://www.kayanaprimawisata.co.id/syarat-dan-ketentuan/" class="elementor-item">Syarat dan Ketentuan</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-120"><a rel="privacy-policy" href="https://www.kayanaprimawisata.co.id/kebijakan-privasi/" class="elementor-item">Kebijakan Privasi</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-123"><a href="https://www.kayanaprimawisata.co.id/testimoni/" class="elementor-item">Testimoni</a></li>
-</ul>			</nav>
-					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false" style="">
-			<i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close eicon-close"></i>		</div>
-					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true" style="top: 44px; width: 1350px; left: 0px; --menu-height: 0;">
-				<ul id="menu-2-08146ee" class="elementor-nav-menu" data-smartmenus-id="17839629394490476"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124"><a href="https://www.kayanaprimawisata.co.id/tentang-kami/" class="elementor-item" tabindex="-1">Tentang Kami</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122"><a href="https://www.kayanaprimawisata.co.id/syarat-dan-ketentuan/" class="elementor-item" tabindex="-1">Syarat dan Ketentuan</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-120"><a rel="privacy-policy" href="https://www.kayanaprimawisata.co.id/kebijakan-privasi/" class="elementor-item" tabindex="-1">Kebijakan Privasi</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-123"><a href="https://www.kayanaprimawisata.co.id/testimoni/" class="elementor-item" tabindex="-1">Testimoni</a></li>
-</ul>			</nav>
-						</div>
-				</div>
-				</div>
-					</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" data-dce-background-color="#ffffff" class="elementor-element elementor-element-37707dcf e-flex e-con-boxed e-con e-child elementor-sticky elementor-sticky--active elementor-section--handles-inside elementor-sticky--effects" data-id="37707dcf" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}" style="position: fixed; width: 1350px; margin-top: 0px; margin-bottom: 0px; top: 0px;">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-695d1a69 dce_masking-none elementor-widget elementor-widget-image" data-id="695d1a69" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-																<a href="https://www.kayanaprimawisata.co.id">
-							<img fetchpriority="high" width="768" height="242" src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-768x242.png.webp" class="attachment-medium_large size-medium_large wp-image-11 ewww_webp_loaded" alt="" srcset="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-768x242.png.webp 768w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-600x189.png.webp 600w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark.png.webp 1293w" sizes="(max-width: 768px) 100vw, 768px" data-src-img="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-768x242.png" data-src-webp="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-768x242.png.webp" data-srcset-webp="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-768x242.png.webp 768w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-600x189.png.webp 600w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark.png.webp 1293w" data-srcset-img="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-768x242.png 768w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-600x189.png 600w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark.png 1293w" data-eio="j"><noscript><img fetchpriority="high" width="768" height="242" src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-768x242.png" class="attachment-medium_large size-medium_large wp-image-11" alt="" srcset="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-768x242.png 768w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-600x189.png 600w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark.png 1293w" sizes="(max-width: 768px) 100vw, 768px" /></noscript>								</a>
-															</div>
-				</div>
-				<div class="elementor-element elementor-element-6fc2e3c3 elementor-nav-menu__align-end elementor-nav-menu--stretch elementor-nav-menu__text-align-center elementor-nav-menu--dropdown-tablet elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="6fc2e3c3" data-element_type="widget" data-e-type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
-				<div class="elementor-widget-container">
-								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
-				<ul id="menu-1-6fc2e3c3" class="elementor-nav-menu" data-smartmenus-id="17839629394508347"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-110"><a href="https://www.kayanaprimawisata.co.id/" class="elementor-item">Beranda</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111"><a href="https://www.kayanaprimawisata.co.id/paket-wisata-malang-batu-bromo/" class="elementor-item">Paket Wisata</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2150"><a href="https://www.kayanaprimawisata.co.id/paket-wisata-outbound-malang/" class="elementor-item">Paket Outbound</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-92 current_page_item menu-item-114"><a href="https://www.kayanaprimawisata.co.id/custom-trip-wisata-malang/" aria-current="page" class="elementor-item elementor-item-active">Custom Trip</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-112"><a href="https://www.kayanaprimawisata.co.id/rental-mobil-malang/" class="elementor-item">Rental Mobil</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"><a href="https://www.kayanaprimawisata.co.id/sewa-bus-malang/" class="elementor-item">Sewa Bus</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-115"><a href="https://www.kayanaprimawisata.co.id/kontak-kami/" class="elementor-item">Kontak Kami</a></li>
-</ul>			</nav>
-					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false" style="">
-			<i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close eicon-close"></i>		</div>
-					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true" style="top: 44px; width: 1350px; left: 0px; --menu-height: 0;">
-				<ul id="menu-2-6fc2e3c3" class="elementor-nav-menu" data-smartmenus-id="17839629394503057"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-110"><a href="https://www.kayanaprimawisata.co.id/" class="elementor-item" tabindex="-1">Beranda</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111"><a href="https://www.kayanaprimawisata.co.id/paket-wisata-malang-batu-bromo/" class="elementor-item" tabindex="-1">Paket Wisata</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2150"><a href="https://www.kayanaprimawisata.co.id/paket-wisata-outbound-malang/" class="elementor-item" tabindex="-1">Paket Outbound</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-92 current_page_item menu-item-114"><a href="https://www.kayanaprimawisata.co.id/custom-trip-wisata-malang/" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Custom Trip</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-112"><a href="https://www.kayanaprimawisata.co.id/rental-mobil-malang/" class="elementor-item" tabindex="-1">Rental Mobil</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"><a href="https://www.kayanaprimawisata.co.id/sewa-bus-malang/" class="elementor-item" tabindex="-1">Sewa Bus</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-115"><a href="https://www.kayanaprimawisata.co.id/kontak-kami/" class="elementor-item" tabindex="-1">Kontak Kami</a></li>
-</ul>			</nav>
-						</div>
-				</div>
-					</div>
-				</div><div data-particle_enable="false" data-particle-mobile-disabled="false" data-dce-background-color="#ffffff" class="elementor-element elementor-element-37707dcf e-flex e-con-boxed e-con e-child elementor-sticky elementor-sticky__spacer" data-id="37707dcf" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}" style="visibility: hidden; transition: none; animation: auto ease 0s 1 normal none running none;">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-695d1a69 dce_masking-none elementor-widget elementor-widget-image" data-id="695d1a69" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-																<a href="https://www.kayanaprimawisata.co.id">
-							<img fetchpriority="high" width="768" height="242" src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-768x242.png.webp" class="attachment-medium_large size-medium_large wp-image-11 ewww_webp_loaded" alt="" srcset="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-768x242.png.webp 768w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-600x189.png.webp 600w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark.png.webp 1293w" sizes="(max-width: 768px) 100vw, 768px" data-src-img="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-768x242.png" data-src-webp="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-768x242.png.webp" data-srcset-webp="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-768x242.png.webp 768w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-600x189.png.webp 600w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark.png.webp 1293w" data-srcset-img="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-768x242.png 768w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-600x189.png 600w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark.png 1293w" data-eio="j"><noscript><img fetchpriority="high" width="768" height="242" src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-768x242.png" class="attachment-medium_large size-medium_large wp-image-11" alt="" srcset="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-768x242.png 768w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark-600x189.png 600w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-dark.png 1293w" sizes="(max-width: 768px) 100vw, 768px" /></noscript>								</a>
-															</div>
-				</div>
-				<div class="elementor-element elementor-element-6fc2e3c3 elementor-nav-menu__align-end elementor-nav-menu--stretch elementor-nav-menu__text-align-center elementor-nav-menu--dropdown-tablet elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="6fc2e3c3" data-element_type="widget" data-e-type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
-				<div class="elementor-widget-container">
-								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
-				<ul id="menu-1-6fc2e3c3" class="elementor-nav-menu" data-smartmenus-id="17839629394508347"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-110"><a href="https://www.kayanaprimawisata.co.id/" class="elementor-item">Beranda</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111"><a href="https://www.kayanaprimawisata.co.id/paket-wisata-malang-batu-bromo/" class="elementor-item">Paket Wisata</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2150"><a href="https://www.kayanaprimawisata.co.id/paket-wisata-outbound-malang/" class="elementor-item">Paket Outbound</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-92 current_page_item menu-item-114"><a href="https://www.kayanaprimawisata.co.id/custom-trip-wisata-malang/" aria-current="page" class="elementor-item elementor-item-active">Custom Trip</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-112"><a href="https://www.kayanaprimawisata.co.id/rental-mobil-malang/" class="elementor-item">Rental Mobil</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"><a href="https://www.kayanaprimawisata.co.id/sewa-bus-malang/" class="elementor-item">Sewa Bus</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-115"><a href="https://www.kayanaprimawisata.co.id/kontak-kami/" class="elementor-item">Kontak Kami</a></li>
-</ul>			</nav>
-					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false" style="">
-			<i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close eicon-close"></i>		</div>
-					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true" style="top: 44px; width: 1350px; left: 0px; --menu-height: 0;">
-				<ul id="menu-2-6fc2e3c3" class="elementor-nav-menu" data-smartmenus-id="17839629394503057"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-110"><a href="https://www.kayanaprimawisata.co.id/" class="elementor-item" tabindex="-1">Beranda</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111"><a href="https://www.kayanaprimawisata.co.id/paket-wisata-malang-batu-bromo/" class="elementor-item" tabindex="-1">Paket Wisata</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2150"><a href="https://www.kayanaprimawisata.co.id/paket-wisata-outbound-malang/" class="elementor-item" tabindex="-1">Paket Outbound</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-92 current_page_item menu-item-114"><a href="https://www.kayanaprimawisata.co.id/custom-trip-wisata-malang/" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Custom Trip</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-112"><a href="https://www.kayanaprimawisata.co.id/rental-mobil-malang/" class="elementor-item" tabindex="-1">Rental Mobil</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"><a href="https://www.kayanaprimawisata.co.id/sewa-bus-malang/" class="elementor-item" tabindex="-1">Sewa Bus</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-115"><a href="https://www.kayanaprimawisata.co.id/kontak-kami/" class="elementor-item" tabindex="-1">Kontak Kami</a></li>
-</ul>			</nav>
-						</div>
-				</div>
-					</div>
-				</div>
-				</div>
-				</header>
-				<div data-elementor-type="wp-page" data-elementor-id="92" class="elementor elementor-92" data-elementor-settings="{&quot;element_pack_global_tooltip_width&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;element_pack_global_tooltip_width_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;element_pack_global_tooltip_width_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;element_pack_global_tooltip_padding&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_padding_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_padding_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true}}" data-elementor-post-type="page">
-				<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-3ac4dc53 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="3ac4dc53" data-element_type="container" data-e-type="container">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-f00c737 elementor-widget elementor-widget-image-carousel e-widget-swiper" data-id="f00c737" data-element_type="widget" data-e-type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;1&quot;,&quot;slides_to_show_tablet&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500}" data-widget_type="image-carousel.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-image-carousel-wrapper swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden" role="region" aria-roledescription="carousel" aria-label="Karosel Gambar" dir="ltr">
-			<div class="elementor-image-carousel swiper-wrapper" aria-live="off" id="swiper-wrapper-08b4da4f21010c7018" style="transform: translate3d(-1800px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" role="group" aria-roledescription="slide" aria-label="3 / 3" data-swiper-slide-index="2" aria-hidden="true" inert="" style="width: 900px;"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image ewww_webp_loaded" src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/banner-custom-trip-kayana-prima-wisata-2-1024x536.jpg.webp" alt="banner custom trip kayana prima wisata 2" data-src-img="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/banner-custom-trip-kayana-prima-wisata-2-1024x536.jpg" data-src-webp="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/banner-custom-trip-kayana-prima-wisata-2-1024x536.jpg.webp" data-eio="j"><noscript><img decoding="async" class="swiper-slide-image" src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/banner-custom-trip-kayana-prima-wisata-2-1024x536.jpg" alt="banner custom trip kayana prima wisata 2" /></noscript></figure></div>
-								<div class="swiper-slide swiper-slide-prev" role="group" aria-roledescription="slide" aria-label="1 / 3" data-swiper-slide-index="0" style="width: 900px;" aria-hidden="true" inert=""><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image ewww_webp_loaded" src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/custom-trip-kayana-prima-wisata-1024x536.jpg.webp" alt="custom trip kayana prima wisata" data-src-img="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/custom-trip-kayana-prima-wisata-1024x536.jpg" data-src-webp="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/custom-trip-kayana-prima-wisata-1024x536.jpg.webp" data-eio="j"><noscript><img decoding="async" class="swiper-slide-image" src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/custom-trip-kayana-prima-wisata-1024x536.jpg" alt="custom trip kayana prima wisata" /></noscript></figure></div><div class="swiper-slide swiper-slide-active" role="group" aria-roledescription="slide" aria-label="2 / 3" data-swiper-slide-index="1" style="width: 900px;"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image ewww_webp_loaded" src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/banner-custom-trip-kayana-prima-wisata-1-1024x536.jpg.webp" alt="banner custom trip kayana prima wisata 1" data-src-img="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/banner-custom-trip-kayana-prima-wisata-1-1024x536.jpg" data-src-webp="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/banner-custom-trip-kayana-prima-wisata-1-1024x536.jpg.webp" data-eio="j"><noscript><img decoding="async" class="swiper-slide-image" src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/banner-custom-trip-kayana-prima-wisata-1-1024x536.jpg" alt="banner custom trip kayana prima wisata 1" /></noscript></figure></div><div class="swiper-slide swiper-slide-next" role="group" aria-roledescription="slide" aria-label="3 / 3" data-swiper-slide-index="2" aria-hidden="true" inert="" style="width: 900px;"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image ewww_webp_loaded" src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/banner-custom-trip-kayana-prima-wisata-2-1024x536.jpg.webp" alt="banner custom trip kayana prima wisata 2" data-src-img="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/banner-custom-trip-kayana-prima-wisata-2-1024x536.jpg" data-src-webp="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/banner-custom-trip-kayana-prima-wisata-2-1024x536.jpg.webp" data-eio="j"><noscript><img decoding="async" class="swiper-slide-image" src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/banner-custom-trip-kayana-prima-wisata-2-1024x536.jpg" alt="banner custom trip kayana prima wisata 2" /></noscript></figure></div>			<div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" role="group" aria-roledescription="slide" aria-label="1 / 3" data-swiper-slide-index="0" aria-hidden="true" inert="" style="width: 900px;"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image ewww_webp_loaded" src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/custom-trip-kayana-prima-wisata-1024x536.jpg.webp" alt="custom trip kayana prima wisata" data-src-img="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/custom-trip-kayana-prima-wisata-1024x536.jpg" data-src-webp="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/custom-trip-kayana-prima-wisata-1024x536.jpg.webp" data-eio="j"><noscript><img decoding="async" class="swiper-slide-image" src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/custom-trip-kayana-prima-wisata-1024x536.jpg" alt="custom trip kayana prima wisata" /></noscript></figure></div></div>
-							
-									<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-54a630fb elementor-widget elementor-widget-text-editor" data-id="54a630fb" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									<p>Untuk berkonsultasi dengan tim tour planner kami, silahkan isi formulir dibawah ini.</p>								</div>
-				</div>
-				<div class="elementor-element elementor-element-0764afd elementor-button-align-stretch elementor-widget elementor-widget-form dce-form-has-conditions" data-id="0764afd" data-element_type="widget" data-e-type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Selanjutnya&quot;,&quot;step_previous_label&quot;:&quot;Sebelumnya&quot;,&quot;step_type&quot;:&quot;icon_text&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;dce_confirm_dialog_enabled&quot;:&quot;no&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;,&quot;label_icon_size&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;field_icon_size&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="form.default">
-				<div class="elementor-widget-container">
-								<script>
-			setTimeout(function() {
-				let el = document.querySelector(".dce-conditions-js-error-notice");
-				if (el)
-					el.style.display = "block";
-			}, 6000);
-			</script>		<form class="elementor-form" method="post" name="Form Custom Trip" aria-label="Form Custom Trip">
-			<input type="hidden" name="post_id" value="92">
-			<input type="hidden" name="form_id" value="0764afd">
-			<input type="hidden" name="referer_title" value="Custom Trip Wisata Malang Harga Termurah 2026 - Kayana Prima Wisata">
-
-							<input type="hidden" name="queried_id" value="92">
-			
-			<div class="e-form__indicators e-form__indicators--type-icon_text"><div class="e-form__indicators__indicator e-form__indicators__indicator--state-active"><div class="e-form__indicators__indicator__icon e-form__indicators__indicator--shape-circle"><i class="far fa-clock"></i></div><label class="e-form__indicators__indicator__label">Info Destinasi &amp; Waktu</label></div><div class="e-form__indicators__indicator__separator"></div><div class="e-form__indicators__indicator e-form__indicators__indicator--state-inactive"><div class="e-form__indicators__indicator__icon e-form__indicators__indicator--shape-circle"><i class="fas fa-hotel"></i></div><label class="e-form__indicators__indicator__label">Info Kebutuhan</label></div><div class="e-form__indicators__indicator__separator"></div><div class="e-form__indicators__indicator e-form__indicators__indicator--state-inactive"><div class="e-form__indicators__indicator__icon e-form__indicators__indicator--shape-circle"><i class="fas fa-plane-arrival"></i></div><label class="e-form__indicators__indicator__label">Info Kedatangan</label></div><div class="e-form__indicators__indicator__separator"></div><div class="e-form__indicators__indicator e-form__indicators__indicator--state-inactive"><div class="e-form__indicators__indicator__icon e-form__indicators__indicator--shape-circle"><i class="fas fa-user-tie"></i></div><label class="e-form__indicators__indicator__label">Info Identitas</label></div></div><div data-field-conditions="[{&quot;id&quot;:&quot;jenis_hotel&quot;,&quot;condition&quot;:&quot;(hotel_include == 'Ya, tour dan hotel')&quot;,&quot;mode&quot;:&quot;show&quot;,&quot;disableOnly&quot;:false},{&quot;id&quot;:&quot;pilihan_wisata&quot;,&quot;condition&quot;:&quot;(obyek_wisata == 'Pilih Sendiri')&quot;,&quot;mode&quot;:&quot;show&quot;,&quot;disableOnly&quot;:false},{&quot;id&quot;:&quot;waktu_kedatangan&quot;,&quot;condition&quot;:&quot;(punya_tiket == 'Sudah Punya')&quot;,&quot;mode&quot;:&quot;show&quot;,&quot;disableOnly&quot;:false}]" data-field-ids="[&quot;info_waktu&quot;,&quot;lokasi&quot;,&quot;durasi&quot;,&quot;tanggal&quot;,&quot;field_dc40b7f&quot;,&quot;peserta_dewasa&quot;,&quot;peserta_anak&quot;,&quot;field_8a7e89f&quot;,&quot;hotel_include&quot;,&quot;jenis_hotel&quot;,&quot;tipe_wisata&quot;,&quot;obyek_wisata&quot;,&quot;pilihan_wisata&quot;,&quot;catatan&quot;,&quot;field_09e8b72&quot;,&quot;field_8935f12&quot;,&quot;punya_tiket&quot;,&quot;kedatangan&quot;,&quot;waktu_kedatangan&quot;,&quot;penjemputan&quot;,&quot;field_480b160&quot;,&quot;field_39e280e&quot;,&quot;nama&quot;,&quot;whatsapp&quot;,&quot;email&quot;,&quot;kota_asal&quot;]" class="elementor-form-fields-wrapper elementor-labels-above">
-								<div class="elementor-field-type-step elementor-column elementor-field-group-info_waktu elementor-col-100 e-form__step">
-							<div class="e-field-step elementor-hidden" data-label="Info Destinasi &amp; Waktu" data-previousbutton="" data-nextbutton="" data-iconurl="" data-iconlibrary="far fa-clock" data-icon=""></div>
-
-						<div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-lokasi elementor-col-40 elementor-field-required elementor-mark-required">
-												<label for="form-field-lokasi" class="elementor-field-label">
-								Kemana anda ingin berlibur?							</label>
-								<div class="elementor-field elementor-select-wrapper remove-before ">
-			<div class="select-caret-down-wrapper">
-				<i aria-hidden="true" class="eicon-caret-down"></i>			</div>
-			<select name="form_fields[lokasi]" id="form-field-lokasi" class="elementor-field-textual elementor-size-xs" required="required">
-									<option value="- Pilih Destinasi -">- Pilih Destinasi -</option>
-									<option value="Malang">Malang</option>
-									<option value="Batu">Batu</option>
-									<option value="Bromo">Bromo</option>
-									<option value="Malang &amp; Batu">Malang &amp; Batu</option>
-									<option value="Malang &amp; Bromo">Malang &amp; Bromo</option>
-									<option value="Malang, Batu, Bromo">Malang, Batu, Bromo</option>
-									<option value="Wisata Pantai Malang">Wisata Pantai Malang</option>
-							</select>
-		</div>
-						</div><div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-durasi elementor-col-30 elementor-field-required elementor-mark-required">
-												<label for="form-field-durasi" class="elementor-field-label">
-								Berapa lama ingin berlibur?							</label>
-								<div class="elementor-field elementor-select-wrapper remove-before ">
-			<div class="select-caret-down-wrapper">
-				<i aria-hidden="true" class="eicon-caret-down"></i>			</div>
-			<select name="form_fields[durasi]" id="form-field-durasi" class="elementor-field-textual elementor-size-xs" required="required">
-									<option value="- Pilih Durasi -">- Pilih Durasi -</option>
-									<option value="1 Hari">1 Hari</option>
-									<option value="2 Hari 1 Malam">2 Hari 1 Malam</option>
-									<option value="3 Hari 2 Malam">3 Hari 2 Malam</option>
-									<option value="4 Hari 3 Malam">4 Hari 3 Malam</option>
-									<option value="5 Hari 4 Malam">5 Hari 4 Malam</option>
-									<option value="6 Hari 5 Malam">6 Hari 5 Malam</option>
-									<option value="7 Hari 6 Malam">7 Hari 6 Malam</option>
-							</select>
-		</div>
-						</div><div class="elementor-field-type-date elementor-field-group elementor-column elementor-field-group-tanggal elementor-col-30 elementor-field-required elementor-mark-required">
-												<label for="form-field-tanggal" class="elementor-field-label">
-								Kapan anda ingin berlibur?							</label>
-						
-		<input type="date" name="form_fields[tanggal]" id="form-field-tanggal" class="elementor-field elementor-size-xs  elementor-field-textual elementor-date-field elementor-use-native" required="required" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
-						</div><div class="elementor-field-type-html elementor-field-group elementor-column elementor-field-group-field_dc40b7f elementor-col-100">
-					<center>Berapa Peserta yang ingin ikut berlibur?</center>				</div><div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-peserta_dewasa elementor-col-50 elementor-sm-50 elementor-field-required elementor-mark-required">
-												<label for="form-field-peserta_dewasa" class="elementor-field-label">
-								Peserta Dewasa							</label>
-														<input size="1" type="text" name="form_fields[peserta_dewasa]" id="form-field-peserta_dewasa" class="elementor-field elementor-size-xs  elementor-field-textual" placeholder="0" required="required">
-											</div><div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-peserta_anak elementor-col-50 elementor-sm-50">
-												<label for="form-field-peserta_anak" class="elementor-field-label">
-								Peserta Anak							</label>
-														<input size="1" type="text" name="form_fields[peserta_anak]" id="form-field-peserta_anak" class="elementor-field elementor-size-xs  elementor-field-textual" placeholder="0">
-											</div><div class="e-form__buttons elementor-column elementor-col-100"><div class="elementor-field-group e-form__buttons__wrapper elementor-field-type-next"><button type="button" class="elementor-button elementor-size-sm e-form__buttons__wrapper__button e-form__buttons__wrapper__button-next" data-direction="next">Selanjutnya</button></div></div></div>
-								
-								
-								
-								
-								
-								
-								<div class="elementor-field-type-step elementor-column elementor-field-group-field_8a7e89f elementor-col-100 e-form__step elementor-hidden">
-							<div class="e-field-step elementor-hidden" data-label="Info Kebutuhan" data-previousbutton="" data-nextbutton="" data-iconurl="" data-iconlibrary="fas fa-hotel" data-icon=""></div>
-
-						<div class="elementor-field-type-radio elementor-field-group elementor-column elementor-field-group-hotel_include elementor-col-100 elementor-field-required elementor-mark-required">
-												<label for="form-field-hotel_include" class="elementor-field-label">
-								Kebutuhan tour termasuk akomodasi/hotel?							</label>
-						<div class="elementor-field-subgroup  elementor-subgroup-inline"><span class="elementor-field-option"><input type="radio" value="Ya, tour dan hotel" id="form-field-hotel_include-0" name="form_fields[hotel_include]" required="required"> <label for="form-field-hotel_include-0">Ya, tour dan hotel</label></span><span class="elementor-field-option"><input type="radio" value="Tidak, hanya tour saja" id="form-field-hotel_include-1" name="form_fields[hotel_include]" required="required"> <label for="form-field-hotel_include-1">Tidak, hanya tour saja</label></span></div>				</div><div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-jenis_hotel elementor-col-100" data-dce-conditions-field-status="inactive" style="display: none;">
-												<label for="form-field-jenis_hotel" class="elementor-field-label">
-								Jenis Hotel							</label>
-								<div class="elementor-field elementor-select-wrapper remove-before ">
-			<div class="select-caret-down-wrapper">
-				<i aria-hidden="true" class="eicon-caret-down"></i>			</div>
-			<select name="form_fields[jenis_hotel]" id="form-field-jenis_hotel" class="elementor-field-textual elementor-size-xs" disabled="">
-									<option value="- Pilih Jenis Hotel -">- Pilih Jenis Hotel -</option>
-									<option value="Bintang I">Bintang I</option>
-									<option value="Bintang II">Bintang II</option>
-									<option value="Bintang III">Bintang III</option>
-									<option value="Bintang IV">Bintang IV</option>
-									<option value="Bintang V">Bintang V</option>
-							</select>
-		</div>
-						</div><div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-tipe_wisata elementor-col-100 elementor-field-required elementor-mark-required">
-												<label for="form-field-tipe_wisata" class="elementor-field-label">
-								Tipe wisata seperti apa yang anda inginkan?							</label>
-								<div class="elementor-field elementor-select-wrapper remove-before ">
-			<div class="select-caret-down-wrapper">
-				<i aria-hidden="true" class="eicon-caret-down"></i>			</div>
-			<select name="form_fields[tipe_wisata]" id="form-field-tipe_wisata" class="elementor-field-textual elementor-size-xs" required="required">
-									<option value="Menunggu Saran Kayana">Menunggu Saran Kayana</option>
-									<option value="Family Tour">Family Tour</option>
-									<option value="Honeymoon">Honeymoon</option>
-									<option value="Corporate Gathering">Corporate Gathering</option>
-									<option value="Outbound">Outbound</option>
-									<option value="Meeting">Meeting</option>
-									<option value="Study Tour">Study Tour</option>
-							</select>
-		</div>
-						</div><div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-obyek_wisata elementor-col-100 elementor-field-required elementor-mark-required">
-												<label for="form-field-obyek_wisata" class="elementor-field-label">
-								Obyek wisata yang anda ingin kunjungi?							</label>
-								<div class="elementor-field elementor-select-wrapper remove-before ">
-			<div class="select-caret-down-wrapper">
-				<i aria-hidden="true" class="eicon-caret-down"></i>			</div>
-			<select name="form_fields[obyek_wisata]" id="form-field-obyek_wisata" class="elementor-field-textual elementor-size-xs" required="required">
-									<option value="- Pilih Obyek Wisata -">- Pilih Obyek Wisata -</option>
-									<option value="Terima Saran Kayana">Terima Saran Kayana</option>
-									<option value="Pilih Sendiri">Pilih Sendiri</option>
-							</select>
-		</div>
-						</div><div class="elementor-field-type-checkbox elementor-field-group elementor-column elementor-field-group-pilihan_wisata elementor-col-100" data-dce-conditions-field-status="inactive" style="display: none;">
-					<div class="elementor-field-subgroup  elementor-subgroup-inline"><span class="elementor-field-option"><input type="checkbox" value="Flora Wisata San Terra" id="form-field-pilihan_wisata-0" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-0">Flora Wisata San Terra</label></span><span class="elementor-field-option"><input type="checkbox" value="Coban Rais" id="form-field-pilihan_wisata-1" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-1">Coban Rais</label></span><span class="elementor-field-option"><input type="checkbox" value="Taman Kelinci" id="form-field-pilihan_wisata-2" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-2">Taman Kelinci</label></span><span class="elementor-field-option"><input type="checkbox" value="Jatim Park 1" id="form-field-pilihan_wisata-3" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-3">Jatim Park 1</label></span><span class="elementor-field-option"><input type="checkbox" value="Jatim Park 2" id="form-field-pilihan_wisata-4" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-4">Jatim Park 2</label></span><span class="elementor-field-option"><input type="checkbox" value="Jatim Park 3" id="form-field-pilihan_wisata-5" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-5">Jatim Park 3</label></span><span class="elementor-field-option"><input type="checkbox" value="Museum Angkut" id="form-field-pilihan_wisata-6" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-6">Museum Angkut</label></span><span class="elementor-field-option"><input type="checkbox" value="Hawai Waterpark" id="form-field-pilihan_wisata-7" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-7">Hawai Waterpark</label></span><span class="elementor-field-option"><input type="checkbox" value="Wisata Goa Pinus Pujon" id="form-field-pilihan_wisata-8" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-8">Wisata Goa Pinus Pujon</label></span><span class="elementor-field-option"><input type="checkbox" value="Coban Talun" id="form-field-pilihan_wisata-9" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-9">Coban Talun</label></span><span class="elementor-field-option"><input type="checkbox" value="Petik Apel Batu" id="form-field-pilihan_wisata-10" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-10">Petik Apel Batu</label></span><span class="elementor-field-option"><input type="checkbox" value="Kampung Warna Warni" id="form-field-pilihan_wisata-11" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-11">Kampung Warna Warni</label></span><span class="elementor-field-option"><input type="checkbox" value="Toko Oen Malang" id="form-field-pilihan_wisata-12" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-12">Toko Oen Malang</label></span><span class="elementor-field-option"><input type="checkbox" value="Aloon-Aloon Kota Malang" id="form-field-pilihan_wisata-13" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-13">Aloon-Aloon Kota Malang</label></span><span class="elementor-field-option"><input type="checkbox" value="Aloon-Aloon Kota Batu" id="form-field-pilihan_wisata-14" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-14">Aloon-Aloon Kota Batu</label></span><span class="elementor-field-option"><input type="checkbox" value="Masjid Tiban Turen Malang" id="form-field-pilihan_wisata-15" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-15">Masjid Tiban Turen Malang</label></span><span class="elementor-field-option"><input type="checkbox" value="Malang Night Paradise" id="form-field-pilihan_wisata-16" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-16">Malang Night Paradise</label></span><span class="elementor-field-option"><input type="checkbox" value="Pantai Tiga Warna" id="form-field-pilihan_wisata-17" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-17">Pantai Tiga Warna</label></span><span class="elementor-field-option"><input type="checkbox" value="Taman Langit Gunung Banyak" id="form-field-pilihan_wisata-18" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-18">Taman Langit Gunung Banyak</label></span><span class="elementor-field-option"><input type="checkbox" value="Taman Rekreasi Selecta" id="form-field-pilihan_wisata-19" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-19">Taman Rekreasi Selecta</label></span><span class="elementor-field-option"><input type="checkbox" value="Eco Green Park" id="form-field-pilihan_wisata-20" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-20">Eco Green Park</label></span><span class="elementor-field-option"><input type="checkbox" value="The Bagong Adventure Museum Tubuh" id="form-field-pilihan_wisata-21" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-21">The Bagong Adventure Museum Tubuh</label></span><span class="elementor-field-option"><input type="checkbox" value="Batu Night Spectacular (BNS)" id="form-field-pilihan_wisata-22" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-22">Batu Night Spectacular (BNS)</label></span><span class="elementor-field-option"><input type="checkbox" value="Taman Nasional Bromo Tengger Semeru" id="form-field-pilihan_wisata-23" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-23">Taman Nasional Bromo Tengger Semeru</label></span><span class="elementor-field-option"><input type="checkbox" value="Pantai Balekambang" id="form-field-pilihan_wisata-24" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-24">Pantai Balekambang</label></span><span class="elementor-field-option"><input type="checkbox" value="Pantai Goa Cina" id="form-field-pilihan_wisata-25" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-25">Pantai Goa Cina</label></span><span class="elementor-field-option"><input type="checkbox" value="Pantai Labirin Coban Rondo" id="form-field-pilihan_wisata-26" name="form_fields[pilihan_wisata][]" disabled=""> <label for="form-field-pilihan_wisata-26">Pantai Labirin Coban Rondo</label></span></div>				</div><div class="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-catatan elementor-col-100">
-												<label for="form-field-catatan" class="elementor-field-label">
-								Catatan Tambahan (opsional)							</label>
-						<textarea class="elementor-field-textual elementor-field  elementor-size-xs" name="form_fields[catatan]" id="form-field-catatan" rows="4" placeholder="tuliskan catatan tambahan mengenai paket wisata anda (opsional)"></textarea>				</div><div class="e-form__buttons elementor-column elementor-col-100"><div class="elementor-field-group e-form__buttons__wrapper elementor-field-type-previous"><button type="button" class="elementor-button elementor-size-sm e-form__buttons__wrapper__button e-form__buttons__wrapper__button-previous" data-direction="previous">Sebelumnya</button></div><div class="elementor-field-group e-form__buttons__wrapper elementor-field-type-next"><button type="button" class="elementor-button elementor-size-sm e-form__buttons__wrapper__button e-form__buttons__wrapper__button-next" data-direction="next">Selanjutnya</button></div></div></div>
-								
-								
-								
-								
-								
-								
-								<div class="elementor-field-type-step elementor-column elementor-field-group-field_09e8b72 elementor-col-100 e-form__step elementor-hidden">
-							<div class="e-field-step elementor-hidden" data-label="Info Kedatangan" data-previousbutton="" data-nextbutton="" data-iconurl="" data-iconlibrary="fas fa-plane-arrival" data-icon=""></div>
-
-						<div class="elementor-field-type-html elementor-field-group elementor-column elementor-field-group-field_8935f12 elementor-col-100">
-					<center>Informasi kedatangan anda</center>				</div><div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-punya_tiket elementor-col-50 elementor-sm-50 elementor-field-required elementor-mark-required">
-												<label for="form-field-punya_tiket" class="elementor-field-label">
-								Sudah punya tiket?							</label>
-								<div class="elementor-field elementor-select-wrapper remove-before ">
-			<div class="select-caret-down-wrapper">
-				<i aria-hidden="true" class="eicon-caret-down"></i>			</div>
-			<select name="form_fields[punya_tiket]" id="form-field-punya_tiket" class="elementor-field-textual elementor-size-xs" required="required">
-									<option value="Belum Punya">Belum Punya</option>
-									<option value="Sudah Punya">Sudah Punya</option>
-							</select>
-		</div>
-						</div><div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-kedatangan elementor-col-50 elementor-sm-50">
-												<label for="form-field-kedatangan" class="elementor-field-label">
-								Estimasi kedatangan?							</label>
-								<div class="elementor-field elementor-select-wrapper remove-before ">
-			<div class="select-caret-down-wrapper">
-				<i aria-hidden="true" class="eicon-caret-down"></i>			</div>
-			<select name="form_fields[kedatangan]" id="form-field-kedatangan" class="elementor-field-textual elementor-size-xs">
-									<option value="Pagi">Pagi</option>
-									<option value="Siang">Siang</option>
-									<option value="Sore">Sore</option>
-									<option value="Malam">Malam</option>
-							</select>
-		</div>
-						</div><div class="elementor-field-type-time elementor-field-group elementor-column elementor-field-group-waktu_kedatangan elementor-col-50 elementor-sm-50" data-dce-conditions-field-status="inactive" style="display: none;">
-												<label for="form-field-waktu_kedatangan" class="elementor-field-label">
-								Jam kedatangan (sesuai tiket)?							</label>
-								<input type="time" name="form_fields[waktu_kedatangan]" id="form-field-waktu_kedatangan" class="elementor-field elementor-size-xs  elementor-field-textual elementor-time-field elementor-use-native" disabled="">
-						</div><div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-penjemputan elementor-col-50 elementor-sm-50 elementor-field-required elementor-mark-required">
-												<label for="form-field-penjemputan" class="elementor-field-label">
-								Lokasi penjemputan?							</label>
-								<div class="elementor-field elementor-select-wrapper remove-before ">
-			<div class="select-caret-down-wrapper">
-				<i aria-hidden="true" class="eicon-caret-down"></i>			</div>
-			<select name="form_fields[penjemputan]" id="form-field-penjemputan" class="elementor-field-textual elementor-size-xs" required="required">
-									<option value="Hotel">Hotel</option>
-									<option value="Stasiun">Stasiun</option>
-									<option value="Bandara">Bandara</option>
-									<option value="Terminal Bus">Terminal Bus</option>
-									<option value="Lainnya">Lainnya</option>
-							</select>
-		</div>
-						</div><div class="e-form__buttons elementor-column elementor-col-100"><div class="elementor-field-group e-form__buttons__wrapper elementor-field-type-previous"><button type="button" class="elementor-button elementor-size-sm e-form__buttons__wrapper__button e-form__buttons__wrapper__button-previous" data-direction="previous">Sebelumnya</button></div><div class="elementor-field-group e-form__buttons__wrapper elementor-field-type-next"><button type="button" class="elementor-button elementor-size-sm e-form__buttons__wrapper__button e-form__buttons__wrapper__button-next" data-direction="next">Selanjutnya</button></div></div></div>
-								
-								
-								
-								
-								
-								<div class="elementor-field-type-step elementor-column elementor-field-group-field_480b160 elementor-col-100 e-form__step elementor-hidden">
-							<div class="e-field-step elementor-hidden" data-label="Info Identitas" data-previousbutton="" data-nextbutton="" data-iconurl="" data-iconlibrary="fas fa-user-tie" data-icon=""></div>
-
-						<div class="elementor-field-type-html elementor-field-group elementor-column elementor-field-group-field_39e280e elementor-col-100">
-					<center>Beritahukan kepada kami, siapakah anda?</center>				</div><div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-nama elementor-col-50 elementor-sm-50 elementor-field-required elementor-mark-required">
-												<label for="form-field-nama" class="elementor-field-label">
-								Nama Lengkap							</label>
-														<input size="1" type="text" name="form_fields[nama]" id="form-field-nama" class="elementor-field elementor-size-xs  elementor-field-textual" required="required">
-											</div><div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-whatsapp elementor-col-50 elementor-sm-50 elementor-field-required elementor-mark-required">
-												<label for="form-field-whatsapp" class="elementor-field-label">
-								No. Whatsapp							</label>
-														<input size="1" type="text" name="form_fields[whatsapp]" id="form-field-whatsapp" class="elementor-field elementor-size-xs  elementor-field-textual" required="required">
-											</div><div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-50 elementor-sm-50 elementor-field-required elementor-mark-required">
-												<label for="form-field-email" class="elementor-field-label">
-								Alamat Email							</label>
-														<input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-xs  elementor-field-textual" required="required">
-											</div><div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-kota_asal elementor-col-50 elementor-sm-50 elementor-field-required elementor-mark-required">
-												<label for="form-field-kota_asal" class="elementor-field-label">
-								Kota Asal Keberangkatan							</label>
-														<input size="1" type="text" name="form_fields[kota_asal]" id="form-field-kota_asal" class="elementor-field elementor-size-xs  elementor-field-textual" required="required">
-											</div><div class="e-form__buttons elementor-column elementor-col-100"><div class="elementor-field-group e-form__buttons__wrapper elementor-field-type-previous"><button type="button" class="elementor-button elementor-size-sm e-form__buttons__wrapper__button e-form__buttons__wrapper__button-previous" data-direction="previous">Sebelumnya</button></div><div class="elementor-field-group elementor-field-type-submit e-form__buttons__wrapper">
-					<button class="elementor-button elementor-size-sm e-form__buttons__wrapper__button" type="submit">
-						<span class="elementor-button-content-wrapper">
-															<span class="elementor-button-icon">
-									<i aria-hidden="true" class="far fa-calendar-check"></i>																	</span>
-																						<span class="elementor-button-text">Konsultasi Sekarang</span>
-													</span>
-					</button>
-				</div></div></div>
-								
-								
-								
-								
-								
-								
-			</div>
-		</form>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-b146d82 elementor-align-center elementor-mobile-align-justify elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-button" data-id="b146d82" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://kirimpesanwa.my.id/kayana" target="_blank" rel="noopener">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-icon">
-				<i aria-hidden="true" class="fab fa-whatsapp"></i>			</span>
-									<span class="elementor-button-text">Chat Via Whatsapp</span>
-					</span>
-					</a>
-				</div>
-								</div>
-				</div>
-					</div>
-				</div>
-				</div>
-				<footer data-elementor-type="footer" data-elementor-id="43" class="elementor elementor-43 elementor-location-footer" data-elementor-settings="{&quot;element_pack_global_tooltip_width&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;element_pack_global_tooltip_width_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;element_pack_global_tooltip_width_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;element_pack_global_tooltip_padding&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_padding_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_padding_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true}}" data-elementor-post-type="elementor_library">
-			<div data-particle_enable="false" data-particle-mobile-disabled="false" data-dce-background-color="#19A0E1" class="elementor-element elementor-element-a54297b e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="a54297b" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-b1e0a38 e-con-full e-flex e-con e-child" data-id="b1e0a38" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-322469d elementor-widget elementor-widget-heading" data-id="322469d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Perlu KONSULTASI atau ingin PAKET CUSTOM TRIP? Klik disini!</h2>				</div>
-				</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-b3f2b18 e-con-full e-flex e-con e-child" data-id="b3f2b18" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-5c059b6 elementor-align-justify elementor-widget elementor-widget-button" data-id="5c059b6" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://www.kayanaprimawisata.co.id/custom-trip-wisata-malang/">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-icon">
-				<i aria-hidden="true" class="fas fa-map-marked-alt"></i>			</span>
-									<span class="elementor-button-text">Custom Trip</span>
-					</span>
-					</a>
-				</div>
-								</div>
-				</div>
-				</div>
-					</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" data-dce-background-color="#1B1B1B" class="elementor-element elementor-element-7e7d5bad e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="7e7d5bad" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-a95d457 e-con-full e-flex e-con e-child" data-id="a95d457" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-7aeae6e dce_masking-none elementor-widget elementor-widget-image" data-id="7aeae6e" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-																<a href="https://www.kayanaprimawisata.co.id">
-							<img width="768" height="242" src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-white-768x242.png.webp" class="attachment-medium_large size-medium_large wp-image-21 ewww_webp_loaded" alt="" srcset="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-white-768x242.png.webp 768w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-white-600x189.png.webp 600w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-white.png.webp 1293w" sizes="(max-width: 768px) 100vw, 768px" data-src-img="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-white-768x242.png" data-src-webp="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-white-768x242.png.webp" data-srcset-webp="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-white-768x242.png.webp 768w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-white-600x189.png.webp 600w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-white.png.webp 1293w" data-srcset-img="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-white-768x242.png 768w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-white-600x189.png 600w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-white.png 1293w" data-eio="j"><noscript><img width="768" height="242" src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-white-768x242.png" class="attachment-medium_large size-medium_large wp-image-21" alt="" srcset="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-white-768x242.png 768w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-white-600x189.png 600w, https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/10/kayana-logo-white.png 1293w" sizes="(max-width: 768px) 100vw, 768px" /></noscript>								</a>
-															</div>
-				</div>
-				<div class="elementor-element elementor-element-4aabc98 elementor-widget elementor-widget-text-editor" data-id="4aabc98" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									<p>Temukan Paket Wisata Malang, Paket Wisata Batu dan Paket Wisata Bromo serta Jasa Rental / Sewa Mobil Malang Terpercaya, Profesional dan Termurah dengan Pelayanan Memuaskan yang berdomisili di Kota Malang sejak tahun 2010.</p>								</div>
-				</div>
-				<div class="elementor-element elementor-element-b332dea elementor-widget elementor-widget-heading" data-id="b332dea" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Legalitas</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-114b7b6 elementor-widget elementor-widget-text-editor" data-id="114b7b6" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									<p><strong>CV. KAYANA PRIMA WISATA</strong><br><strong>NIB</strong>: 8120215261714<br><strong>IZIN</strong>: AHU-0007242-AH.01.14. Tahun 2018<br><strong>NPWP</strong>: 86.806.480.9-625.000</p>								</div>
-				</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-7487ea1 e-con-full e-flex e-con e-child" data-id="7487ea1" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-b90ad22 elementor-widget elementor-widget-heading" data-id="b90ad22" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Kayana Prima Wisata</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-61731bc elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="61731bc" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
-				<div class="elementor-widget-container">
-							<ul class="elementor-icon-list-items">
-							<li class="elementor-icon-list-item">
-											<a href="https://www.kayanaprimawisata.co.id/tentang-kami/">
-
-											<span class="elementor-icon-list-text">Tentang Kami</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://www.kayanaprimawisata.co.id/kontak-kami/">
-
-											<span class="elementor-icon-list-text">Kontak Kami</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-										<span class="elementor-icon-list-text">Layanan Kami</span>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://www.kayanaprimawisata.co.id/testimoni/">
-
-											<span class="elementor-icon-list-text">Testimoni</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://www.kayanaprimawisata.co.id/galeri-foto/">
-
-											<span class="elementor-icon-list-text">Gallery Foto</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://www.kayanaprimawisata.co.id/artikel/">
-
-											<span class="elementor-icon-list-text">Blog &amp; Artikel</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://www.kayanaprimawisata.co.id/cara-pemesanan/">
-
-											<span class="elementor-icon-list-text">Cara Pemesanan</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://www.kayanaprimawisata.co.id/syarat-dan-ketentuan/">
-
-											<span class="elementor-icon-list-text">Syarat dan Ketentuan</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://www.kayanaprimawisata.co.id/kebijakan-privasi/">
-
-											<span class="elementor-icon-list-text">Kebijakan Privasi</span>
-											</a>
-									</li>
-						</ul>
-						</div>
-				</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-49f337f e-con-full e-flex e-con e-child" data-id="49f337f" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-c5440af elementor-widget elementor-widget-heading" data-id="c5440af" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Layanan Kami</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-8e6ec60 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="8e6ec60" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
-				<div class="elementor-widget-container">
-							<ul class="elementor-icon-list-items">
-							<li class="elementor-icon-list-item">
-											<a href="https://www.kayanaprimawisata.co.id/paket-wisata-malang-batu-bromo/">
-
-											<span class="elementor-icon-list-text">Paket Wisata Malang</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://www.kayanaprimawisata.co.id/paket-wisata-bromo/">
-
-											<span class="elementor-icon-list-text">Paket Wisata Bromo</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://www.kayanaprimawisata.co.id/paket-wisata-outbound-malang/">
-
-											<span class="elementor-icon-list-text">Paket Wisata Outbound Malang</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://www.kayanaprimawisata.co.id/rental-mobil-malang/">
-
-											<span class="elementor-icon-list-text">Rental Mobil Malang</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://www.kayanaprimawisata.co.id/rental-hiace-dan-elf-malang/">
-
-											<span class="elementor-icon-list-text">Rental Hiace dan Elf Malang</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://www.kayanaprimawisata.co.id/sewa-bus-malang/">
-
-											<span class="elementor-icon-list-text">Sewa Bus Malang</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://www.kayanaprimawisata.co.id/custom-trip-wisata-malang/">
-
-											<span class="elementor-icon-list-text">Custom Trip</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://www.kayanaprimawisata.co.id/hotel-malang/">
-
-											<span class="elementor-icon-list-text">Hotel &amp; Villa Malang</span>
-											</a>
-									</li>
-						</ul>
-						</div>
-				</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-9edfe82 e-con-full e-flex e-con e-child" data-id="9edfe82" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-e1325af elementor-widget elementor-widget-heading" data-id="e1325af" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Kontak Kami</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-184556c elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="184556c" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
-				<div class="elementor-widget-container">
-							<ul class="elementor-icon-list-items">
-							<li class="elementor-icon-list-item">
-											<a href="https://maps.app.goo.gl/ogbjRzJtYXS5nhQB6">
-
-												<span class="elementor-icon-list-icon">
-							<i aria-hidden="true" class="far fa-building"></i>						</span>
-										<span class="elementor-icon-list-text">Jl. Bendungan Sutami No. 58 D, Sumbersari, Kec. Lowokwaru, Kota Malang, Jawa Timur 65145</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://maps.app.goo.gl/tEwXjEs1zkLc7WT29">
-
-												<span class="elementor-icon-list-icon">
-							<i aria-hidden="true" class="far fa-building"></i>						</span>
-										<span class="elementor-icon-list-text">Jl. Bandara Eltari No. VB 5, Cemorokandang, Kec. Kedungkandang, Kota Malang, Jawa Timur 65138</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<span class="elementor-icon-list-icon">
-							<i aria-hidden="true" class="far fa-clock"></i>						</span>
-										<span class="elementor-icon-list-text">Senin - Minggu: 8:00 - 21:00</span>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://kirimpesanwa.my.id/kayana">
-
-												<span class="elementor-icon-list-icon">
-							<i aria-hidden="true" class="fab fa-whatsapp"></i>						</span>
-										<span class="elementor-icon-list-text">+62 822-3404-4410</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="mailto:halo@kayanaprimawisata.co.id">
-
-												<span class="elementor-icon-list-icon">
-							<i aria-hidden="true" class="far fa-envelope"></i>						</span>
-										<span class="elementor-icon-list-text">halo@kayanaprimawisata.co.id</span>
-											</a>
-									</li>
-						</ul>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-4755be0 elementor-widget elementor-widget-heading" data-id="4755be0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Ikuti Kami</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-e1c343d e-grid-align-mobile-center elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="e1c343d" data-element_type="widget" data-e-type="widget" data-widget_type="social-icons.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-social-icons-wrapper elementor-grid" role="list">
-							<span class="elementor-grid-item" role="listitem">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-3a5291f" target="_blank">
-						<span class="elementor-screen-only">Facebook</span>
-						<i aria-hidden="true" class="fab fa-facebook"></i>					</a>
-				</span>
-							<span class="elementor-grid-item" role="listitem">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-faa46c4" target="_blank">
-						<span class="elementor-screen-only">Instagram</span>
-						<i aria-hidden="true" class="fab fa-instagram"></i>					</a>
-				</span>
-							<span class="elementor-grid-item" role="listitem">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-9fdda8b" target="_blank">
-						<span class="elementor-screen-only">Youtube</span>
-						<i aria-hidden="true" class="fab fa-youtube"></i>					</a>
-				</span>
-					</div>
-						</div>
-				</div>
-				</div>
-					</div>
-				</div>
-		<div data-particle_enable="false" data-particle-mobile-disabled="false" data-dce-background-color="#1B1B1B" class="elementor-element elementor-element-61b5e7b e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="61b5e7b" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-3d3d224e elementor-widget elementor-widget-heading" data-id="3d3d224e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<p class="elementor-heading-title elementor-size-default">Copyright © 2026 <a href="https://www.kayanaprimawisata.co.id">Kayana Prima Wisata.</a><br>All right reserved.<br>Design with <img draggable="false" role="img" class="emoji" alt="❤" src="https://s.w.org/images/core/emoji/17.0.2/svg/2764.svg"> by <a href="https://kirimpesanwa.my.id/jasapembuatanwebsite">Slackercode</a></p>				</div>
-				</div>
-					</div>
-				</div>
-				</footer>
-		
-<script type="speculationrules">
-{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/hello-elementor/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
-</script>
-
-			<span class="wptwa-flag"></span>
-			<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-				<symbol id="wptwa-logo">
-					<path id="WhatsApp" d="M90,43.841c0,24.213-19.779,43.841-44.182,43.841c-7.747,0-15.025-1.98-21.357-5.455L0,90l7.975-23.522   c-4.023-6.606-6.34-14.354-6.34-22.637C1.635,19.628,21.416,0,45.818,0C70.223,0,90,19.628,90,43.841z M45.818,6.982   c-20.484,0-37.146,16.535-37.146,36.859c0,8.065,2.629,15.534,7.076,21.61L11.107,79.14l14.275-4.537   c5.865,3.851,12.891,6.097,20.437,6.097c20.481,0,37.146-16.533,37.146-36.857S66.301,6.982,45.818,6.982z M68.129,53.938   c-0.273-0.447-0.994-0.717-2.076-1.254c-1.084-0.537-6.41-3.138-7.4-3.495c-0.993-0.358-1.717-0.538-2.438,0.537   c-0.721,1.076-2.797,3.495-3.43,4.212c-0.632,0.719-1.263,0.809-2.347,0.271c-1.082-0.537-4.571-1.673-8.708-5.333   c-3.219-2.848-5.393-6.364-6.025-7.441c-0.631-1.075-0.066-1.656,0.475-2.191c0.488-0.482,1.084-1.255,1.625-1.882   c0.543-0.628,0.723-1.075,1.082-1.793c0.363-0.717,0.182-1.344-0.09-1.883c-0.27-0.537-2.438-5.825-3.34-7.977   c-0.902-2.15-1.803-1.792-2.436-1.792c-0.631,0-1.354-0.09-2.076-0.09c-0.722,0-1.896,0.269-2.889,1.344   c-0.992,1.076-3.789,3.676-3.789,8.963c0,5.288,3.879,10.397,4.422,11.113c0.541,0.716,7.49,11.92,18.5,16.223   C58.2,65.771,58.2,64.336,60.186,64.156c1.984-0.179,6.406-2.599,7.312-5.107C68.398,56.537,68.398,54.386,68.129,53.938z"></path>
-				</symbol>
-			</svg>
-			<span id="wptwa-show-widget" data-current-language="" data-ids="1707" data-page-title="Custom Trip" data-page-url="https://www.kayanaprimawisata.co.id/custom-trip-wisata-malang/"></span><div id="bne-navbar" class="hide_on_standard hide_on_footer columns-5 nav_bottom" style="background-color:#19a0e0;"><div class="bne-navbar-inner"><div id="bne-navbar-btn-1" class="bne-navbar-btn-wrapper "><a href="https://www.kayanaprimawisata.co.id" target="" title="Beranda" data-navlink="1" class="bne-navbar-link"><i class="bne-navbar-icon bne-fa fa fa-home" style="color: #ffffff"></i><span class="bne-navbar-title" style="color: #ffffff">Beranda</span></a></div><!-- .bne-navbar-btn-wrapper (end) --><div id="bne-navbar-btn-2" class="bne-navbar-btn-wrapper "><a href="https://www.kayanaprimawisata.co.id/rental-mobil-malang/" target="" title="Rental Mobil" data-navlink="2" class="bne-navbar-link"><i class="bne-navbar-icon bne-fa fa fa-car" style="color: #ffffff"></i><span class="bne-navbar-title" style="color: #ffffff">Rental Mobil</span></a></div><!-- .bne-navbar-btn-wrapper (end) --><div id="bne-navbar-btn-3" class="bne-navbar-btn-wrapper "><a href="https://www.kayanaprimawisata.co.id/custom-trip-wisata-malang/" target="" title="Custom Trip" data-navlink="3" class="bne-navbar-link"><i class="bne-navbar-icon bne-fa fa fa-umbrella-beach" style="color: #ffffff"></i><span class="bne-navbar-title" style="color: #ffffff">Custom Trip</span></a></div><!-- .bne-navbar-btn-wrapper (end) --><div id="bne-navbar-btn-4" class="bne-navbar-btn-wrapper "><a href="tel:+6282234044410" target="" title="Telepon" data-navlink="4" class="bne-navbar-link"><i class="bne-navbar-icon bne-fa fa fa-phone" style="color: #ffffff"></i><span class="bne-navbar-title" style="color: #ffffff">Telepon</span></a></div><!-- .bne-navbar-btn-wrapper (end) --><div id="bne-navbar-btn-5" class="bne-navbar-btn-wrapper "><a href="https://kirimpesanwa.my.id/kayana" target="" title="Whatsapp" data-navlink="5" class="bne-navbar-link"><i class="bne-navbar-icon bne-fa fa fa-whatsapp" style="color: #ffffff"></i><span class="bne-navbar-title" style="color: #ffffff">Whatsapp</span></a></div><!-- .bne-navbar-btn-wrapper (end) --></div><!-- .bne-navbar-inner (end) --></div><!-- #bne-navbar (end) --><!-- Instagram Feed JS -->
-<script type="text/javascript">
-var sbiajaxurl = "https://www.kayanaprimawisata.co.id/wp-admin/admin-ajax.php";
-</script>
-			<script>
-				const lazyloadRunObserver = () => {
-					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
-					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
-						entries.forEach( ( entry ) => {
-							if ( entry.isIntersecting ) {
-								let lazyloadBackground = entry.target;
-								if( lazyloadBackground ) {
-									lazyloadBackground.classList.add( 'e-lazyloaded' );
-								}
-								lazyloadBackgroundObserver.unobserve( entry.target );
-							}
-						});
-					}, { rootMargin: '200px 0px 200px 0px' } );
-					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
-						lazyloadBackgroundObserver.observe( lazyloadBackground );
-					} );
-				};
-				const events = [
-					'DOMContentLoaded',
-					'elementor/lazyload/observe',
-				];
-				events.forEach( ( event ) => {
-					document.addEventListener( event, lazyloadRunObserver );
-				} );
-			</script>
-			<link rel="stylesheet" id="dce-style-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/dynamic-content-for-elementor/assets/css/style.min.css?ver=3.3.0" media="all">
-<link rel="stylesheet" id="dce-dynamic-visibility-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/dynamic-content-for-elementor/assets/css/dynamic-visibility.min.css?ver=3.3.0" media="all">
-<link rel="stylesheet" id="flatpickr-css" href="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor/assets/lib/flatpickr/flatpickr.min.css?ver=4.6.13" media="all">
-<script id="wp-hooks-js" src="https://www.kayanaprimawisata.co.id/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d"></script>
-<script id="heartbeat-js-extra">
-var heartbeatSettings = {"ajaxurl":"/wp-admin/admin-ajax.php","interval":"120","minimalInterval":"120"};
-//# sourceURL=heartbeat-js-extra
-</script>
-<script id="heartbeat-js" src="https://www.kayanaprimawisata.co.id/wp-includes/js/heartbeat.min.js?ver=7.0.1"></script>
-<script id="ahc_front_js-js-extra">
-var ahc_ajax_front = {"ajax_url":"https://www.kayanaprimawisata.co.id/wp-admin/admin-ajax.php","page_id":"92","page_title":"Custom Trip","post_type":"page","visitor_ip":"103.111.190.114"};
-//# sourceURL=ahc_front_js-js-extra
-</script>
-<script data-minify="1" id="ahc_front_js-js" src="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/plugins/visitors-traffic-real-time-statistics-pro/js/front.js?ver=1778242764"></script>
-<script id="wptwa-public-js-extra">
-var ajax_object = {"ajax_url":"https://www.kayanaprimawisata.co.id/wp-admin/admin-ajax.php"};
-//# sourceURL=wptwa-public-js-extra
-</script>
-<script data-minify="1" id="wptwa-public-js" src="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/plugins/wpt-whatsapp/assets/js/public.js?ver=1778242764"></script>
-<script data-minify="1" id="bne_navbar-js" src="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/plugins/bne-navbar/assets/js/bne-navbar.js?ver=1778242764"></script>
-<script data-minify="1" id="canvasjs-js" src="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/canvasjs.min.js?ver=1778242764"></script>
-<script data-minify="1" id="hello-theme-frontend-js" src="https://www.kayanaprimawisata.co.id/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/js/hello-frontend.js?ver=1778242764"></script>
-<script id="elementor-webpack-runtime-js" src="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.1.4"></script>
-<script id="elementor-frontend-modules-js" src="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.1.4"></script>
-<script id="jquery-ui-core-js" src="https://www.kayanaprimawisata.co.id/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"></script>
-<script id="elementor-frontend-js-extra">
-var EAELImageMaskingConfig = {"svg_dir_url":"https://www.kayanaprimawisata.co.id/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/img/image-masking/svg-shapes/"};
-//# sourceURL=elementor-frontend-js-extra
-</script>
-<script id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Bagikan di Facebook","shareOnTwitter":"Bagikan di Twitter","pinIt":"Buat Pin","download":"Unduh","downloadImage":"Unduh gambar","fullscreen":"Layar Penuh","zoom":"Perbesar","share":"Bagikan","playVideo":"Putar Video","previous":"Sebelumnya","next":"Selanjutnya","close":"Tutup","a11yCarouselPrevSlideMessage":"Slide sebelumnya","a11yCarouselNextSlideMessage":"Slide selanjutnya","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Layar lebar","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},
-"hasCustomBreakpoints":false},"version":"4.1.4","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"container":true,"e_panel_promotions":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"nested-elements":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_opt_in_v4_page":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true,"e_pro_atomic_form":true,"e_pro_variables":true,"e_pro_interactions":true},"urls":{"assets":"https:\/\/www.kayanaprimawisata.co.id\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/www.kayanaprimawisata.co.id\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/www.kayanaprimawisata.co.id\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"e4925381fb","atomicFormsSendForm":"0ed07d84c3"},"swiperClass":"swiper","settings":{"page":{"element_pack_global_tooltip_width":{"unit":"px","size":"","sizes":[]},"element_pack_global_tooltip_width_tablet":{"unit":"px","size":"","sizes":[]},"element_pack_global_tooltip_width_mobile":{"unit":"px","size":"","sizes":[]},"element_pack_global_tooltip_padding":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"element_pack_global_tooltip_padding_tablet":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"element_pack_global_tooltip_padding_mobile":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"element_pack_global_tooltip_border_radius":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"element_pack_global_tooltip_border_radius_tablet":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"element_pack_global_tooltip_border_radius_mobile":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true}},
-"editorPreferences":[],"dynamicooo":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":92,"title":"Custom%20Trip%20Wisata%20Malang%20Harga%20Termurah%202026%20-%20Kayana%20Prima%20Wisata","excerpt":"","featuredImage":"https:\/\/www.kayanaprimawisata.co.id\/wp-content\/uploads\/2023\/12\/custom-trip-kayana-prima-wisata-1024x536.jpg"}};
-//# sourceURL=elementor-frontend-js-before
-</script>
-<script id="elementor-frontend-js" src="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.1.4"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
-<script id="smartmenus-js" src="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1"></script>
-<script id="e-sticky-js" src="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=4.0.4"></script>
-<script id="bdt-uikit-js-extra">
-var element_pack_ajax_login_config = {"ajaxurl":"https://www.kayanaprimawisata.co.id/wp-admin/admin-ajax.php","language":"id","loadingmessage":"Sending user info, please wait...","unknownerror":"Unknown error, make sure access is correct!"};
-var ElementPackConfig = {"ajaxurl":"https://www.kayanaprimawisata.co.id/wp-admin/admin-ajax.php","nonce":"315faac027","data_table":{"language":{"sLengthMenu":"Show _MENU_ Entries","sInfo":"Showing _START_ to _END_ of _TOTAL_ entries","sSearch":"Search :","sZeroRecords":"No matching records found","oPaginate":{"sPrevious":"Previous","sNext":"Next"}}},"contact_form":{"sending_msg":"Sending message please wait...","captcha_nd":"Invisible captcha not defined!","captcha_nr":"Could not get invisible captcha response!"},"mailchimp":{"subscribing":"Subscribing you please wait..."},"search":{"more_result":"More Results","search_result":"SEARCH RESULT","not_found":"not found"},"words_limit":{"read_more":"[read more]","read_less":"[read less]"},"elements_data":{"sections":[],"columns":[],"widgets":[]}};
-//# sourceURL=bdt-uikit-js-extra
-</script>
-<script id="bdt-uikit-js" src="https://www.kayanaprimawisata.co.id/wp-content/plugins/bdthemes-element-pack/assets/js/bdt-uikit.min.js?ver=3.21.7"></script>
-<script id="ep-post-list-js" src="https://www.kayanaprimawisata.co.id/wp-content/plugins/bdthemes-element-pack/assets/js/modules/ep-post-list.min.js?ver=7.21.0"></script>
-<script id="imagesloaded-js" src="https://www.kayanaprimawisata.co.id/wp-includes/js/imagesloaded.min.js?ver=5.0.0"></script>
-<script id="swiper-js" src="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js?ver=8.4.5"></script>
-<script id="eael-general-js-extra">
-var localize = {"ajaxurl":"https://www.kayanaprimawisata.co.id/wp-admin/admin-ajax.php","nonce":"742e9d0142","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"eael_translate_text":{"required_text":"is a required field","invalid_text":"Invalid","billing_text":"Billing","shipping_text":"Shipping","fg_mfp_counter_text":"of"},"page_permalink":"https://www.kayanaprimawisata.co.id/custom-trip-wisata-malang/","cart_redirectition":"no","cart_page_url":"","el_breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Layar lebar","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"ParticleThemesData":{"default":"{\"particles\":{\"number\":{\"value\":160,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#ffffff\"},\"shape\":{\"type\":\"circle\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"img/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.5,\"random\":false,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":3,\"random\":true,\"anim\":{\"enable\":false,\"speed\":40,\"size_min\":0.1,\"sync\":false}},\"line_linked\":{\"enable\":true,\"distance\":150,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":1},\"move\":{\"enable\":true,\"speed\":6,\"direction\":\"none\",\"random\":false,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":true,\"mode\":\"repulse\"},\"onclick\":{\"enable\":true,\"mode\":\"push\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":400,\"size\":40,\"duration\":2,\"opacity\":8,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","nasa":"{\"particles\":{\"number\":{\"value\":250,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#ffffff\"},\"shape\":{\"type\":\"circle\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"img/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":1,\"random\":true,\"anim\":{\"enable\":true,\"speed\":1,\"opacity_min\":0,\"sync\":false}},\"size\":{\"value\":3,\"random\":true,\"anim\":{\"enable\":false,\"speed\":4,\"size_min\":0.3,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":150,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":1},\"move\":{\"enable\":true,\"speed\":1,\"direction\":\"none\",\"random\":true,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":600}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":true,\"mode\":\"bubble\"},\"onclick\":{\"enable\":true,\"mode\":\"repulse\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":250,\"size\":0,\"duration\":2,\"opacity\":0,\"speed\":3},\"repulse\":{\"distance\":400,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","bubble":"{\"particles\":{\"number\":{\"value\":15,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#1b1e34\"},\"shape\":{\"type\":\"polygon\",\"stroke\":{\"width\":0,\"color\":\"#000\"},\"polygon\":{\"nb_sides\":6},\"image\":{\"src\":\"img/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.3,\"random\":true,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":50,\"random\":false,\"anim\":{\"enable\":true,\"speed\":10,\"size_min\":40,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":200,\"color\":\"#ffffff\",\"opacity\":1,\"width\":2},\"move\":{\"enable\":true,\"speed\":8,\"direction\":\"none\",\"random\":false,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":false,\"mode\":\"grab\"},\"onclick\":{\"enable\":false,\"mode\":\"push\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":400,\"size\":40,\"duration\":2,\"opacity\":8,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","snow":"{\"particles\":{\"number\":{\"value\":450,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#fff\"},\"shape\":{\"type\":\"circle\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"img/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.5,\"random\":true,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":5,\"random\":true,\"anim\":{\"enable\":false,\"speed\":40,\"size_min\":0.1,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":500,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":2},\"move\":{\"enable\":true,\"speed\":6,\"direction\":\"bottom\",\"random\":false,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":true,\"mode\":\"bubble\"},\"onclick\":{\"enable\":true,\"mode\":\"repulse\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":0.5}},\"bubble\":{\"distance\":400,\"size\":4,\"duration\":0.3,\"opacity\":1,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","nyan_cat":"{\"particles\":{\"number\":{\"value\":150,\"density\":{\"enable\":false,\"value_area\":800}},\"color\":{\"value\":\"#ffffff\"},\"shape\":{\"type\":\"star\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"http://wiki.lexisnexis.com/academic/images/f/fb/Itunes_podcast_icon_300.jpg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.5,\"random\":false,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":4,\"random\":true,\"anim\":{\"enable\":false,\"speed\":40,\"size_min\":0.1,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":150,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":1},\"move\":{\"enable\":true,\"speed\":14,\"direction\":\"left\",\"random\":false,\"straight\":true,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":false,\"mode\":\"grab\"},\"onclick\":{\"enable\":true,\"mode\":\"repulse\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":200,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":400,\"size\":40,\"duration\":2,\"opacity\":8,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}"},"eael_login_nonce":"54653df086","eael_register_nonce":"5cbc30bc78","eael_lostpassword_nonce":"b8028a332d","eael_resetpassword_nonce":"aaff5a6a10"};
-//# sourceURL=eael-general-js-extra
-</script>
-<script id="eael-general-js" src="https://www.kayanaprimawisata.co.id/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=6.6.11"></script>
-<script id="element-pack-helper-js" src="https://www.kayanaprimawisata.co.id/wp-content/plugins/bdthemes-element-pack/assets/js/common/helper.min.js?ver=7.21.0"></script>
-<script id="dce-expressionlanguage-js" src="https://www.kayanaprimawisata.co.id/wp-content/plugins/dynamic-content-for-elementor/assets/node/expression-language/expressionlanguage.min.js?ver=3.3.0"></script>
-<script id="dce-fix-background-loop-js" src="https://www.kayanaprimawisata.co.id/wp-content/plugins/dynamic-content-for-elementor/assets/js/fix-background-loop.min.js?ver=3.3.0"></script>
-<script id="dce-settings-js" src="https://www.kayanaprimawisata.co.id/wp-content/plugins/dynamic-content-for-elementor/assets/js/settings.min.js?ver=3.3.0"></script>
-<script id="dce-conditional-fields-js" src="https://www.kayanaprimawisata.co.id/wp-content/plugins/dynamic-content-for-elementor/assets/js/conditional-fields.min.js?ver=3.3.0"></script>
-<script id="flatpickr-js" src="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor/assets/lib/flatpickr/flatpickr.min.js?ver=4.6.13"></script>
-<script id="elementor-pro-webpack-runtime-js" src="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=4.0.4"></script>
-<script id="wp-i18n-js" src="https://www.kayanaprimawisata.co.id/wp-includes/js/dist/i18n.min.js?ver=781d11515ad3d91786ec"></script>
-<script id="wp-i18n-js-after">
-wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
-//# sourceURL=wp-i18n-js-after
-</script>
-<script id="elementor-pro-frontend-js-before">
-var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/www.kayanaprimawisata.co.id\/wp-admin\/admin-ajax.php","nonce":"da55978893","urls":{"assets":"https:\/\/www.kayanaprimawisata.co.id\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/www.kayanaprimawisata.co.id\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},
-"facebook_sdk":{"lang":"id_ID","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/www.kayanaprimawisata.co.id\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
-//# sourceURL=elementor-pro-frontend-js-before
-</script>
-<script id="elementor-pro-frontend-js" src="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=4.0.4"></script>
-<script id="pro-elements-handlers-js" src="https://www.kayanaprimawisata.co.id/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=4.0.4"></script><svg style="display: none;" class="e-font-icon-svg-symbols"></svg>
-<script id="wp-emoji-settings" type="application/json">
-{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://www.kayanaprimawisata.co.id/wp-includes/js/wp-emoji-release.min.js?ver=7.0.1"}}
-</script>
-<script type="module">
-/*! This file is auto-generated */
-const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
-//# sourceURL=https://www.kayanaprimawisata.co.id/wp-includes/js/wp-emoji-loader.min.js
-</script>
-
-
-
-
-<div class="wptwa-container" data-delay-time="0" data-inactive-time="0" data-scroll-length="0">
-					<div class="wptwa-box wptwa-js-ready">
-						<div class="wptwa-description">
-							<p style="text-align: center">Silahkan hubungi Customer Service kami dibawah untuk melakukan reservasi atau konsultasi. Customer Service kami siap melayani Anda.</p>
-
-						</div>
-						<span class="wptwa-close"></span>
-						<div class="wptwa-people" style="max-height: 697px;">
-							<a href="https://web.whatsapp.com/send?phone=6282234044410&amp;text=Halo Kayana Prima Wisata Malang..." data-number="6282234044410" class="wptwa-account wptwa-clearfix wptwa-hide-on-small-screen" data-auto-text="Halo Kayana Prima Wisata Malang..." data-ga-label="Kayana Admin" target="_blank">
-								<div class="wptwa-face"><img src="https://www.kayanaprimawisata.co.id/wp-content/uploads/2023/12/image-260nw-2128998383.jpg" onerror="this.style.display='none'"></div>
-								<div class="wptwa-info">
-									<span class="wptwa-title">Customer Service</span>
-									<span class="wptwa-name">Kayana Prima Wisata</span>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="wptwa-toggle"><svg class="WhatsApp" width="20px" height="20px" viewBox="0 0 90 90"><use xlink:href="#wptwa-logo"></use></svg> <span class="wptwa-text">Chat via Whatsapp</span></div>
-					<div class="wptwa-mobile-close"><span>Close and go back to page</span></div>
-				</div></body></html>
+        function handleSubmit(e) {
+            e.preventDefault();
+            
+            const destination = document.getElementById('destination').value;
+            const duration = document.getElementById('duration').value;
+            const travelDate = document.getElementById('travelDate').value;
+            const adults = document.getElementById('adults').value;
+            const children = document.getElementById('children').value;
+            
+            const message = `Halo Happy Trans Malang, saya ingin konsultasi Custom Trip:%0A%0A` +
+                          `📍 Destinasi: ${destination}%0A` +
+                          `⏱️ Durasi: ${duration} hari%0A` +
+                          `📅 Tanggal: ${travelDate}%0A` +
+                          `👥 Peserta Dewasa: ${adults}%0A` +
+                          `👶 Peserta Anak: ${children}%0A%0A` +
+                          `Mohon informasi lebih lanjut. Terima kasih!`;
+            
+            window.open(`https://wa.me/6288235416304?text=${message}`, '_blank');
+        }
+    </script>
+</body>
+</html>
