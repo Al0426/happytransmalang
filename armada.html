@@ -336,7 +336,7 @@ footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 0 
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .form-group {
@@ -438,23 +438,33 @@ footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 0 
         grid-template-columns: 1fr;
         gap: 15px;
     }
-    
     .modal-header {
         padding: 20px;
     }
-    
     .modal-header-content h3 {
         font-size: 20px;
     }
-    
     .modal-body {
         padding: 20px;
     }
-    
     .btn-whatsapp {
         font-size: 14px;
         padding: 14px;
     }
+    .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); flex-direction: column; padding: 20px; box-shadow: var(--shadow); gap: 15px; }
+    .nav-links.active { display: flex; }
+    .mobile-menu-btn { display: block; }
+    .page-hero h1 { font-size: 28px; }
+    .section-title h2 { font-size: 28px; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .floating-wa-container { bottom: 20px; right: 20px; }
+    .floating-wa { width: 55px; height: 55px; font-size: 24px; }
+    .logo-text .happy { font-size: 18px; }
+    .logo-text .trans { font-size: 16px; }
+    .logo-img { width: 45px; height: 45px; }
+}
+@media (max-width: 992px) {
+    .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 </style>
 <!-- Favicon untuk menampilkan logo di tab browser -->
@@ -794,8 +804,8 @@ footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 0 
 <!-- Hiace Luxury -->
 <div class="fleet-card featured">
 <div class="fleet-image">
-<span class="fleet-tag">Best Seller</span>
-<img src="https://static.wixstatic.com/media/261cbb_bf6c6d0e19884236a7c7c05afab1ce3b~mv2.png" alt="Hiace Premio">
+<span class="fleet-tag">Premium</span>
+<img src="https://static.wixstatic.com/media/261cbb_bf6c6d0e19884236a7c7c05afab1ce3b~mv2.png" alt="Hiace Luxury">
 </div>
 <div class="fleet-pricing">
 <div class="fleet-price">Rp1.850.000 <small>/ hari</small></div>
@@ -819,7 +829,7 @@ footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 0 
 <li><i class="fas fa-times"></i> Makan Driver</li>
 </ul>
 <div class="fleet-footer">
-<a href="#" class="fleet-btn" onclick="openBookingModal('Hiace Premio'); return false;">
+<a href="#" class="fleet-btn" onclick="openBookingModal('Hiace Luxury'); return false;">
 <i class="fab fa-whatsapp"></i> Booking Sekarang
 </a>
 </div>
@@ -974,7 +984,7 @@ footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 0 
 <h4>Link Cepat</h4>
 <ul>
 <li><a href="./">Beranda</a></li>
-<li><a href="armada.html">Armada</a></li>
+<li><a href="armada-mobil.html">Armada</a></li>
 <li><a href="paket-wisata.html">Paket Wisata</a></li>
 <li><a href="custom-trip.html">Custom Trip</a></li>
 <li><a href="sewa-bus.html">Sewa Bus</a></li>
@@ -1053,9 +1063,10 @@ footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 0 
                             <option value="Toyota Avanza">Toyota Avanza</option>
                             <option value="New Avanza (FWD)">New Avanza (FWD)</option>
                             <option value="Suzuki Ertiga">Suzuki Ertiga</option>
+                            <option value="Toyota Innova">Toyota Innova</option>
                             <option value="Hiace Commuter">Hiace Commuter</option>
                             <option value="Hiace Premio">Hiace Premio</option>
-                            <option value="Toyota Alphard">Toyota Alphard</option>
+                            <option value="Hiace Luxury">Hiace Luxury</option>
                             <option value="Short ELF">Short ELF</option>
                             <option value="Long ELF">Long ELF</option>
                             <option value="Long ELF Giga">Long ELF Giga</option>
@@ -1072,6 +1083,13 @@ footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 0 
                         <label>DURASI (HARI) <span class="required">*</span></label>
                         <input type="number" id="bookDuration" placeholder="1" min="1" value="1" required>
                     </div>
+                    <div class="form-group">
+                        <label>JUMLAH PENUMPANG</label>
+                        <input type="number" id="bookPax" placeholder="Contoh: 4" min="1">
+                    </div>
+                </div>
+
+                <div class="form-row">
                     <div class="form-group">
                         <label>TITIK JEMPUT <span class="required">*</span></label>
                         <input type="text" id="bookPickup" placeholder="Kota / Alamat" required>
@@ -1132,6 +1150,11 @@ function closeBookingModal() {
     modal.classList.remove('active');
     document.body.style.overflow = 'auto';
     document.getElementById('bookingForm').reset();
+    // Reset summary
+    document.querySelector('.booking-summary').innerHTML = `
+        <h4><i class="fas fa-info-circle"></i> Ringkasan Booking</h4>
+        <p>Isi form di atas untuk melihat ringkasan pemesanan Anda.</p>
+    `;
 }
 
 document.getElementById('bookingModal').addEventListener('click', function(e) {
@@ -1147,7 +1170,8 @@ function updateSummary() {
     const service = document.getElementById('bookService').value;
     const date = document.getElementById('bookDate').value;
     const duration = document.getElementById('bookDuration').value;
-    const pax = document.getElementById('bookPax').value;
+    const paxInput = document.getElementById('bookPax');
+    const pax = paxInput ? paxInput.value : '1';
     const pickup = document.getElementById('bookPickup').value;
     const destination = document.getElementById('bookDestination').value;
     
@@ -1163,7 +1187,7 @@ function updateSummary() {
         summary.innerHTML = `
             <h4><i class="fas fa-info-circle"></i> Ringkasan Booking</h4>
             <p><strong>${name}</strong> ingin memesan <strong>${service}</strong></p>
-            <p>📅 ${formattedDate} | ⏱️ ${duration} hari | 👥 ${pax} penumpang</p>
+            <p>📅 ${formattedDate} | ⏱️ ${duration} hari | 👥 ${pax || '1'} penumpang</p>
             <p>📍 Jemput: ${pickup || '-'} ${destination ? '| 🎯 Tujuan: ' + destination : ''}</p>
         `;
     }
@@ -1177,7 +1201,8 @@ function sendToWhatsApp(e) {
     const service = document.getElementById('bookService').value;
     const date = document.getElementById('bookDate').value;
     const duration = document.getElementById('bookDuration').value;
-    const pax = document.getElementById('bookPax').value;
+    const paxInput = document.getElementById('bookPax');
+    const pax = paxInput ? paxInput.value : '1';
     const pickup = document.getElementById('bookPickup').value;
     const destination = document.getElementById('bookDestination').value;
     const notes = document.getElementById('bookNotes').value;
@@ -1192,12 +1217,12 @@ function sendToWhatsApp(e) {
     const message = `*BOOKING HAPPY TRANS MALANG* 🚐\n\n` +
                    `*DATA PEMESAN:*\n` +
                    `👤 Nama: ${name}\n` +
-                   ` No. WA: ${phone}\n` +
+                   `📱 No. WA: ${phone}\n` +
                    `\n*DETAIL PESANAN:*\n` +
                    `🎯 Layanan: ${service}\n` +
-                   ` Tanggal: ${formattedDate}\n` +
+                   `📅 Tanggal: ${formattedDate}\n` +
                    `⏱️ Durasi: ${duration} hari\n` +
-                   `👥 Jumlah Penumpang: ${pax} orang\n` +
+                   `👥 Jumlah Penumpang: ${pax || '1'} orang\n` +
                    `📍 Titik Jemput: ${pickup}\n` +
                    `${destination ? '🎪 Destinasi: ' + destination + '\n' : ''}` +
                    `${notes ? '\n*CATATAN TAMBAHAN:*\n' + notes : ''}\n\n` +
